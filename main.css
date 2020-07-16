@@ -17,9 +17,11 @@ html {
     width: 100%;
 }
 
+
+
 @media (orientation: landscape) {
     body {
-        width: 60%;
+        width: 40%;
         font-size: 1rem;
         line-height: 1.5rem;
         margin: auto;
@@ -27,7 +29,7 @@ html {
         word-wrap: break-word;
     }
 
-    .user_profile_cap {
+    /* .user_profile_cap {
         width: 100%;
         height: auto 13px;
         border: 1px solid #DDD;
@@ -64,7 +66,7 @@ html {
         font-weight: bold;
         display: block;
     }
-
+ */
 
     footer {
         display: flex;
@@ -95,7 +97,7 @@ html {
         word-wrap: break-word;
     }
 
-    .user_profile_headline h1 {
+    /* .user_profile_headline h1 {
         margin: 0;
         padding: 0.25em;
         font-size: 1.25em;
@@ -128,7 +130,7 @@ html {
         width: 100%;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-    }
+    } */
 
     .content {
         padding: 0.5em;
@@ -218,3 +220,64 @@ body::after {
     }
 
 }
+
+.introduction  {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.introduction img {
+    max-width: 20%;
+    box-shadow:  1px  4px 4px 1px #ccc;
+    margin-bottom: 1em;
+
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    border: 1px #eee solid;
+    box-shadow:   1px  4px 4px 1px #ccc;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    min-height: 15em;
+}
+
+.project div {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.project h2 {
+   
+}
+
+
+
+
+.project  img {
+    width: 20%;
+    /* height: 20%; */
+    box-shadow:   1px  4px 4px 1px #ccc;
+     object-fit: contain;
+    /* border: 1px solid #ccc; */
+    /* box-shadow: 0px 4px 5px #ccc; */
+}
+
+.project p {
+    padding-left: 1em;
+    
+}
+
+
+.project  a {
+    display: block;
+    padding: 1em;
+    /* box-shadow: 0px 4px 5px #ccc; */
+}
+
+
+
