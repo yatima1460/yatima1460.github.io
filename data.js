@@ -49,17 +49,36 @@ window.onload = function () {
 
     let projects_div = document.getElementById("projects");
 
-    projects.forEach(project => {
-        projects_div.innerHTML +="<a class=\"project\" href=\"" + project.url + "\" target=\"_blank\" rel=\"noopener\">\
-            <h2>"+ project.title + "</h2>\
-            <div class=\"project-description\">\
-                <img src=\""+ project.image + "\">\
-                <div class=\"project-text\">"+ project.text + "\
-                    <p class=\"fakelink\">"+ project.url + "</p>\
+    if(window.innerHeight < window.innerWidth){
+        // Landscape
+        projects.forEach(project => {
+            projects_div.innerHTML +="<a class=\"project\" href=\"" + project.url + "\" target=\"_blank\" rel=\"noopener\">\
+                <h2>"+ project.title + "</h2>\
+                <div class=\"project-description\">\
+                    <img src=\""+ project.image + "\">\
+                    <div class=\"project-text\">"+ project.text + "\
+                        <p class=\"fakelink\">"+ project.url + "</p>\
+                    </div>\
                 </div>\
-            </div>\
-        </a>"
-    });
+            </a>"
+        });
+    }
+    else
+    {
+        // Portrait
+        projects.forEach(project => {
+            projects_div.innerHTML +="<a class=\"project\" href=\"" + project.url + "\" target=\"_blank\" rel=\"noopener\">\
+                <h2>"+ project.title + "</h2>\
+                <div class=\"project-description\">\
+                    <img src=\""+ project.image + "\">\
+                    <div class=\"project-text\">"+ project.text + "</div>\
+                </div>  <p class=\"fakelink\">"+ project.url + "</p>\
+            </a>"
+        });
+    }
+    
+
+
 
 
 }
