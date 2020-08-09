@@ -332,19 +332,24 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+ 
+}
+
+.title h1 {
+  width: 60%;
 }
 
   .avatar-zone {
 
    
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     margin-top: 1em;
     margin-bottom: 0em;
     margin-left: 0em;
 
-    
+    align-self: right;
     text-align: right;
     justify-content: right;
   }
