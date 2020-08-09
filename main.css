@@ -60,18 +60,37 @@ html {
         padding-left: 0.1em;
       }
   body {
-    width: 40%;
+    width: 45%;
     font-size: 1rem;
     line-height: 1.5rem;
     margin: auto;
     font-family: "Roboto", sans-serif;
     word-wrap: break-word;
   }
+   @media only screen and (max-width: 1366px) {
+    body {
+      width: 60%;
+    }
+  }
+  
+  @media only screen and (max-width: 1280px) {
+    body {
+      width: 80%;
+    }
+  } 
+
+  @media only screen and (max-width: 1024px) {
+    body {
+      width: 95%;
+    }
+  } 
 }
+
 @media (orientation: portrait) {
     h1 {
         padding-bottom: 0.25em;
         padding-top: 0.5em;
+        line-height: 1em;
       }
       
       h2 {
@@ -85,8 +104,12 @@ html {
     margin: auto;
     font-family: "Roboto", sans-serif;
     word-wrap: break-word;
+
+    
   }
 }
+
+
 
 .introduction {
   display: flex;
@@ -128,8 +151,16 @@ html {
   .content {
     margin-top: 2em;
   }
+  .introduction-mobile {
+    display: none;
+    
+  }
+  .social-icons-mobile {
+    display: none;
+    
+  }
   .avatar-zone {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     margin-top: 1em;
@@ -188,6 +219,7 @@ html {
   
 .social-icons img {
     margin-top: 0.2em;
+   
   }
   
   .social-icons img:hover {
@@ -288,6 +320,20 @@ html {
     margin-top: 0em;
   }
 
+    
+.social-icons {
+  display: none;
+}
+
+.introduction {
+  display: none;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
   .avatar-zone {
 
    
@@ -327,45 +373,6 @@ html {
     display: none;
   }
 
-  
-.social-icons {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    
-    box-shadow: 1px 4px 4px 1px #ccc;
-    border-radius: 0.5em;
-    border: 1px #eee solid;
-
-    text-align: center;
-    justify-content: center;
-
-    background-color: white;
-  
-    align-items: center; 
-    width: 70%;
-    margin: auto;
-    /* height: 3.2em; */
-  }
-
-  
-.social-icons img {
-    margin-top: 0.0;
- 
-
-  }
-
-  .social-icons a {
-    /* width: 33.33%; */
-    /* object-fit: contain; */
-    /* text-align: center; */
-    /* margin: 0.1em; */
-    
-    
-    margin-right: 0.3em;
-    margin-left: 0.3em;
-    margin-top: 0.5em;
-  }
 
   
 
@@ -375,6 +382,7 @@ html {
 
 .presentation {
     font-size: 1.1rem;
+    width: 100%;
    
 }
 
@@ -417,6 +425,59 @@ html {
   display: flex;
   flex-direction: column;
   padding-left: 1em;
+}
+
+
+
+
+
+.social-icons-mobile {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+  position: fixed;
+  
+  
+  box-shadow: 1px 4px 4px 1px #ccc;
+  border-radius: 0.5em;
+  border: 1px #eee solid;
+
+  text-align: center;
+  justify-content: center;
+
+  background-color: white;
+
+  align-items: center; 
+  width: 100%;
+  margin: auto;
+  /* height: 3.2em; */
+
+  position: fixed;
+  bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+
+.social-icons-mobile img {
+  margin-top: 0.0;
+
+
+}
+
+.social-icons-mobile a {
+  /* width: 33.33%; */
+  /* object-fit: contain; */
+  /* text-align: center; */
+  /* margin: 0.1em; */
+  
+  
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
 }
 
 } /* Portrait */
@@ -476,4 +537,7 @@ body::after {
   content: "Copyright© 2020 Federico Santamorena (yatima1460) - All Rights Reserved";
   color: #666666;
   text-align: center;
+
+  margin-top: 2em; /* To show the copyright line because sticky social icons */
+  padding-bottom: 4em;
 }
