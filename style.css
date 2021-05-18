@@ -1,22 +1,6 @@
 /* global */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-* {
-    box-sizing: border-box;
-    text-rendering: geometricPrecision;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non */
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-drag: none;
-  }
-
 
 
 
@@ -125,7 +109,7 @@ a{
 }
 /* section 2 */
 .description-zone{
-    padding-top: 5vh;
+    padding-top: 2.5vh;
     width: 70%;
 }
 
@@ -181,6 +165,16 @@ a:hover{
         grid-template-columns: 1fr;
         
     }
+    .avatar-square {
+      
+    
+        
+     
+    
+    
+      }
+    
+
     .avatar-zone{
         padding:0;
         padding-top: 5rem;
