@@ -160,7 +160,7 @@ a:hover{
 
 
 /* media queres */
-@media(max-width:1080px){
+@media(max-width:740px){
     .grid-2{
         grid-template-columns: 1fr;
         
