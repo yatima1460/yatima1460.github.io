@@ -160,24 +160,18 @@ a:hover{
 
 
 /* media queres */
-@media(max-width:780px){
+@media(max-width:1080px){
     .grid-2{
         grid-template-columns: 1fr;
         
     }
-    .avatar-square {
-      
-    
-        
-     
-    
-    
-      }
-    
 
     .avatar-zone{
         padding:0;
         padding-top: 5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        width: 100%;
     }
     .description-zone{
        
