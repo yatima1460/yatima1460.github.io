@@ -161,24 +161,29 @@ a:hover{
 
 /* media queres */
 @media(max-width:740px){
+    
     .grid-2{
         grid-template-columns: 1fr;
-        
     }
 
     .avatar-zone{
         padding:0;
-        padding-top: 5rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        width: 100%;
+        padding-top: 5em;
+        padding-left: 1em;
+        padding-right: 1em;
+
+        width: auto;
+      
     }
     .description-zone{
        
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+        width: auto;
+       
     }
 }
