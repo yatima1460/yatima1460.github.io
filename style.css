@@ -1,36 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-
-
 body {
-    margin: auto;
+    /* margin: auto;
     max-width: 800px;
-    padding: 32px;
-    font-family: 'Ubuntu', sans-serif;
+    padding: 32px; */
+    font-family: monerogothicbold;
     background-color: white;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem;
     line-height: 1.4; 
-    color: #000;
+    color: #000; */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.container {
+    
+   
+    display: flex;
+    padding: 0;
+
+  
+    margin: 0;
+    height: 100vh;
+}
+
+.credit-card
+{
+   
+   
+   
+    background: gold; /** <-- For the demo **/
+  
+    /* width: 85.6mm;
+    height: 53.98mm; */
+    background: teal;
+    /* width: 50%; */
+   
+    background-color: white;
+    border: 4px solid #4c4c4c;
+    margin: auto;
+    padding: 2em;
+    border-radius: 1em;
+ 
+    color: #4c4c4c;
+
+    display: flex;
+    flex-direction: row;
+    
+    /* aspect-ratio: 1.58577250834; */
+    
+}
+
+/* Load Monero font */
+@font-face {
+    font-family: 'monerogothicbold';
+    src: url('monerogothic/monerogothic_v3-webfont.woff2') format('woff2'),
+        url('monerogothic/monerogothic_v3-webfont.woff') format('woff'),
+        url('monerogothic/MoneroGothic_v3.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+.photo {
+    width: 50%
 }
 
 a {
-    color: #0077AA;
-    font-size: 1.5rem;
+    color: #ff6600;
+    display: block;
+    text-decoration: none;
 }
 
-a:visited {
-    color: #0077AA;
+h4 {
+    padding: 0;
+    margin: 0em;
+    margin-bottom: 0.5em;
+
 }
 
 h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0;
-}
-
-
-h4 {
-    font-size: 1.1rem;
-    margin: 0;
     padding: 0;
-    color: #555;
-    font-weight: normal;
+    margin: 0em;
+    margin-top: 1em;
+    /* text-decoration: underline; */
+  
 }
+/* @media screen and (orientation:landscape) { … } */
+@media screen and (orientation:portrait) { 
+
+    .credit-card
+    {
+     
+    flex-direction: column;
+    }
+}
+
+.drill-icon {
+    width: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+/* b {
+    text-decoration: underline;
+} */
+
