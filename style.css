@@ -3,10 +3,11 @@ body {
     max-width: 800px;
     padding: 32px; */
     font-family: monerogothicbold;
-    background-color: white;
+    background-color: black;
     /* font-size: 1.2rem;
     line-height: 1.4; 
     color: #000; */
+    color: white;
     margin: 0;
     padding: 0;
 }
@@ -66,8 +67,11 @@ body {
 
 
 .photo {
-    width: 50%;
+    width: 50vmin;
     border-radius: 50%;
+    /* position: absolute; */
+    left: 0;
+  
 }
 
 a {
@@ -111,3 +115,6 @@ border: 0;
     text-decoration: underline;
 } */
 
+.cover {
+    width: 100%;
+}
