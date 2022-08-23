@@ -44,10 +44,9 @@
         outline: 0 none;
     }
 
-    img
-{
-    box-shadow: 0px 0px 5px #fa84df;
-}
+    img {
+        box-shadow: 0px 0px 5px #fa84df;
+    }
 
     h3 {
         margin-top: 4em;
@@ -62,17 +61,35 @@
         outline: 0 none;
     }
 
+    .links a::before {
+        content: '> ';
+        color: #CF41AE
+    }
+
+    .links a {
+        display: block;
+        padding: 4px;
+        text-decoration: none;
+        color: #CF41AE;
+
+    }
+
+    .links a:hover:before {
+        content: '> ';
+        color: white
+    }
+
     a,
     a:hover,
     a:focus {
-       
+        text-decoration: underline;
         color: #CF41AE;
         text-shadow: none;
         -webkit-transition: 500ms linear 0s;
         -moz-transition: 500ms linear 0s;
         -o-transition: 500ms linear 0s;
         transition: 500ms linear 0s;
-        outline: 0 none;
+
     }
 
     a:hover,
@@ -97,6 +114,7 @@
         margin: 0;
         margin-bottom: 10%;
         font-family: monospace;
+        font-size: normal;
 
         /* background-image: url('cover.gif');
         background-position: top;
@@ -138,9 +156,16 @@
     }
 
     @media screen and (orientation:landscape) {
-        .links a{
-            padding-left: 1em;
+        .below-cover {
+            margin-left: 10%;
         }
+
+        .photo {
+       
+    
+       width: 21vmin;
+       height: 21vmin;
+   }
     }
 
     @media screen and (orientation:portrait) {
@@ -151,27 +176,26 @@
 
         }
 
-      
+
+
         .links {
             display: flex;
             flex-direction: column;
         }
 
-        .name {
-
-        }
+        .name {}
 
 
-        .links a{
+        .links a {
             padding-top: 0.5em;
         }
     }
 
 
-.top {
-    display: flex;   
-    flex-direction: column;
-}
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
 </style>
 
 <body>
@@ -189,96 +213,102 @@
                 <div class="name">Yatima<br>Santamorena</div>
             </div>
         </div>
-        <div class="links">
-            <h4>Nova Gorica, Slovenia</h4>
 
-            <a href="https://github.com/yatima1460" target="_blank">github.com/yatima1460</a>
-            <!-- <a href="https://www.linkedin.com/in/yatima1460/" target="_blank"> linkedin.com/in/yatima1460</a> -->
-            <a href="mailto:devnull@santamorena.me">devnull@santamorena.me</a>
-            <a href=" https://drill.software/" target="_blank">check out my project, Drill</a>
-            <a
-                href="monero:8B5UK4znA6h67sfRK1eCjdUEry8BKseAF1qmKAVhAF5u1zeWiNFfgW9VaARLFh5VZKUQJC346K7wpH7aT17v62DC9igXw3y">send me Monero</a>
-        </div>
-
-        <!-- Start of work experience -->
-        <div style="display: flex; flex-direction: column;">
+        <div class="below-cover">
 
 
+            <div class="links">
+                <h4>Nova Gorica, Slovenia</h4>
 
-            <h3><a href="https://www.opera.com/"  target="_blank">Opera</a></h3>
-            <h4>June 2021 - Current</h4>
-            <div>
-                <b>YoYo Games</b>' <a href="https://gamemaker.io/" target="_blank">GameMaker</a>'s build engineer
-            </div>
-            
-            <h3><a href="https://zuru.tech"  target="_blank">Zuru Tech</a></h3>
-            <h4>December 2020 - March 2021</h4>
-            <div>
-                C++ BIM software with <b>Unreal Engine</b>
-            </div>
-        
-            <h3><a href="https://www.ubisoft.com/en-us/company/careers/locations/milan/ubisoft-milan"  target="_blank">Ubisoft</a></h3>
-            <h4>September 2020 - December 2020</h4>
-            <div>
-                <b>Mario + Rabbids: Sparks of Hope</b> Gameplay Programmer
+                <a href="https://github.com/yatima1460" target="_blank">github.com/yatima1460</a>
+                <!-- <a href="https://www.linkedin.com/in/yatima1460/" target="_blank"> linkedin.com/in/yatima1460</a> -->
+                <a href="mailto:devnull@santamorena.me">devnull@santamorena.me</a>
+                <a href=" https://drill.software/" target="_blank">check out my project, Drill</a>
+                <a
+                    href="monero:8B5UK4znA6h67sfRK1eCjdUEry8BKseAF1qmKAVhAF5u1zeWiNFfgW9VaARLFh5VZKUQJC346K7wpH7aT17v62DC9igXw3y">send
+                    me Monero</a>
             </div>
 
-            <h3>Sfera Productions</h3>
-            <h4>2017 - 2018</h4>
-            <div><b>VR</b> projects with <b>Unreal Engine</b> and HTC Vive
-            </div>
-
-            <h3>ITC Consulting</h3>
-            <h4>2016</h4>
-            <div>
-                C# <b>Unity</b> driving simulator
-            </div>
+            <!-- Start of work experience -->
+            <div style="display: flex; flex-direction: column;">
 
 
-            <pgp>-----BEGIN PGP PUBLIC KEY BLOCK-----
 
-                mQGNBGMFT/sBDADkwl/cKGlRM0ypN8s9NLm+t4fJ5ST9/97PD4Qc9U5J8cmXcDUE
-                KfzvCISyqC/b6HSJSx8W7gDooNDpMCE+twlCd27SHzrtC31ieuah7/2x5zKLtaK3
-                gUy3m2Vp/M0AdHMuYTZAmGV2sqqpnNRbX+lKUeNCTi14U52HLem5WlUOsKLSwc4j
-                qUX2362NHlioo9PGfYM6QiODPt+PAUr+sxipCZ5DzFX+DOiC+fcscZ2GlvywAnJQ
-                07AdvkfYV8TJj24aoIXMsDKABwBYixAq14MNOX3VEOXS/DY5/Za5HP+FDVohko+R
-                d/wZJBONSA4YY2++FDNmS+jpAtUNgu4sYV65ONW+hjvzSzhy5YAkhgtZkUQOhsOy
-                Sdw7DkHn/5zTkj+Eh/4dJ34S39ECRTjq08M1AdeSdrCj9/1EHPWLAmI45JDGxhWP
-                7MqQ83VqS/NPw2bUrJk8LsyX3sKw9W+NvzTBpxvGlbIUKFSGZnwvHv+vNPru4Yxx
-                AOed7kQK22GWbq8AEQEAAbQqWWF0aW1hIFNhbnRhbW9yZW5hIDx5YXRpbWFAc2Fu
-                dGFtb3JlbmEubWU+iQHUBBMBCgA+FiEEwX+hTUSd52Eqsg/gexLdvPwOgCgFAmMF
-                T/sCGwMFCQPCZwAFCwkIBwIGFQoJCAsCBBYCAwECHgECF4AACgkQexLdvPwOgCjV
-                Xwv/Qn0dpWWHg5v4uqX9mDIWKANhRxGAvJH/WgL0vl0O2D4g9r+lYwvKz/Jsv5Gp
-                H9ZBCkCiTKQ7z12abyi/xoOYlAmP3P884+Nj8Qd4Y1YS+TBlV3pqrqTjA0Rujr9b
-                cgONixybXSuwWYzMED9CCmKSnzmJK8n4t4ySzjYJQvjTSnEUIYyS5TmbszUx6sNT
-                9SDQ+BxfGQggx11cVkmon8ogOQ5PxGlXWQ+Ew4GSAO6fIuomgdyocTVStdl72FdL
-                fD1G1wKpgKtiH//AiL4xyQAztafFn8EZuX40Uvs2doplI9T70SPaUlzVno/diMdZ
-                BlK5j65g+pcKdWxrWLtiycVhpp2PvHJNMzIpU4Fyf99CvaagtSAUN+OuEeNg6Wsb
-                LrBqEEXsE70F/xDSYYgzYnSkrWcK5CZqWMpYt0w1mPaIATrewolTVXTWdTdUGaOK
-                ItICRbOLSE1fHmtGfPATBSSJwk8PiT3tjvfhGI+xFrzyu36SXHX3YRdsOjS4zXCj
-                pa4BuQGNBGMFT/sBDACnZBgIHPLwUW+rZL8q1q9Kz3Vc8Fbx6xEIpu7lrdIDh2nk
-                DTbnMIyCDlrvvK+gvXpjhqPWoyHDlc/ADwqRRGOJRVdD7zA2skYev/H+IPUGY/Vx
-                5lJkf6r52KnkZ+K43r9Q/m12I2xIC7PuZxa1SsWMqaUxhMpp2iesBjH/f3vKbbUB
-                raYvL8rQF9HcFQqc1oIRmmQEBhvTN8jJmBxZZJgfmE2aZg9yFsWLJ3tZsNs7ncyr
-                OzCHjXETK9MgB9BHnNb+kNLkmZghNcKkqFYplAFxaSy03yibjdFM8RHSVZx6rFOe
-                29Go5pXYMMjQzYDeddED2Oh6b+AB6DySpGO64x6L+R/wT2VsWN/UFN9Z83rOJE2K
-                VIT1mCDbtRi0sG7Qd7hx6aiBQQxRD9pEwLxPF7ukZwdmj6un7asLRsDUSbDXCxSr
-                Kc1pRirlYi8S/BsJy/LtFJ6p+PTYys0f7bC7PPqVznLxon8Cd8phNola/oInkAZD
-                OLCemiw81xOqLjCgltEAEQEAAYkBvAQYAQoAJhYhBMF/oU1EnedhKrIP4HsS3bz8
-                DoAoBQJjBU/7AhsMBQkDwmcAAAoJEHsS3bz8DoAoVAAMANZVX2aDxsi65dC1kjgw
-                +laJ2ENkfU55prg2C8KaBSlO6T3qx+FHyTK2J8qX3B9opQSH1G+notfh41/eF+Bo
-                v9baemDndOBl3or7vbFxg5OlftSHKAH9yX50GJ5Sb/OsWJdxKWJHduQwaECuR4QR
-                vpLlD+AcN/HYCKD0ueDpNM0TNi9kgG21/93+iLLCmrotjzpfucxXovArNpUgOz8v
-                NBouQRXCpnrWP9hykqxMIhBYRuyjOKkfrn1sLYJxAtn7S9cYpeEWGKyKkz0iRiH8
-                EYSd2kLh+Uqe9+p/a/c838cHkzJOBBF60YUPDJCR42qdW6LohrZ6lsEsE0E8V53S
-                szPRpLbvgu0z6wZSc9IfBgYXNmX6iyYZHHxyB4ThyPtzY4Z3waKOsygdUD7npgcW
-                itWZvleK7Ly17onCLb1SvNXxtgbNC2IZ3KRyOqTZb7xoyssaUjDlQYqybeullmGA
-                yphKs8p6yusH96SZqcjJZ+4QtfgKoWZR90lbB/3Lv3tLag==
-                =FbmE
-                -----END PGP PUBLIC KEY BLOCK-----
+                <h3><a href="https://www.opera.com/" target="_blank">Opera</a></h3>
+                <h4>June 2021 - Current</h4>
+                <div>
+                    <b>YoYo Games</b>' <a href="https://gamemaker.io/" target="_blank">GameMaker</a>'s build engineer
+                </div>
+
+                <h3><a href="https://zuru.tech" target="_blank">Zuru Tech</a></h3>
+                <h4>December 2020 - March 2021</h4>
+                <div>
+                    C++ BIM software with <b>Unreal Engine</b>
+                </div>
+
+                <h3><a href="https://www.ubisoft.com/en-us/company/careers/locations/milan/ubisoft-milan"
+                        target="_blank">Ubisoft</a></h3>
+                <h4>September 2020 - December 2020</h4>
+                <div>
+                    <b>Mario + Rabbids: Sparks of Hope</b> Gameplay Programmer
+                </div>
+
+                <h3>Sfera Productions</h3>
+                <h4>2017 - 2018</h4>
+                <div><b>VR</b> projects with <b>Unreal Engine</b> and HTC Vive
+                </div>
+
+                <h3>ITC Consulting</h3>
+                <h4>2016</h4>
+                <div>
+                    C# <b>Unity</b> driving simulator
+                </div>
+
+
+                <pgp>-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+                    mQGNBGMFT/sBDADkwl/cKGlRM0ypN8s9NLm+t4fJ5ST9/97PD4Qc9U5J8cmXcDUE
+                    KfzvCISyqC/b6HSJSx8W7gDooNDpMCE+twlCd27SHzrtC31ieuah7/2x5zKLtaK3
+                    gUy3m2Vp/M0AdHMuYTZAmGV2sqqpnNRbX+lKUeNCTi14U52HLem5WlUOsKLSwc4j
+                    qUX2362NHlioo9PGfYM6QiODPt+PAUr+sxipCZ5DzFX+DOiC+fcscZ2GlvywAnJQ
+                    07AdvkfYV8TJj24aoIXMsDKABwBYixAq14MNOX3VEOXS/DY5/Za5HP+FDVohko+R
+                    d/wZJBONSA4YY2++FDNmS+jpAtUNgu4sYV65ONW+hjvzSzhy5YAkhgtZkUQOhsOy
+                    Sdw7DkHn/5zTkj+Eh/4dJ34S39ECRTjq08M1AdeSdrCj9/1EHPWLAmI45JDGxhWP
+                    7MqQ83VqS/NPw2bUrJk8LsyX3sKw9W+NvzTBpxvGlbIUKFSGZnwvHv+vNPru4Yxx
+                    AOed7kQK22GWbq8AEQEAAbQqWWF0aW1hIFNhbnRhbW9yZW5hIDx5YXRpbWFAc2Fu
+                    dGFtb3JlbmEubWU+iQHUBBMBCgA+FiEEwX+hTUSd52Eqsg/gexLdvPwOgCgFAmMF
+                    T/sCGwMFCQPCZwAFCwkIBwIGFQoJCAsCBBYCAwECHgECF4AACgkQexLdvPwOgCjV
+                    Xwv/Qn0dpWWHg5v4uqX9mDIWKANhRxGAvJH/WgL0vl0O2D4g9r+lYwvKz/Jsv5Gp
+                    H9ZBCkCiTKQ7z12abyi/xoOYlAmP3P884+Nj8Qd4Y1YS+TBlV3pqrqTjA0Rujr9b
+                    cgONixybXSuwWYzMED9CCmKSnzmJK8n4t4ySzjYJQvjTSnEUIYyS5TmbszUx6sNT
+                    9SDQ+BxfGQggx11cVkmon8ogOQ5PxGlXWQ+Ew4GSAO6fIuomgdyocTVStdl72FdL
+                    fD1G1wKpgKtiH//AiL4xyQAztafFn8EZuX40Uvs2doplI9T70SPaUlzVno/diMdZ
+                    BlK5j65g+pcKdWxrWLtiycVhpp2PvHJNMzIpU4Fyf99CvaagtSAUN+OuEeNg6Wsb
+                    LrBqEEXsE70F/xDSYYgzYnSkrWcK5CZqWMpYt0w1mPaIATrewolTVXTWdTdUGaOK
+                    ItICRbOLSE1fHmtGfPATBSSJwk8PiT3tjvfhGI+xFrzyu36SXHX3YRdsOjS4zXCj
+                    pa4BuQGNBGMFT/sBDACnZBgIHPLwUW+rZL8q1q9Kz3Vc8Fbx6xEIpu7lrdIDh2nk
+                    DTbnMIyCDlrvvK+gvXpjhqPWoyHDlc/ADwqRRGOJRVdD7zA2skYev/H+IPUGY/Vx
+                    5lJkf6r52KnkZ+K43r9Q/m12I2xIC7PuZxa1SsWMqaUxhMpp2iesBjH/f3vKbbUB
+                    raYvL8rQF9HcFQqc1oIRmmQEBhvTN8jJmBxZZJgfmE2aZg9yFsWLJ3tZsNs7ncyr
+                    OzCHjXETK9MgB9BHnNb+kNLkmZghNcKkqFYplAFxaSy03yibjdFM8RHSVZx6rFOe
+                    29Go5pXYMMjQzYDeddED2Oh6b+AB6DySpGO64x6L+R/wT2VsWN/UFN9Z83rOJE2K
+                    VIT1mCDbtRi0sG7Qd7hx6aiBQQxRD9pEwLxPF7ukZwdmj6un7asLRsDUSbDXCxSr
+                    Kc1pRirlYi8S/BsJy/LtFJ6p+PTYys0f7bC7PPqVznLxon8Cd8phNola/oInkAZD
+                    OLCemiw81xOqLjCgltEAEQEAAYkBvAQYAQoAJhYhBMF/oU1EnedhKrIP4HsS3bz8
+                    DoAoBQJjBU/7AhsMBQkDwmcAAAoJEHsS3bz8DoAoVAAMANZVX2aDxsi65dC1kjgw
+                    +laJ2ENkfU55prg2C8KaBSlO6T3qx+FHyTK2J8qX3B9opQSH1G+notfh41/eF+Bo
+                    v9baemDndOBl3or7vbFxg5OlftSHKAH9yX50GJ5Sb/OsWJdxKWJHduQwaECuR4QR
+                    vpLlD+AcN/HYCKD0ueDpNM0TNi9kgG21/93+iLLCmrotjzpfucxXovArNpUgOz8v
+                    NBouQRXCpnrWP9hykqxMIhBYRuyjOKkfrn1sLYJxAtn7S9cYpeEWGKyKkz0iRiH8
+                    EYSd2kLh+Uqe9+p/a/c838cHkzJOBBF60YUPDJCR42qdW6LohrZ6lsEsE0E8V53S
+                    szPRpLbvgu0z6wZSc9IfBgYXNmX6iyYZHHxyB4ThyPtzY4Z3waKOsygdUD7npgcW
+                    itWZvleK7Ly17onCLb1SvNXxtgbNC2IZ3KRyOqTZb7xoyssaUjDlQYqybeullmGA
+                    yphKs8p6yusH96SZqcjJZ+4QtfgKoWZR90lbB/3Lv3tLag==
+                    =FbmE
+                    -----END PGP PUBLIC KEY BLOCK-----
                 </pgp>
+            </div>
         </div>
-
     </div>
 
 
