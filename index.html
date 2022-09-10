@@ -10,49 +10,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://github.com/yatima1460.png" />
+    <link rel="icon" type="image/png" href="yatpic_a-1.svg" />
 
     <!-- Font & Style -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <!-- <link rel="stylesheet" href="style.css"> -->
-    <meta name="theme-color" content="#CF41AE">
+    <meta name="theme-color" content="#ffd42a">
 
     <!-- Open Graph Meta Info -->
     <meta property="og:title" content="Yatima Santamorena">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_GB">
+    <meta property="og:locale" content="en_US">
     <!-- <meta property="og:image" content="social-cover.png"> -->
 
     <title>Yatima Santamorena</title>
 </head>
 
 <style>
+ 
     .name {
         margin-top: auto;
         margin-bottom: auto;
         font-size: 6vmin;
 
         text-decoration: none;
-        color: #ffffff;
-        text-shadow: 2px 2px #fa84df;
-        -webkit-transition: 500ms linear 0s;
+        color: black;
+        /* text-shadow: 2px 2px #ffd42a; */
+        /* -webkit-transition: 500ms linear 0s;
         -moz-transition: 500ms linear 0s;
         -o-transition: 500ms linear 0s;
         transition: 500ms linear 0s;
-        outline: 0 none;
+        outline: 0 none; */
     }
-
+/* 
     img {
-        box-shadow: 0px 0px 5px #fa84df;
-    }
+        box-shadow: 0px 0px 5px #ffd42a;
+    } */
 
     h3 {
         margin-top: 4em;
         margin-bottom: 0;
         text-decoration: none;
-        color: #fa84df;
+        /* color: #ffd42a; */
         text-shadow: none;
         -webkit-transition: 500ms linear 0s;
         -moz-transition: 500ms linear 0s;
@@ -61,41 +62,51 @@
         outline: 0 none;
     }
 
-    .links a::before {
-        content: '> ';
-        color: #CF41AE
-    }
-
-    .links a {
-        display: block;
-        padding: 4px;
-        text-decoration: none;
-        color: #CF41AE;
-
-    }
-
-    .links a:hover:before {
-        content: '> ';
-        color: white
-    }
-
     a,
     a:hover,
     a:focus {
-        text-decoration: underline;
-        color: #CF41AE;
-        text-shadow: none;
-        -webkit-transition: 500ms linear 0s;
-        -moz-transition: 500ms linear 0s;
-        -o-transition: 500ms linear 0s;
-        transition: 500ms linear 0s;
-
+        color: #ff2a2a;
     }
 
     a:hover,
     a:focus {
-        color: #fff;
-        text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+        text-decoration: underline;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+   .links a {
+        /* display: block; */
+        padding: 4px;
+        /* text-decoration: none; */
+        color: #ff2a2a;
+
+    } 
+
+    h3 {
+        text-decoration: underline;
+    }
+
+    /* h4 {
+        text-decoration: wavy;
+    } */
+
+ 
+
+
+    .links a::before {
+        /* content: ' '; */
+        /* margin-left: 2em; */
+        /* color: #ff2a2a */
+        text-decoration: none;
+    }
+    .links a::before:hover {
+        content: '> ';
+        /* color: #ff2a2a */
+        text-decoration: none;
     }
 
     .page {
@@ -108,12 +119,16 @@
 
     body {
         image-rendering: pixelated;
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
         padding: 0;
         margin: 0;
         margin-bottom: 10%;
-        font-family: monospace;
+        font-family: -apple-system, BlinkMacSystemFont,
+    “Segoe UI”, “Roboto”, “Oxygen”,
+    “Ubuntu”, “Cantarell”, “Fira Sans”,
+    “Droid Sans”, “Helvetica Neue”, sans-serif;
+
         font-size: normal;
 
         /* background-image: url('cover.gif');
@@ -129,29 +144,30 @@
         height: 25vmin;
     }
 
-    .cover {
+    /* .cover {
         position: absolute;
         left: 0;
         image-rendering: pixelated;
         width: 100%;
         z-index: -1;
         -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-    }
+    } */
 
     pgp {
         margin-top: 20%;
-        border: 1px dashed white;
-        background-color: #4c4c4c;
-        line-break: anywhere;
+        border: 1px dashed black;
+        /* background-color: #4c4c4c; */
+        /* line-break: anywhere; */
         padding: 0;
         font-size: 2vmin;
 
         overflow-y: auto;
 
         text-decoration: none;
-        background-color: #430234;
-        text-shadow: none;
-        height: 30vmin;
+        background-color: white;
+        color: black;
+        font-size: x-small;
+        /* height: 30vmin; */
         outline: 0 none;
     }
 
@@ -161,11 +177,11 @@
         }
 
         .photo {
-       
-    
-       width: 21vmin;
-       height: 21vmin;
-   }
+
+
+            width: 21vmin;
+            height: 21vmin;
+        }
     }
 
     @media screen and (orientation:portrait) {
@@ -200,7 +216,7 @@
 
 <body>
 
-    <img class="cover" src="cover.gif" />
+    <!-- <img class="cover" src="cover.gif" /> -->
 
     <div class="page">
 
@@ -208,7 +224,7 @@
         <div class="top">
             <div style="display: flex">
                 <!-- Profile pic -->
-                <img class="photo" src="https://github.com/yatima1460.png" />
+                <img class="photo" src="yatpic_a-1.svg" />
                 <!-- Name -->
                 <div class="name">Yatima<br>Santamorena</div>
             </div>
@@ -220,9 +236,9 @@
             <div class="links">
                 <h4>Nova Gorica, Slovenia</h4>
 
-                <a href="https://github.com/yatima1460" target="_blank">github.com/yatima1460</a>
-                <!-- <a href="https://www.linkedin.com/in/yatima1460/" target="_blank"> linkedin.com/in/yatima1460</a> -->
-                <a href="mailto:devnull@santamorena.me">devnull@santamorena.me</a>
+                <a href="https://github.com/yatima1460" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/yatima1460/" target="_blank">LinkedIn</a>
+                <a href="mailto:floury.hoops0s@icloud.com">Email me</a>
                 <a href=" https://drill.software/" target="_blank">check out my project, Drill</a>
                 <a
                     href="monero:8B5UK4znA6h67sfRK1eCjdUEry8BKseAF1qmKAVhAF5u1zeWiNFfgW9VaARLFh5VZKUQJC346K7wpH7aT17v62DC9igXw3y">send
