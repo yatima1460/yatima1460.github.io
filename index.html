@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -13,388 +13,213 @@
     <link rel="icon" type="image/png" href="yatpic_a-1.svg" />
 
     <!-- Font & Style -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <meta name="theme-color" content="#ffd42a">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Open Graph Meta Info -->
     <meta property="og:title" content="Yatima Santamorena">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
-    <!-- <meta property="og:image" content="social-cover.png"> -->
 
     <title>Yatima Santamorena</title>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
+
+
+    <style>
+        p {
+            margin-top: 1vh;
+            margin-bottom: 0.5vh;
+        }
+
+        h1 {
+            margin-top: 8vh;
+            margin-bottom: 4vh;
+        }
+
+        h2 {
+            margin-top: 4vh;
+            margin-bottom: 4vh;
+        }
+
+        h3 {
+            margin-top: 4vh;
+            margin-bottom: 2vh;
+        }
+
+        h4 {
+            margin-top: 2vh;
+            margin-bottom: 1vh;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        p::before {
+            content: "- "
+        }
+
+        body {
+            margin: 2em;
+        }
+
+        .avatar {
+            width: 0.8em;
+        }
+    </style>
 </head>
-
-<style>
- 
-    .name {
-        margin-top: auto;
-        margin-bottom: auto;
-        font-size: 6vmin;
-
-        text-decoration: none;
-        color: black;
-        /* text-shadow: 2px 2px #ffd42a; */
-        /* -webkit-transition: 500ms linear 0s;
-        -moz-transition: 500ms linear 0s;
-        -o-transition: 500ms linear 0s;
-        transition: 500ms linear 0s;
-        outline: 0 none; */
-    }
-/* 
-    img {
-        box-shadow: 0px 0px 5px #ffd42a;
-    } */
-
-    h3 {
-        margin-top: 4em;
-        margin-bottom: 0;
-        text-decoration: none;
-        /* color: #ffd42a; */
-        text-shadow: none;
-        -webkit-transition: 500ms linear 0s;
-        -moz-transition: 500ms linear 0s;
-        -o-transition: 500ms linear 0s;
-        transition: 500ms linear 0s;
-        outline: 0 none;
-    }
-
-    a,
-    a:hover,
-    a:focus {
-        color: #ff2a2a;
-    }
-
-    a:hover,
-    a:focus {
-        text-decoration: underline;
-    }
-
-    .links {
-        display: flex;
-        flex-direction: column;
-    }
-
-   .links a {
-        /* display: block; */
-        padding: 4px;
-        /* text-decoration: none; */
-        color: #ff2a2a;
-
-    } 
-
-    h3 {
-        text-decoration: underline;
-    }
-
-    /* h4 {
-        text-decoration: wavy;
-    } */
-
- 
-
-
-    .links a::before {
-        /* content: ' '; */
-        /* margin-left: 2em; */
-        /* color: #ff2a2a */
-        text-decoration: none;
-    }
-    .links a::before:hover {
-        content: '> ';
-        /* color: #ff2a2a */
-        text-decoration: none;
-    }
-
-    .page {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    body {
-        image-rendering: pixelated;
-        background-color: white;
-        color: black;
-        padding: 0;
-        margin: 0;
-        margin-bottom: 10%;
-        font-family: -apple-system, BlinkMacSystemFont,
-    “Segoe UI”, “Roboto”, “Oxygen”,
-    “Ubuntu”, “Cantarell”, “Fira Sans”,
-    “Droid Sans”, “Helvetica Neue”, sans-serif;
-
-        font-size: normal;
-
-        /* background-image: url('cover.gif');
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size:100%; */
-    }
-
-    .photo {
-        border-radius: 50%;
-        margin: 5%;
-        width: 25vmin;
-        height: 25vmin;
-    }
-
-    /* .cover {
-        position: absolute;
-        left: 0;
-        image-rendering: pixelated;
-        width: 100%;
-        z-index: -1;
-        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-    } */
-
-    pgp {
-        margin-top: 20%;
-        border: 1px dashed black;
-        /* background-color: #4c4c4c; */
-        /* line-break: anywhere; */
-        padding: 0;
-        font-size: 2vmin;
-
-        overflow-y: auto;
-
-        text-decoration: none;
-        background-color: white;
-        color: black;
-        font-size: x-small;
-        /* height: 30vmin; */
-        outline: 0 none;
-    }
-
-    @media screen and (orientation:landscape) {
-        .below-cover {
-            margin-left: 10%;
-        }
-
-        .photo {
-
-
-            width: 21vmin;
-            height: 21vmin;
-        }
-    }
-
-    @media screen and (orientation:portrait) {
-        .page {
-
-
-            width: 90%;
-
-        }
-
-
-
-        .links {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .name {}
-
-
-        .links a {
-            padding-top: 0.5em;
-        }
-    }
-
-
-    .top {
-        display: flex;
-        flex-direction: column;
-    }
-</style>
 
 <body>
 
-    <!-- <img class="cover" src="cover.gif" /> -->
+    <div class="container">
+        <div class="centered-div">
 
-    <div class="page">
+            <h1>
 
-        <!-- Top shifted -->
-        <div class="top">
-            <div style="display: flex">
-                <!-- Profile pic -->
-                <img class="photo" src="yatpic_a-1.svg" />
-                <!-- Name -->
-                <div class="name">Yatima<br>Santamorena</div>
-            </div>
-        </div>
+                Yatima Santamorena
 
-        <div class="below-cover">
-
-
-            <div class="links">
-                <h4>Nova Gorica, Slovenia</h4>
-
-                <a href="https://github.com/yatima1460" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/yatima1460/" target="_blank">LinkedIn</a>
-                <a href="mailto:floury.hoops0s@icloud.com">Email me</a>
-                <a href=" https://drill.software/" target="_blank">check out my project, Drill</a>
-                <a
-                    href="monero:8B5UK4znA6h67sfRK1eCjdUEry8BKseAF1qmKAVhAF5u1zeWiNFfgW9VaARLFh5VZKUQJC346K7wpH7aT17v62DC9igXw3y">send
-                    me Monero</a>
-            </div>
-
-            <!-- Start of work experience -->
-            <div style="display: flex; flex-direction: column;">
-
-
-
-                <h3><a href="https://www.opera.com/" target="_blank">Opera</a></h3>
-                <h4>June 2021 - Current</h4>
-                <div>
-                    <b>YoYo Games</b>' <a href="https://gamemaker.io/" target="_blank">GameMaker</a>'s build engineer
-                </div>
-
-                <h3><a href="https://zuru.tech" target="_blank">Zuru Tech</a></h3>
-                <h4>December 2020 - March 2021</h4>
-                <div>
-                    C++ BIM software with <b>Unreal Engine</b>
-                </div>
-
-                <h3><a href="https://www.ubisoft.com/en-us/company/careers/locations/milan/ubisoft-milan"
-                        target="_blank">Ubisoft</a></h3>
-                <h4>September 2020 - December 2020</h4>
-                <div>
-                    <b>Mario + Rabbids: Sparks of Hope</b> Gameplay Programmer
-                </div>
-
-                <h3>Sfera Productions</h3>
-                <h4>2017 - 2018</h4>
-                <div><b>VR</b> projects with <b>Unreal Engine</b> and HTC Vive
-                </div>
-
-                <h3>ITC Consulting</h3>
-                <h4>2016</h4>
-                <div>
-                    C# <b>Unity</b> driving simulator
-                </div>
-
-
-                <pgp>-----BEGIN PGP PUBLIC KEY BLOCK-----
-
-                    mQGNBGMFT/sBDADkwl/cKGlRM0ypN8s9NLm+t4fJ5ST9/97PD4Qc9U5J8cmXcDUE
-                    KfzvCISyqC/b6HSJSx8W7gDooNDpMCE+twlCd27SHzrtC31ieuah7/2x5zKLtaK3
-                    gUy3m2Vp/M0AdHMuYTZAmGV2sqqpnNRbX+lKUeNCTi14U52HLem5WlUOsKLSwc4j
-                    qUX2362NHlioo9PGfYM6QiODPt+PAUr+sxipCZ5DzFX+DOiC+fcscZ2GlvywAnJQ
-                    07AdvkfYV8TJj24aoIXMsDKABwBYixAq14MNOX3VEOXS/DY5/Za5HP+FDVohko+R
-                    d/wZJBONSA4YY2++FDNmS+jpAtUNgu4sYV65ONW+hjvzSzhy5YAkhgtZkUQOhsOy
-                    Sdw7DkHn/5zTkj+Eh/4dJ34S39ECRTjq08M1AdeSdrCj9/1EHPWLAmI45JDGxhWP
-                    7MqQ83VqS/NPw2bUrJk8LsyX3sKw9W+NvzTBpxvGlbIUKFSGZnwvHv+vNPru4Yxx
-                    AOed7kQK22GWbq8AEQEAAbQqWWF0aW1hIFNhbnRhbW9yZW5hIDx5YXRpbWFAc2Fu
-                    dGFtb3JlbmEubWU+iQHUBBMBCgA+FiEEwX+hTUSd52Eqsg/gexLdvPwOgCgFAmMF
-                    T/sCGwMFCQPCZwAFCwkIBwIGFQoJCAsCBBYCAwECHgECF4AACgkQexLdvPwOgCjV
-                    Xwv/Qn0dpWWHg5v4uqX9mDIWKANhRxGAvJH/WgL0vl0O2D4g9r+lYwvKz/Jsv5Gp
-                    H9ZBCkCiTKQ7z12abyi/xoOYlAmP3P884+Nj8Qd4Y1YS+TBlV3pqrqTjA0Rujr9b
-                    cgONixybXSuwWYzMED9CCmKSnzmJK8n4t4ySzjYJQvjTSnEUIYyS5TmbszUx6sNT
-                    9SDQ+BxfGQggx11cVkmon8ogOQ5PxGlXWQ+Ew4GSAO6fIuomgdyocTVStdl72FdL
-                    fD1G1wKpgKtiH//AiL4xyQAztafFn8EZuX40Uvs2doplI9T70SPaUlzVno/diMdZ
-                    BlK5j65g+pcKdWxrWLtiycVhpp2PvHJNMzIpU4Fyf99CvaagtSAUN+OuEeNg6Wsb
-                    LrBqEEXsE70F/xDSYYgzYnSkrWcK5CZqWMpYt0w1mPaIATrewolTVXTWdTdUGaOK
-                    ItICRbOLSE1fHmtGfPATBSSJwk8PiT3tjvfhGI+xFrzyu36SXHX3YRdsOjS4zXCj
-                    pa4BuQGNBGMFT/sBDACnZBgIHPLwUW+rZL8q1q9Kz3Vc8Fbx6xEIpu7lrdIDh2nk
-                    DTbnMIyCDlrvvK+gvXpjhqPWoyHDlc/ADwqRRGOJRVdD7zA2skYev/H+IPUGY/Vx
-                    5lJkf6r52KnkZ+K43r9Q/m12I2xIC7PuZxa1SsWMqaUxhMpp2iesBjH/f3vKbbUB
-                    raYvL8rQF9HcFQqc1oIRmmQEBhvTN8jJmBxZZJgfmE2aZg9yFsWLJ3tZsNs7ncyr
-                    OzCHjXETK9MgB9BHnNb+kNLkmZghNcKkqFYplAFxaSy03yibjdFM8RHSVZx6rFOe
-                    29Go5pXYMMjQzYDeddED2Oh6b+AB6DySpGO64x6L+R/wT2VsWN/UFN9Z83rOJE2K
-                    VIT1mCDbtRi0sG7Qd7hx6aiBQQxRD9pEwLxPF7ukZwdmj6un7asLRsDUSbDXCxSr
-                    Kc1pRirlYi8S/BsJy/LtFJ6p+PTYys0f7bC7PPqVznLxon8Cd8phNola/oInkAZD
-                    OLCemiw81xOqLjCgltEAEQEAAYkBvAQYAQoAJhYhBMF/oU1EnedhKrIP4HsS3bz8
-                    DoAoBQJjBU/7AhsMBQkDwmcAAAoJEHsS3bz8DoAoVAAMANZVX2aDxsi65dC1kjgw
-                    +laJ2ENkfU55prg2C8KaBSlO6T3qx+FHyTK2J8qX3B9opQSH1G+notfh41/eF+Bo
-                    v9baemDndOBl3or7vbFxg5OlftSHKAH9yX50GJ5Sb/OsWJdxKWJHduQwaECuR4QR
-                    vpLlD+AcN/HYCKD0ueDpNM0TNi9kgG21/93+iLLCmrotjzpfucxXovArNpUgOz8v
-                    NBouQRXCpnrWP9hykqxMIhBYRuyjOKkfrn1sLYJxAtn7S9cYpeEWGKyKkz0iRiH8
-                    EYSd2kLh+Uqe9+p/a/c838cHkzJOBBF60YUPDJCR42qdW6LohrZ6lsEsE0E8V53S
-                    szPRpLbvgu0z6wZSc9IfBgYXNmX6iyYZHHxyB4ThyPtzY4Z3waKOsygdUD7npgcW
-                    itWZvleK7Ly17onCLb1SvNXxtgbNC2IZ3KRyOqTZb7xoyssaUjDlQYqybeullmGA
-                    yphKs8p6yusH96SZqcjJZ+4QtfgKoWZR90lbB/3Lv3tLag==
-                    =FbmE
-                    -----END PGP PUBLIC KEY BLOCK-----
-                </pgp>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-    <!-- <h1>Yatima Santamorena</h1>
-
-    <h4>Nova Gorica, Slovenia</h4>
-
-    <a href="https://github.com/yatima1460"             target="_blank"><i class="fab fa-github"    style="color: black">   </i></a>
-    <a href="https://www.linkedin.com/in/yatima1460/"   target="_blank"><i class="fab fa-linkedin"  style="color: #2D72B0"> </i></a>
-    <a href="https://twitter.com/yatima1460"            target="_blank"><i class="fab fa-twitter"   style="color: #3F9AF1"> </i></a>
-    <a href="https://www.instagram.com/yatima1460/"     target="_blank"><i class="fab fa-instagram" style="color: #D63562"> </i></a>
-    <a href="skype:live:yatima1460?chat">                               <i class="fab fa-skype"     style="color: #3D9EDC"> </i></a>
-    <a href="mailto:contact@yatima1460.me">                             <i class="fa  fa-envelope"  style="color: #E34133"> </i></a>
-
-
-    
-
-
-    <h2>Skills</h2>
+            </h1>
 
    
-    <div>
-        <i class="fas fa-cogs fa-fw"></i> Build automation with msbuild, make, CMake
-    </div>
-    <div>
-        <i class="fab fa-docker fa-fw" style="color: #3B90E6"></i> Dockerfiles for environments like build tools and SDKs
-    </div>
-    <div>
-        <i class="fas fa-terminal fa-fw"></i> Shell scripting in Bash and PowerShell
-    </div>
-    <div>
-        <i class="fas fa-cubes fa-fw"></i> OpenGL for 3D rendering
-    </div>
-    <div>
-        <i class="fas fa-gamepad fa-fw"></i> Unreal Engine for game programming
-    </div>
-    <div>
-        <i class="fab fa-cuttlefish fa-fw"></i> C, C++ and C#
-    </div>
-    <div>
-        <i class="fab fa-python fa-fw" style="color: #356D9A" ></i> Python
-    </div>
+           
 
 
-    <h2>Life</h2>
-    <div>
-        <i class="fas fa-dice-d20 fa-fw"></i> I love tabletop games like D&D
-    </div>
-    <div>
-        <i class="fas fa-transgender-alt fa-fw"></i> <code>/showracemenu</code> IRL </i>
-    </div>
-    <div>
-        <i class="fas fa-socks fa-fw"></i> Wearing programming socks
-    </div>
-    <div>
-        <i class="fab fa-raspberry-pi fa-fw"></i> Tinkering with my Raspberry Pi
-    </div> -->
+                <p>
+                    <a href="https://github.com/yatima1460" target="_blank">GitHub</a>
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/yatima1460/" target="_blank">LinkedIn</a>
+                </p>
+                <p>
+                    <a href="mailto:floury.hoops0s@icloud.com">Email me</a>
+                </p>
+                <p>
+                    <a href=" https://drill.software/" target="_blank">check out my project, Drill</a>
+                </p>
+                <p>
+                    <a
+                        href="monero:8B5UK4znA6h67sfRK1eCjdUEry8BKseAF1qmKAVhAF5u1zeWiNFfgW9VaARLFh5VZKUQJC346K7wpH7aT17v62DC9igXw3y">send
+                        me Monero</a>
+                </p>
+        
+
+            <h2>Skills</h2>
+
+            <p>CI/CD pipelines, Git Flow, GitHub Actions, Jenkins, AWS</p>
+            <p>Docker, Proxmox</p>
+            <p>Git, MSBuild, CMake, make, dotnet</p>
+            <p>Python, C#, PowerShell, Bash, Batch,C, C++</p>
+            <p>Linux, Windows, Mac</p>
+
+            <h2>Work Experience</h2>
+
+            <h3>Opera / YoYoGames</h3>
+
+            <h4>June 2021 - Current</h4>
+            <p>
+                Main build engineer in YoYoGames’ GameMaker team
+            </p>
+            <p>
+                Compiling and packaging the game engine runtime and IDE for all targeted platforms:
+                Android, HTML5, iOS, Linux, Mac, WASM, Windows, tvOS, and using the consoles
+                SDKs for PS4 and PS5, Switch, Xbox One and Xbox Series XS
+            </p>
+            <p>
+                Automating the compilation process using scripts in Python, Bash, Batch, C# etc...
+            </p>
+            <p>
+                Pipeline involving GitHub Actions, Jenkins and AWS
+            </p>
+            <p>
+                Creating Docker containers for all the build environments
+
+            </p>
 
 
-    <!-- <h2>Projects</h2>
-            <a href="#">Project 1</a>
-            <a href="#">Project 2</a>
-            <a href="#">Project 3</a>
-            <a href="#">Project 4</a>
-            <a href="#">Project 5</a> -->
+
+            <h3>Zuru Tech</h3>
+
+            <h4>December 2020 - March 2021</h4>
+            <div>
+                C++ developer with Unreal Engine 4, writing automated tests for structural integrity for an unreleased
+                BIM software
+            </div>
+
+
+
+            <h3>Ubisoft </h3>
+
+            <h4>September 2020 - December 2020</h4>
+            <p>
+
+                Mario + Rabbids: Sparks of Hope Gameplay Programmer at Ubisoft Milan, C++ backend for the automated
+                generation of the navmesh for AI pathfinding
+            </p>
+
+
+
+            <h3>Sfera Productions</h3>
+            <h4>2017 - 2018</h4>
+            <p>
+                Unreal Engine Developer, working in a small team developing VR video games and virtual tours
+            </p>
+            <p>
+                Oculus DK2, HTC Vive, Cardboard, Daydream, Samsung Gear VR, Oculus CV1
+            </p>
+            <p>
+                Collaboration with the Italian board game manufacturer Cranio Creations for the
+                production of a VR videogame “Soqquadro VR” shown at Lucca Comics & Games
+                2016, receiving a review on Gioconomicon
+            </p>
+            <p>
+                Creation of the UE4Logger plugin written in C++ to facilitate Unreal logging via
+                Blueprint.
+            </p>
+            <p>
+                Collaboration with the monks of the Three Fountains Abbey in Rome for a VR experience to show to
+                tourists.
+            </p>
+            <p>
+                Production of VR video games shown at Parco Leonardo in Rome
+            </p>
+            <p>
+                Production of a video game published on Steam
+            </p>
+
+            <h3>ITC Consulting</h3>
+            <h4>2016</h4>
+            <p>
+                Unity Developer, working in a small team doing developing a driving simulator in VR
+            <p>
+                C# library recording user actions in real-time without harming performance and then saving them to
+                an SQLite database to be played as a replay
+            </p>
+            <p>
+                Using the Windows kernel DLL APIs in C# to connect the cockpit hardware with the Unity engine
+            </p>
+            <p>
+                Design of a C# driver to hook Unity to a platform that simulates the inertia of the cockpit via a
+                connection on an emulated RS-232 serial port via USB with Arduino
+            </p>
+            <h2>Interests</h2>
+            <p>
+                Automation, Dungeon & Dragons, Hardware architecture, Teaching, Sandbox games
+
+            </p>
+            <h2>Languages</h2>
+            <p>
+                Italian (native)
+               
+
+            </p>
+            <p>
+                English
+            </p>
+        </div>
+    </div>
 
 
 </body>
