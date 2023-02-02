@@ -45,12 +45,12 @@
         }
 
         h3 {
-            margin-top: 2vh;
-            margin-bottom: 2vh;
+            margin-top: 4vh;
+            margin-bottom: 1vh;
         }
 
         h4 {
-            margin-top: 2vh;
+            margin-top: 1vh;
             margin-bottom: 1vh;
             font-size: small;
             font-weight: normal;
@@ -61,20 +61,38 @@
             margin-left: 1em;
         }
 
+        
+
         /* p::before {
             content: "- "
         } */
 
         body {
-            margin: 2em;
+            margin: 1em;
             font-family: monospace;
 
         
 
         }
 
+@media (orientation: landscape) {
+            .links {
+            display: flex;
+            flex-direction: row;
+        }
+}
+
+@media (orientation: portrait) {
+    .links {
+            display: flex;
+            flex-direction: column;
+        }
+}
+
+       
+
     </style>
-</head>
+    </head>
 
 <body>
 
@@ -88,27 +106,29 @@
             </h1>
 
 
+<div class="links">
 
-
-
-            <p>
+    <p>
              
-<a href="https://github.com/yatima1460" target="_blank">GitHub</a>
-            </p>
-            <p>
-                <a href="https://www.linkedin.com/in/yatima1460/" target="_blank">LinkedIn</a>
-            </p>
-            <p>
-                <a href="mailto:floury.hoops0s@icloud.com">Email me</a>
-            </p>
-            <!-- <p>
-                <a href=" https://drill.software/" target="_blank">check out my project, Drill</a>
-            </p> -->
-            <p>
-                <a
-                    href="monero:8B5UK4znA6h67sfRK1eCjdUEry8BKseAF1qmKAVhAF5u1zeWiNFfgW9VaARLFh5VZKUQJC346K7wpH7aT17v62DC9igXw3y">send
-                    me Monero</a>
-            </p>
+        <a href="https://github.com/yatima1460" target="_blank">GitHub</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/yatima1460/" target="_blank">LinkedIn</a>
+                    </p>
+                    <p>
+                        <a href="mailto:floury.hoops0s@icloud.com">Email me</a>
+                    </p>
+                    <!-- <p>
+                        <a href=" https://drill.software/" target="_blank">check out my project, Drill</a>
+                    </p> -->
+                    <p>
+                        <a
+                            href="monero:8B5UK4znA6h67sfRK1eCjdUEry8BKseAF1qmKAVhAF5u1zeWiNFfgW9VaARLFh5VZKUQJC346K7wpH7aT17v62DC9igXw3y">Send
+                            me Monero</a>
+                    </p>
+        
+</div>
+
 
 
             <h2>Skills</h2>
@@ -161,60 +181,29 @@
             <h4>2017 - 2018</h4>
             <h5>Unreal Engine Developer</h5>
             <p>
-                Unreal Engine Developer, working in a small team developing VR video games and virtual tours
-            </p>
-            <p>
-                Oculus DK2, HTC Vive, Cardboard, Daydream, Samsung Gear VR, Oculus CV1
-            </p>
-            <p>
-                Collaboration with the Italian board game manufacturer Cranio Creations for the
-                production of a VR videogame “Soqquadro VR” shown at Lucca Comics & Games
-                2016, receiving a review on Gioconomicon
-            </p>
-            <p>
-                Creation of the UE4Logger plugin written in C++ to facilitate Unreal logging via
-                Blueprint.
-            </p>
-            <p>
-                Collaboration with the monks of the Three Fountains Abbey in Rome for a VR experience to show to
-                tourists.
-            </p>
-            <p>
-                Production of VR video games shown at Parco Leonardo in Rome
-            </p>
-            <p>
-                Production of a video game published on Steam
-            </p>
-
+                Working in a small team developing VR virtual tours and videogames
+            </p> 
+        
             <h3>ITC Consulting</h3>
             <h4>2016</h4>
             <h5>Unity Engine Developer</h5>
             <p>
-                Unity Developer, working in a small team doing developing a driving simulator in VR
-            <p>
-                C# library recording user actions in real-time without harming performance and then saving them to
-                an SQLite database to be played as a replay
+                Working in a small team doing developing a driving simulator and connecting it to a real Arduino hardware cockpit using Windows kernel DLL APIs
             </p>
-            <p>
-                Using the Windows kernel DLL APIs in C# to connect the cockpit hardware with the Unity engine
-            </p>
-            <p>
-                Design of a C# driver to hook Unity to a platform that simulates the inertia of the cockpit via a
-                connection on an emulated RS-232 serial port via USB with Arduino
-            </p>
+            
             <h2>Interests</h2>
             <p>
-                Automation, Dungeon & Dragons, Hardware architecture, Teaching, Sandbox games
+                Automation, Dungeon & Dragons, RISC Hardware, Teaching, Sandbox games, World of Warcraft, Search Engines architecture
 
             </p>
             <h2>Languages</h2>
             <p>
-                Italian (native)
+                - Italian (native)
 
 
             </p>
             <p>
-                English
+                - English
             </p>
         </div>
     </div>
