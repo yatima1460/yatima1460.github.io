@@ -31,67 +31,64 @@
 
 
     <style>
-        a {
 
-            font-weight: normal;
-            border-bottom: 1px solid;
-            text-decoration: none;
-            font-weight: bold;
-            /* color: red; */
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            margin-bottom: 10em;
         }
 
+        a {
+            border-bottom: 1px solid;
+            text-decoration: none;
+        }
+
+        h1 {
+            margin-top: 4ex;
+            margin-bottom: 1ex;
+        }
 
         h2 {
-            margin-top: 4vh;
-            margin-bottom: 4vh;
+            margin-top: 4ex;
+            margin-bottom: 1ex;
+            /* margin-bottom: 4vh; */
         }
 
         h3 {
-            margin-top: 5vh;
-            margin-bottom: 1vh;
+            margin-top: 6ex;
+            margin-bottom: 1ex;
         }
 
         h4 {
-            margin-top: 1vh;
-            margin-bottom: 1vh;
+            margin-top: 1ex;
+            margin-bottom: 1ex;
             font-size: small;
             font-weight: normal;
         }
 
-        p {
-            margin: 0;
-            margin-left: 1em;
+        h5 {
+            margin-top: 1ex;
+            margin-bottom: 1ex;
+           
         }
 
+         p {
+            /* margin-right: 0.5ex; */
+            /* margin-left: 1ex; */
+        } 
 
+        .links {
+            display: flex;
+        }
 
-        /* p::before {
-            content: "- "
-        } */
-
-        /* body {
-            margin-top: 2em;
-            margin-bottom: 4em;
-            font-family: 'Ubuntu', sans-serif;
-            margin-left: 2em;
-            margin-right: 2em;
-        } */
-
-        body {
-
-            font-family: 'Ubuntu', sans-serif;
-            margin-bottom: 10em;
-            margin-top: 4em;
-
+        .links a {
+            margin-top: 1ex;
+            margin-right: auto;
         }
 
         @media (orientation: landscape) {
             .links {
-                display: flex;
                 flex-direction: row;
             }
-
-
 
             .container {
                 width: 50%;
@@ -101,14 +98,12 @@
 
         @media (orientation: portrait) {
             .links {
-                display: flex;
                 flex-direction: column;
             }
 
-
-            body {
-                margin-left: 2em;
-                margin-right: 2em;
+            .container {
+                width: 90%;
+                margin: auto
             }
         }
     </style>
@@ -122,32 +117,30 @@
             <h1>
 
                 Yatima Santamorena
-
             </h1>
 
 
             <div class="links">
 
-                <p>
+               
 
                     <a href="https://github.com/yatima1460" target="_blank">GitHub</a>
-                </p>
-                <p>
+                
+              
 
 
                     <a href="https://www.linkedin.com/in/yatima1460/" target="_blank">LinkedIn</a>
-                </p>
-                <p>
+               
                     <a href="mailto:floury.hoops0s@icloud.com">Email me</a>
-                </p>
+               
                 <!-- <p>
                         <a href=" https://drill.software/" target="_blank">check out my project, Drill</a>
                     </p> -->
-                <p>
+               
                     <a
                         href="monero:8B5UK4znA6h67sfRK1eCjdUEry8BKseAF1qmKAVhAF5u1zeWiNFfgW9VaARLFh5VZKUQJC346K7wpH7aT17v62DC9igXw3y">Send
                         me Monero</a>
-                </p>
+                
 
 
             </div>
@@ -168,8 +161,9 @@
 
 
             <h2>Work Experience</h2>
-
-            <h3><a href="https://gamemaker.io" target="_blank">Opera / GameMaker / YoYoGames</a></h3>
+            <h3>
+                <!-- <img src="logos/operalogo.png" height="1ex" width="1ex" /> -->
+                <a href="https://gamemaker.io" target="_blank">Opera / YoYoGames / GameMaker</a></h3>
 
             <h4>2021 - Current</h4>
             <h5>Build Engineer</h5>
