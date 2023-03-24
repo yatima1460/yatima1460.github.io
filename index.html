@@ -42,13 +42,21 @@
             text-decoration: none;
         }
 
+        hr {
+  height: 1px;
+  background: linear-gradient(to right, white, black, white);
+  border: none;
+  margin-top: 1ex;
+  margin-bottom: 1ex;
+}
+
         h1 {
             margin-top: 4ex;
             margin-bottom: 1ex;
         }
 
         h2 {
-            margin-top: 4ex;
+            margin-top: 6ex;    
             margin-bottom: 1ex;
             /* margin-bottom: 4vh; */
         }
@@ -78,11 +86,21 @@
 
         .links {
             display: flex;
+            align-items: center;
         }
 
-        .links a {
+        .links div {
             margin-top: 1ex;
             margin-right: auto;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .links div img {
+            width: 16px;
+            height: 16px;
+            margin-right: 0.5ex;
         }
 
         @media (orientation: landscape) {
@@ -106,6 +124,28 @@
                 margin: auto
             }
         }
+
+        .company {
+            display: flex;
+            align-items: center;
+        }
+        .company img {
+            margin-right: 10px;
+            width: 36px;
+            height: 36px;
+        }
+
+        @media (orientation: portrait) {
+            .company img {
+            margin-right: 5px;
+            width: 48px;
+            height: 48px;
+        }
+        }
+
+        .company-desc {
+            margin-left: 4ex;
+        }
     </style>
 </head>
 
@@ -114,114 +154,134 @@
     <div class="container">
         <div class="centered-div">
 
-            <h1>
-
+            <h1 class="company">
+                <!-- <img src="yatpic_a-1.svg" /> -->
                 Yatima Santamorena
             </h1>
 
 
             <div class="links">
 
+               <div>
+                <img src="logos/github.png" />
+                <a href="https://github.com/yatima1460" target="_blank">GitHub</a>
+               </div>
                
+               <div>
+                <img src="logos/linkedin.png" />
+                <a href="https://www.linkedin.com/in/yatima1460/" target="_blank">LinkedIn</a>
+               </div>
 
-                    <a href="https://github.com/yatima1460" target="_blank">GitHub</a>
-                
-              
-
-
-                    <a href="https://www.linkedin.com/in/yatima1460/" target="_blank">LinkedIn</a>
-               
-                    <a href="mailto:floury.hoops0s@icloud.com">Email me</a>
-               
+               <div >
+                <img src="logos/Mail_(iOS).svg.png" />
+                <a href="mailto:floury.hoops0s@icloud.com" target="_blank">Email me</a>
+               </div>
+                  
+                  
+               <div >
+                <img src="logos/monero-xmr-logo.png" />
+                <a  href="monero:8B5UK4znA6h67sfRK1eCjdUEry8BKseAF1qmKAVhAF5u1zeWiNFfgW9VaARLFh5VZKUQJC346K7wpH7aT17v62DC9igXw3y" target="_blank">Send me Monero</a>
+               </div>
                 <!-- <p>
                         <a href=" https://drill.software/" target="_blank">check out my project, Drill</a>
                     </p> -->
                
-                    <a
-                        href="monero:8B5UK4znA6h67sfRK1eCjdUEry8BKseAF1qmKAVhAF5u1zeWiNFfgW9VaARLFh5VZKUQJC346K7wpH7aT17v62DC9igXw3y">Send
-                        me Monero</a>
+              
                 
 
 
             </div>
 
 
-
+         
             <h2>Skills</h2>
 
             <ul>
-                <li>Automation, Git, CI/CD pipelines, Git Flow, GitHub Actions, Jenkins</li>
+                <li>Automation, Git, CI/CD pipelines, Git Flow, GitHub Actions, some experience with Jenkins</li>
                 <li>Docker build environments, Proxmox VMs with GPU passthrough</li>
-                <li>MSBuild, CMake, make, XCode, dotnet, InnoSetup</li>
-                <li>Python, C#, PowerShell, Bash, Batch, InnoSetup Pascal, C, C++, Swift</li>
+                <li>C11, C++17</li>
+                <li>MSBuild, CMake, make, XCode, dotnet</li>
+                <li>Python, C#, PowerShell, Bash, Batch, InnoSetup Pascal, some experience with Swift</li>
                 <li>Linux, Windows, Mac</li>
-                <li>OpenGL, Unreal Engine 4, Unity</li>
-
+                <li>OpenGL 4.x, Unreal Engine 4, Unity</li>
+                
             </ul>
 
-
+           
             <h2>Work Experience</h2>
-            <h3>
-                <!-- <img src="logos/operalogo.png" height="1ex" width="1ex" /> -->
-                <a href="https://gamemaker.io" target="_blank">Opera / YoYoGames / GameMaker</a></h3>
+          
 
+          
+            <h3 class="company">
+               <img src="logos/gamemaker.png" />
+                <a href="https://gamemaker.io" target="_blank">GameMaker</a>
+            </h3>
+            <div class="company-desc">
             <h4>2021 - Current</h4>
             <h5>Build Engineer</h5>
             <p>
-                Designing and implementing the automation to compile and package the game engine runtime and IDE for all
-                targeted platforms:
-                Android, HTML5, iOS, Linux, Mac, WASM, Windows, tvOS, and using the consoles
-                SDKs for PS4 and PS5, Switch, Xbox One and Xbox Series XS
+                As part of my responsibilities, I designed and executed an automated process for compiling and packaging the game engine runtime and integrated development environment (IDE) across a wide range of platforms, including Android, HTML5, iOS, Linux, Mac, WASM, Windows, and tvOS. Additionally, I utilized software development kits (SDKs) for consoles such as PS4 and PS5, Switch, Xbox One, and Xbox Series XS, to ensure the seamless functioning of the game engine and IDE on these platforms.
             </p>
 
+        </div>
 
 
-
-            <h3><a href="https://zuru.tech" target="_blank">Zuru Tech</a></h3>
-
+            <h3 class="company">
+                <img src="logos/zurutech.png" />
+                <a href="https://zuru.tech" target="_blank">Zuru Tech</a></h3>
+                <div class="company-desc">
             <h4>2020 - 2021</h4>
             <h5>Junior C++ Software Developer</h5>
             <p>
-                C++ developer with Unreal Engine 4, writing automated tests for structural integrity for an unreleased
-                BIM software
-                </dpiv>
+                In my role as a C++ developer with expertise in Unreal Engine 4, I was responsible for designing and developing automated tests to ensure the structural integrity of an unreleased Building Information Modeling (BIM) software. My tasks involved employing industry-standard coding practices to create efficient and reliable tests that detected potential flaws and errors, contributing to the overall stability and robustness of the software.
+            
+           </p>
+            </div>
 
 
 
-            <h3><a href="https://www.ubisoft.com/en-us/company/careers/locations/milan/ubisoft-milan"
+            <h3 class="company">
+                <img src="logos/ubisoft.png" />
+                <a href="https://www.ubisoft.com/en-us/company/careers/locations/milan/ubisoft-milan"
                     target="_blank">Ubisoft</a></h3>
-
+                    <div class="company-desc">
             <h4>2020</h4>
             <h5>Junior Gameplay Programmer</h5>
             <p>
-
-                Mario + Rabbids: Sparks of Hope Gameplay Programmer at Ubisoft Milan, C++ backend for the automated
-                generation of the navmesh for AI pathfinding
+                As a Gameplay Programmer for Ubisoft Milan on the Mario + Rabbids: Sparks of Hope project, I was responsible for designing and implementing a C++ backend to automate the generation of the navmesh, which facilitated AI pathfinding in the game.
             </p>
+        </div>
 
 
-
-            <h3>Sfera Productions</h3>
+            <h3>
+                <!-- <img src="logos/nologo.png" height="36px" width="36px" /> -->
+                Sfera Productions</h3>
+                <div class="company-desc">
             <h4>2017 - 2018</h4>
             <h5>Unreal Engine Developer</h5>
             <p>
-                Working in a small team developing VR virtual tours and videogames
-            </p>
+                Developed VR virtual tours and video games in a small team, utilizing various VR platforms including Oculus DK2, HTC Vive, Daydream, and Cardboard.            </p>
 
-            <h3>ITC Consulting</h3>
+
+            </div>
+            <h3>
+                <!-- <img src="logos/nologo.png" height="36px" width="36px" /> -->
+                ITC Consulting</h3>
+                <div class="company-desc">
             <h4>2016</h4>
             <h5>Unity Engine Developer</h5>
             <p>
-                Working in a small team doing developing a driving simulator and connecting it to a real Arduino
-                hardware cockpit using Windows kernel DLL APIs
+                Working as a member of a small team, I was involved in the development of a driving simulator. My responsibilities included connecting the simulator to a real Arduino hardware cockpit by utilizing Windows kernel DLL APIs.
             </p>
-
+        </div>
             <h2>Interests</h2>
+            
             <p>
                 Automation, Dungeon & Dragons, RISC Hardware, Teaching, Sandbox games, World of Warcraft, Search Engines
                 architecture
 
             </p>
+         
             <h2>Languages</h2>
             <p>
                 English and Italian
