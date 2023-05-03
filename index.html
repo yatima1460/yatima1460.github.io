@@ -31,24 +31,96 @@
 
 
     <style>
-
         body {
             font-family: 'Ubuntu', sans-serif;
             margin-bottom: 10em;
         }
 
-        a {
-            border-bottom: 1px solid;
-            text-decoration: none;
+        .label {
+            display: inline-flex;
+            flex-direction: row;
+            border: 1px solid;
+            padding: 6px;
+            border-radius: 5px;
+            margin: 0.5ex;
+            cursor: default;
         }
 
+        a {
+            text-decoration: none;
+            color: black;
+           
+        }
+
+
+        .label-description {
+            color: gray;
+            font-size: small;
+            display: block;
+            
+        }
+
+
+        .label-logo {
+            width: 16px;
+            height: 16px;
+            margin-right: 0.5ex;
+            display: inline;
+        }
+
+        .label-text {
+            margin: 0;
+        }
+
+        
+
+        /* .btn img {
+            width: 16px;
+            height: 16px;
+            margin-right: 0.5ex;
+        }
+
+        .btn {
+
+
+            display: inline-block;
+            border: 1px solid;
+            padding: 6px;
+            border-radius: 5px;
+            margin: 0.5ex;
+        } */
+
+
+        /* a img {
+            width: 16px;
+            height: 16px;
+            margin-right: 0.5ex;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            align-items: center;
+        }
+*/
+       
+
+        .label-hover:hover {
+            text-decoration: none;
+            color: black;
+            background-color: #eeeeee;
+            border-color: black;
+            cursor: pointer;
+        } 
+
         hr {
-  height: 1px;
-  background: linear-gradient(to right, white, black, white);
-  border: none;
-  margin-top: 1ex;
-  margin-bottom: 1ex;
-}
+            height: 1px;
+            background: linear-gradient(to right, white, black, white);
+            border: none;
+            margin-top: 1ex;
+            margin-bottom: 1ex;
+        }
 
         h1 {
             margin-top: 4ex;
@@ -56,7 +128,7 @@
         }
 
         h2 {
-            margin-top: 6ex;    
+            margin-top: 4ex;
             margin-bottom: 1ex;
             /* margin-bottom: 4vh; */
         }
@@ -76,32 +148,27 @@
         h5 {
             margin-top: 1ex;
             margin-bottom: 1ex;
-           
+
         }
 
-         p {
+        p {
             /* margin-right: 0.5ex; */
             /* margin-left: 1ex; */
-        } 
+        }
 
         .links {
             display: flex;
             align-items: center;
         }
 
-        .links div {
-            margin-top: 1ex;
+        .links a {
+
             margin-right: auto;
 
             display: flex;
             align-items: center;
         }
 
-        .links div img {
-            width: 16px;
-            height: 16px;
-            margin-right: 0.5ex;
-        }
 
         @media (orientation: landscape) {
             .links {
@@ -109,7 +176,7 @@
             }
 
             .container {
-                width: 50%;
+                width: 70%;
                 margin: auto
             }
         }
@@ -125,10 +192,15 @@
             }
         }
 
+        .company-info {
+            display: none;
+        }
+
         .company {
             display: flex;
             align-items: center;
         }
+
         .company img {
             margin-right: 10px;
             width: 36px;
@@ -136,10 +208,10 @@
 
         @media (orientation: portrait) {
             .company img {
-            margin-right: 5px;
-            width: 48px;
-            height: 48px;
-        }
+                margin-right: 5px;
+                width: 48px;
+                height: 48px;
+            }
         }
 
         .company-desc {
@@ -158,134 +230,165 @@
                 Yatima Santamorena
             </h1>
 
-
-            <div class="links">
-
-               <div>
-                <img src="logos/github.png" />
-                <a href="https://github.com/yatima1460" target="_blank">GitHub</a>
-               </div>
+            <a href="https://github.com/yatima1460" target="_blank">
+            <div class="label label-hover">
+                
                
-               <div>
-                <img src="logos/linkedin.png" />
-                <a href="https://www.linkedin.com/in/yatima1460/" target="_blank">LinkedIn</a>
-               </div>
-
-               <div >
-                <img src="logos/Mail_(iOS).svg.png" />
-                <a href="mailto:floury.hoops0s@icloud.com" target="_blank">Email me</a>
-               </div>
-                  
-                  
-               <div >
-                <img src="logos/monero-xmr-logo.png" />
-                <a  href="monero:8B5UK4znA6h67sfRK1eCjdUEry8BKseAF1qmKAVhAF5u1zeWiNFfgW9VaARLFh5VZKUQJC346K7wpH7aT17v62DC9igXw3y" target="_blank">Send me Monero</a>
-               </div>
-                <!-- <p>
-                        <a href=" https://drill.software/" target="_blank">check out my project, Drill</a>
-                    </p> -->
-               
+                    <img class="label-logo" src="logos/github.png" />
               
-                
-
-
+                <p class="label-text">
+                    GitHub
+                </p>
+                 
             </div>
+        </a>
+
+            <a href="https://www.linkedin.com/in/yatima1460/" target="_blank">
+                <div class="label label-hover">
+                    <img class="label-logo" src="logos/linkedin.png" />
+                    <p class="label-text">
+                        LinkedIn
+                    </p>
+                </div>
+            </a>
+
+            <a href="mailto:floury.hoops0s@icloud.com" target="_blank">
+                <div class="label label-hover">
+             
+                        <img class="label-logo" src="logos/Mail_(iOS).svg.png" />
+                  
+                    <p class="label-text">
+                        Email
+                    </p>
+                </div>
+            </a>
 
 
-         
-            <h2>Skills</h2>
+            <a href="monero:8B5UK4znA6h67sfRK1eCjdUEry8BKseAF1qmKAVhAF5u1zeWiNFfgW9VaARLFh5VZKUQJC346K7wpH7aT17v62DC9igXw3y" target="_blank">
+                <div class="label label-hover">
+                 
+                        <img class="label-logo" src="logos/monero-xmr-logo.png" />
+                  
+                    <p class="label-text">
+                        Send me Monero
+                    </p>
+                </div>
+            </a>
 
-            <ul>
-                <li>Automation, Git, CI/CD pipelines, Git Flow, GitHub Actions, some experience with Jenkins</li>
-                <li>Docker build environments, Proxmox VMs with GPU passthrough</li>
-                <li>C11, C++17</li>
-                <li>MSBuild, CMake, make, XCode, dotnet</li>
-                <li>Python, C#, PowerShell, Bash, Batch, InnoSetup Pascal, some experience with Swift</li>
-                <li>Linux, Windows, Mac</li>
-                <li>OpenGL 4.x, Unreal Engine 4, Unity</li>
-                
-            </ul>
 
            
+
+            <!-- <p>
+                        <a href=" https://drill.software/" target="_blank">check out my project, Drill</a>
+                    </p> -->
+
+            <h2>Skills</h2>
+            <div>
+                <div class="label">
+            
+                    <p class="label-text">
+                        Automation
+                    </p>
+                    
+                </div>
+                <div class="label">Perforce</div>
+                <div class="label">Git</div>
+                <div class="label">CI/CD</div>
+                <div class="label">GitHub Actions</div>
+                <div class="label">Jenkins</div>
+                <div class="label">Docker</div>
+                <div class="label">Proxmox</div>
+                <div class="label">Docker</div>
+                <div class="label">C</div>
+                <div class="label">C++</div>
+                <div class="label">MSBuild</div>
+                <div class="label">CMake</div>
+                <div class="label">make</div>
+                <div class="label">XCode</div>
+                <div class="label">Python</div>
+                <div class="label">C#</div>
+                <div class="label">PowerShell</div>
+                <div class="label">Bash</div>
+                <div class="label">Batch</div>
+                <div class="label">InnoSetup Pascal</div>
+                <div class="label">Swift</div>
+                <div class="label">Linux</div>
+                <div class="label">Windows</div>
+                <div class="label">Mac</div>
+                <div class="label">OpenGL</div>
+                <div class="label">Unreal Engine 4</div>
+                <div class="label">Unity</div>
+            </div>
+
+
+
             <h2>Work Experience</h2>
-          
+           
+                <a href="https://gamemaker.io" target="_blank">
+                    <div class="label label-hover">
+                        
+                        <img class="label-logo" src="logos/gamemaker.png" />
+                        <div class="label-text">
+                            GameMaker
+                            
+                         
+                        </div>
+                       
 
-          
-            <h3 class="company">
-               <img src="logos/gamemaker.png" />
-                <a href="https://gamemaker.io" target="_blank">GameMaker</a>
-            </h3>
-            <div class="company-desc">
-            <h4>2021 - Current</h4>
-            <h5>Build Engineer</h5>
-            <p>
-                As part of my responsibilities, I designed and executed an automated process for compiling and packaging the game engine runtime and integrated development environment (IDE) across a wide range of platforms, including Android, HTML5, iOS, Linux, Mac, WASM, Windows, and tvOS. Additionally, I utilized software development kits (SDKs) for consoles such as PS4 and PS5, Switch, Xbox One, and Xbox Series XS, to ensure the seamless functioning of the game engine and IDE on these platforms.
-            </p>
+                    </div>
+                    
+                </a>
 
-        </div>
+                <a href="https://zuru.tech" target="_blank">
+                    <div class="label label-hover">
+                        <img class="label-logo" src="logos/zurutech.png" />
+                        <div class="label-text">
+                            Zuru Tech 
 
+                           
+                        </div>
+                     
 
-            <h3 class="company">
-                <img src="logos/zurutech.png" />
-                <a href="https://zuru.tech" target="_blank">Zuru Tech</a></h3>
-                <div class="company-desc">
-            <h4>2020 - 2021</h4>
-            <h5>Junior C++ Software Developer</h5>
-            <p>
-                In my role as a C++ developer with expertise in Unreal Engine 4, I was responsible for designing and developing automated tests to ensure the structural integrity of an unreleased Building Information Modeling (BIM) software. My tasks involved employing industry-standard coding practices to create efficient and reliable tests that detected potential flaws and errors, contributing to the overall stability and robustness of the software.
-            
-           </p>
-            </div>
+                     
+                    </div>
+                </a>
 
+             
+                <a href="https://www.ubisoft.com/en-us/company/careers/locations/milan/ubisoft-milan" target="_blank">
+                    <div class="label label-hover">
+                        <img class="label-logo" src="logos/ubisoft.png" />
+                        <div class="label-text">
+Ubisoft
+                           
+                        </div>
+                     
 
+                     
+                    </div>
+                </a>
 
-            <h3 class="company">
-                <img src="logos/ubisoft.png" />
-                <a href="https://www.ubisoft.com/en-us/company/careers/locations/milan/ubisoft-milan"
-                    target="_blank">Ubisoft</a></h3>
-                    <div class="company-desc">
-            <h4>2020</h4>
-            <h5>Junior Gameplay Programmer</h5>
-            <p>
-                As a Gameplay Programmer for Ubisoft Milan on the Mario + Rabbids: Sparks of Hope project, I was responsible for designing and implementing a C++ backend to automate the generation of the navmesh, which facilitated AI pathfinding in the game.
-            </p>
-        </div>
-
-
-            <h3 class="company">
-                 <img src="logos/sfera-productions.png">
-                Sfera Productions</h3>
-                <div class="company-desc">
-            <h4>2017 - 2018</h4>
-            <h5>Unreal Engine Developer</h5>
-            <p>
-                Developed VR virtual tours and video games in a small team, utilizing various VR platforms including Oculus DK2, HTC Vive, Daydream, and Cardboard.            </p>
+        
 
 
-            </div>
-            <h3 class="company">
-                <img src="logos/itc-consulting.png">
-                ITC Consulting</h3>
-                <div class="company-desc">
-            <h4>2016</h4>
-            <h5>Unity Engine Developer</h5>
-            <p>
-                Working as a member of a small team, I was involved in the development of a driving simulator. My responsibilities included connecting the simulator to a real Arduino hardware cockpit by utilizing Windows kernel DLL APIs.
-            </p>
-        </div>
-            <h2>Interests</h2>
-            
-            <p>
-                Automation, Dungeon & Dragons, RISC Hardware, Teaching, Sandbox games, World of Warcraft, Search Engines
-                architecture
+               
+        <h2>Interests</h2>
 
-            </p>
-         
-            <h2>Languages</h2>
-            <p>
-                English and Italian
-            </p>
-        </div>
+        <div class="label">Automation</div>
+        <div class="label">Dungeon & Dragons</div>
+        <div class="label">RISC Hardware</div>
+        <div class="label">Teaching</div>
+        <div class="label">Sandbox games</div>
+        <div class="label">World of Warcraft</div>
+        <div class="label">Search Engines</div>
+
+
+
+        <h2>Languages</h2>
+
+        <div class="label">English</div>
+        <div class="label">Italian</div>
+  
+    </div>
     </div>
 
 
