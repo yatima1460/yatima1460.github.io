@@ -36,6 +36,24 @@
             margin-bottom: 10em;
         }
 
+        .pgp {
+            font-family: monospace;
+            font-size: small;
+            white-space: pre;
+            margin-top: 1ex;
+            margin-bottom: 1ex;
+            width: 100%;
+            height: 200px;
+            resize: none;
+            overflow-y: scroll;
+            white-space: pre-wrap;
+            border: 1px solid #ccc;
+            
+            font-family: monospace;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+        }
+
         .label {
             display: inline-flex;
             flex-direction: row;
@@ -134,8 +152,9 @@
         }
 
         h3 {
-            margin-top: 6ex;
+            margin-top: 2ex;
             margin-bottom: 1ex;
+            margin-left: 1ex;
         }
 
         h4 {
@@ -156,18 +175,12 @@
             /* margin-left: 1ex; */
         }
 
-        .links {
+        .personal-links {
             display: flex;
             align-items: center;
+            margin-top: 2ex;
         }
 
-        .links a {
-
-            margin-right: auto;
-
-            display: flex;
-            align-items: center;
-        }
 
 
         @media (orientation: landscape) {
@@ -229,57 +242,73 @@
                 <!-- <img src="yatpic_a-1.svg" /> -->
                 Yatima Santamorena
             </h1>
+            <small>
+                I'm a build engineer with experience in C/C++ and game engines
+            </small>
 
-            <a href="https://github.com/yatima1460" target="_blank">
-            <div class="label label-hover">
-                
-               
-                    <img class="label-logo" src="logos/github.png" />
-              
-                <p class="label-text">
-                    GitHub
-                </p>
-                 
+            
+            <div class="personal-links">
+                <a href="https://github.com/yatima1460" target="_blank">
+                    <div class="label label-hover">
+                        
+                       
+                            <img class="label-logo" src="logos/github.png" />
+                      
+                        <p class="label-text">
+                            GitHub
+                        </p>
+                         
+                    </div>
+                </a>
+        
+                    <a href="https://www.linkedin.com/in/yatima1460/" target="_blank">
+                        <div class="label label-hover">
+                            <img class="label-logo" src="logos/linkedin.png" />
+                            <p class="label-text">
+                                LinkedIn
+                            </p>
+                        </div>
+                    </a>
+        
+                    <a href="mailto:floury.hoops0s@icloud.com" target="_blank">
+                        <div class="label label-hover">
+                     
+                                <img class="label-logo" src="logos/Mail_(iOS).svg.png" />
+                          
+                            <p class="label-text">
+                                Email
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="  https://www.instagram.com/yatima1460/" target="_blank">
+                        <div class="label label-hover">
+                            <img class="label-logo" src="logos/instagram.png" />
+                            <p class="label-text">
+                                Instagram
+                            </p>
+                        </div>
+                    </a>
+                  
+        
+        
+                    <a href="monero:8B5UK4znA6h67sfRK1eCjdUEry8BKseAF1qmKAVhAF5u1zeWiNFfgW9VaARLFh5VZKUQJC346K7wpH7aT17v62DC9igXw3y" target="_blank">
+                        <div class="label label-hover">
+                         
+                                <img class="label-logo" src="logos/monero-xmr-logo.png" />
+                          
+                            <p class="label-text">
+                                Send me Monero
+                            </p>
+                        </div>
+                    </a>
+        
             </div>
-        </a>
-
-            <a href="https://www.linkedin.com/in/yatima1460/" target="_blank">
-                <div class="label label-hover">
-                    <img class="label-logo" src="logos/linkedin.png" />
-                    <p class="label-text">
-                        LinkedIn
-                    </p>
-                </div>
-            </a>
-
-            <a href="mailto:floury.hoops0s@icloud.com" target="_blank">
-                <div class="label label-hover">
-             
-                        <img class="label-logo" src="logos/Mail_(iOS).svg.png" />
-                  
-                    <p class="label-text">
-                        Email
-                    </p>
-                </div>
-            </a>
-
-
-            <a href="monero:8B5UK4znA6h67sfRK1eCjdUEry8BKseAF1qmKAVhAF5u1zeWiNFfgW9VaARLFh5VZKUQJC346K7wpH7aT17v62DC9igXw3y" target="_blank">
-                <div class="label label-hover">
-                 
-                        <img class="label-logo" src="logos/monero-xmr-logo.png" />
-                  
-                    <p class="label-text">
-                        Send me Monero
-                    </p>
-                </div>
-            </a>
-
-
+           
            
 
             <!-- <p>
-                        <a href=" https://drill.software/" target="_blank">check out my project, Drill</a>
+                        <a href=" " target="_blank"></a>
                     </p> -->
 
             <h2>Skills</h2>
@@ -323,6 +352,24 @@
 
 
             <h2>Work Experience</h2>
+
+
+                <h3>Current</h3>
+
+
+                <a href="mailto:floury.hoops0s@icloud.com" target="_blank">
+                    <div class="label label-hover">
+                 
+                            <img class="label-logo" src="logos/Mail_(iOS).svg.png" />
+                      
+                        <p class="label-text">
+                            Hire me!
+                        </p>
+                    </div>
+                </a>
+
+
+                <h3>Past</h3>
            
                 <a href="https://gamemaker.io" target="_blank">
                     <div class="label label-hover">
@@ -387,6 +434,60 @@ Ubisoft
 
         <div class="label">English</div>
         <div class="label">Italian</div>
+        <!-- <div class="label">Spanish</div> -->
+
+        <h2>PGP</h2>
+
+        <div class="pgp">
+            -----BEGIN PGP PUBLIC KEY BLOCK-----
+            Version: ObjectivePGP
+            Comment: https://www.objectivepgp.com
+            Charset: UTF-8
+            
+            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
+            hpxtHp12uPLxuvG68g==
+            =qdTM
+            -----END PGP PUBLIC KEY BLOCK-----
+        </div>
+       
+        
+  
   
     </div>
     </div>
