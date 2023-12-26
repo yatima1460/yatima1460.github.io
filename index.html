@@ -62,8 +62,14 @@ h3 {
     }
 
     .blink_me {
-        animation: blinker 1s linear infinite;
-    }
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 
     @keyframes blinker {
         50% {
@@ -356,8 +362,7 @@ h3 {
             <ul>
                 <li>
                     <i class="fa-solid fa-envelope"></i> Send me an email by clicking ><a
-                        href="mailto:floury.hoops0s@icloud.com">here</a>
-                    < !! </li>
+                        href="mailto:floury.hoops0s@icloud.com" class="blink_me" >here</a>< !! </li>
                 <li>
                     <i class="fa-brands fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/yatima1460/">LinkedIn
                     </a> (boring)
