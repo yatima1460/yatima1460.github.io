@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ site.title | default: site.github.repository_name }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description | default: site.github.project_tagline }}">
+    <script src="https://kit.fontawesome.com/66cfca07cc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+
+    <!-- <link rel="icon" href="data:image/png;base64,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"> -->
+</head>
+<style>
+    /* body {
+  max-width: 50%;
+  margin: 40px auto;
+  padding: 0 10px;
+  font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: black;
+  background-color: rgb(254, 227, 227);
+} */
+
+    /* h1 {
+  font-size: 6rem;
+  color: black;
+}
+h2 {
+  font-size: 4rem;
+  color: black;
+}
+h3 {
+  font-size: 2rem;
+  color: black;
+}
+
+.logo-h3 {
+  width: 3rem;
+}
+
+.logo-h4 {
+  width: 1rem;
+} */
+
+    a:link,
+    a:visited {
+        color: blue;
+
+
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .blink_me {
+        animation: blinker 1s linear infinite;
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+
+    /* 
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+} */
+
+
+    .panda {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        width: 20%;
+    }
+
+    /* .card {
+        border: 0.25rem black solid;
+        margin: auto;
+        border-radius: 1rem;
+    } */
+
+    /* // @media (prefers-color-scheme: dark) {
+//   body {
+//     color: #c9d1d9;
+//     background: #39414c;
+//   }
+
+//   h1,
+//   h2,
+//   h3 {
+//     color: white;
+//   }
+// } */
+
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #f1f1f1;
+        font-family: helvetica neue, helvetica, arial, sans-serif;
+        font-weight: 250;
+    }
+
+    #notebook-paper {
+
+        @media (orientation: landscape) {
+            width: 60%;
+
+            background: linear-gradient(to bottom, white 29px, #cbe8ef 1px);
+            margin: 50px auto;
+            background-size: 100% 30px;
+            position: relative;
+            padding-top: 150px;
+            padding-left: 160px;
+            padding-right: 20px;
+            overflow: hidden;
+            border-radius: 5px;
+            -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+            -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+            -ms-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+            -o-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 140px;
+                height: 100%;
+                width: 1px;
+                background: #eb9993;
+            }
+
+            #content {
+            margin-top: 67px;
+            font-size: 20px;
+            line-height: 30px;
+
+                p {
+                    margin: 0px 0px 0px 0px;
+                }
+            }
+
+
+            header {
+                height: 150px;
+                width: 100%;
+                background: white;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                h1 {
+                    font-size: 60px;
+                    line-height: 60px;
+                    padding: 127px 20px 0 160px;
+                }
+
+            }
+        }
+
+        @media (orientation: portrait) {
+            width: 95%;
+
+            background: linear-gradient(to bottom, white 29px, #cbe8ef 1px);
+            margin: 50px auto;
+            background-size: 100% 30px;
+            position: relative;
+            padding-top: 150px;
+            padding-left: 60px;
+            padding-right: 20px;
+            overflow: hidden;
+            border-radius: 5px;
+            -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+            -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+            -ms-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+            -o-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 40px;
+                height: 100%;
+                width: 1px;
+                background: #eb9993;
+            }
+
+            #content {
+            margin-top: 37px;
+            font-size: 20px;
+            line-height: 30px;
+
+                p {
+                    margin: 0px 0px 0px 0px;
+                }
+             }
+
+             header {
+                height: 150px;
+                width: 100%;
+                background: white;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                h1 {
+                    font-size: 60px;
+                    line-height: 60px;
+                    padding: 127px 20px 0 60px;
+                }
+
+            }
+        }
+
+
+        .logo {
+            height: 1rem;
+        }
+
+        li:before {
+            content: "⭐️";
+            padding-left: 1rem;
+        }
+
+
+
+
+        h2 {
+            font-weight: 400;
+            padding-top: 60px;
+
+
+        }
+
+        h3 {
+            font-weight: 300;
+            padding-top: 30px;
+        }
+
+        h4 {
+            font-weight: 250;
+            padding-top: 0px;
+            font-style: italic;
+
+        }
+
+
+       
+
+        .logo-pcf {
+            height: 112px;
+            rotate: -30deg;
+            padding-top: 30px;
+            display: inline-block
+        }
+
+        .logo-crytek {
+            height: 112px;
+
+            padding-top: 30px;
+        }
+
+        .logo-opera {
+            height: 60px;
+            font-weight: 400;
+            font-size: 30px;
+            padding-top: 22px;
+
+            .logo-gamemaker {
+                height: 30px;
+
+
+            }
+
+
+
+        }
+
+        .logo-zurutech {
+            height: 52px;
+            font-weight: 400;
+            font-size: 30px;
+            padding-top: 20px;
+        }
+
+        .zurutech {
+            font-size: 40px;
+            padding-bottom: 8px;
+        }
+
+        .logo-ubisoft {
+            height: 82px;
+            font-weight: 400;
+            font-size: 30px;
+            padding-top: 20px;
+
+        }
+
+
+    }
+</style>
+
+<body>
+
+    <div id="notebook-paper">
+
+        <header>
+            <h1>Yatima Santamorena</h1>
+        </header>
+        <div id="content">
+
+
+            <p><i class="fa-solid fa-gears"></i> Senior Build Engineer & C++
+                developer with VR <i class="fa-solid fa-vr-cardboard"></i> experience, optimizing your pipelines <i
+                    class="fa-solid fa-code-branch"></i> , and
+                making your software more <i class="fa-solid fa-microchip"></i> hardware-friendly. </p>
+
+
+
+            <p>🌎 <b>Remote-ready</b>, open to work <b>on-site in your 🇺🇸 U.S. company provided visa assistance.</b>
+            </p>
+
+            <p>Excited about <i class="fa-brands fa-bitcoin"></i> crypto/web3 space.</p>
+
+            <p>Let's collaborate by means of a <b>sole proprietorship</b> or <b>B2B contract</b> for greater flexibility
+                and mutually optimal financial results!</p>
+
+            <h2>Contact</h2>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-envelope"></i> Send me an email by clicking ><a
+                        href="mailto:floury.hoops0s@icloud.com">here</a>
+                    < !! </li>
+                <li>
+                    <i class="fa-brands fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/yatima1460/">LinkedIn
+                    </a> (boring)
+                </li>
+            </ul>
+
+            <h2>Work Experience</h2>
+            <p>Senior Build Engineer and Senior Release Engineer with expertise in Python, Docker, Jenkins, Unreal
+                Engine,
+                and GitHub Actions.</p>
+
+            <p>Skilled game engine developer in C++ and C#.</p>
+
+            <p>VR experience.</p>
+
+
+            <h3><img class="logo-pcf" src="logo/pcf.png">
+                <font style="font-weight: 500">People Can Fly</font>
+            </h3>
+            <h4> Senior Build Engineer - 2023 to Present </h4>
+            <p>Currently working on the pipeline for <img class="logo" src="logo/ue.png"> Unreal Engine compilation in
+                <i class="fa-brands fa-jenkins"></i> Groovy, C# and BuildGraph
+            </p>
+
+
+            <img class="logo-crytek" src="logo/crytek.webp">
+            <h4>Build Engineer - 2023 </h4>
+            <p>Maintained build system in <i class="fa-brands fa-python"></i> Python for Crytek engine</p>
+
+            <h3 class="logo-opera">
+                <font color=red><i class="fa-brands fa-opera"></i></font> Opera / <img class="logo-gamemaker"
+                    src="logo/gamemaker.png"> GameMaker
+            </h3>
+            <h4>Build Engineer - 2021 to 2023</h4>
+            <ul>
+                <li>
+                    Ported the engine compilation from on-premises to <i class="fa-brands fa-github"></i> GitHub Actions
+                </li>
+                <li>
+                    Wrote new build system in <i class="fa-brands fa-python"></i> Python
+                </li>
+                <li>
+                    <i class="fa-brands fa-docker"></i> Dockerization of various build environments
+                </li>
+                <li>
+                    Worked with all consoles SDKs <i class="fa-brands fa-playstation"></i><i
+                        class="fa-brands fa-switch"></i><i class="fa-brands fa-xbox"></i><img class="logo"
+                        src="logo/s-l1600.png">
+                </li>
+            </ul>
+
+            <h3 class="zurutech"><img class="logo-zurutech" src="logo/zurutech.png"> Tech</h3>
+            <h4>Junior C++ Software Developer - 2020 to 2021</h4>
+            <ul>
+                <li>
+                    CAD software
+                </li>
+                <li>
+                    Automated tests for Unreal Engine 4.x
+                </li>
+            </ul>
+
+
+            <img class="logo-ubisoft" src="logo/ubisoft.png">
+            <h4>Junior Gameplay Programmer - 2020</h4>
+            <ul>
+                <li>
+                    Mario Rabbids: Sparks of Hope
+                </li>
+                <li>
+                    Navmesh generation for AI
+                </li>
+            </ul>
+
+            <h3>Sfera Productions</h3>
+            <h4>Unreal Engine Programmer - 2017 to 2018</h4>
+            <ul>
+                <li>
+                    VR performance optimisation for <img class="logo" src="logo/ue.png"> Unreal Engine 4.x
+                </li>
+                <li>
+                    Extending Blueprint functionality using C++
+                </li>
+            </ul>
+
+            <h3>ITC Consulting</h3>
+            <h4>Unity Engine Developer - 2016</h4>
+            <ul>
+                <li>
+                    Driving simulator
+                </li>
+                <li>
+                    C# logic to connect <img class="logo" src="assets/unity.svg"> Unity to external cockpit hardware
+                </li>
+            </ul>
+
+            <h2><i class="fa-solid fa-dice-d20"></i> Interests & Hobbies</h2>
+            <ul>
+                <li>
+                    Home automation with HomeAssistant, Raspberry Pi, KNX, MikroTik
+                </li>
+                <li>
+                    Dungeon & Dragons
+                </li>
+                <li>
+                    RISC hardware
+                </li>
+                <li>
+                    Writing
+                </li>
+            </ul>
+
+            <h2><i class="fa-solid fa-language"></i> Languages</h2>
+
+            <ul>
+                <li>
+                    English
+                </li>
+                <li>
+                    Italian
+                </li>
+            </ul>
+
+
+            <h2>Links</h2>
+
+            <a href="https: //github.com/yatima1460">my github</a>
+
+
+            <p>Thanks for checking out the website! :D</p>
+        </div>
+    </div>
+</body>
+<img class="panda" src="assets/giphy-2.gif"></img>
+
+</html>

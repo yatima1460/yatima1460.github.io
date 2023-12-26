@@ -14,10 +14,10 @@ Let's collaborate by means of a **sole proprietorship** or **B2B contract** for 
 
 ## Contact
 
-* [Email](mailto:floury.hoops0s@icloud.com)
-* [LinkedIn](https://www.linkedin.com/in/yatima1460/)
+* <i class="fa-solid fa-envelope"></i> Send me an email by clicking ><a class="blink_me" href="mailto:floury.hoops0s@icloud.com">here</a>< !!
+* <i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/yatima1460/"><font color="blue">LinkedIn</font>(boring)</a>
 
-## Work Experience
+## <i class="fa-solid fa-terminal"></i> Work Experience
 
 Senior Build Engineer and Senior Release Engineer with expertise in Python, Docker, Jenkins, Unreal Engine, and GitHub Actions.
 
@@ -27,19 +27,19 @@ VR experience.
 
 ### People Can Fly
 
-#### Senior Build Engineer - 2023 to Present
+#### <i class="fa-solid fa-user-gear"></i> Senior Build Engineer - 2023 to Present
 
 Currently working on the pipeline for Unreal Engine compilation
 
 ### Crytek
 
-#### Build Engineer - 2023
+#### <i class="fa-solid fa-user-gear"></i> Build Engineer - 2023
 
 Maintained build system in Python for Crytek engine
 
-### Opera / GameMaker
+### <font color=red><i class="fa-brands fa-opera"></i></font> Opera / GameMaker
 
-#### Build Engineer - 2021 to 2023
+#### <i class="fa-solid fa-user-gear"></i> Build Engineer - 2021 to 2023
 
 * Ported the engine compilation from on-premises to GitHub Actions
 * Wrote new build system in Python
@@ -69,19 +69,19 @@ Maintained build system in Python for Crytek engine
 
 ### ITC Consulting
 
-#### Unity Engine Developer - 2016
+#### <img class="logo-h4" src="assets/unity.svg"> Unity Engine Developer - 2016
 
 * Driving simulator
 * C# logic to connect Unity to external cockpit hardware
 
-## Interests & Hobbies
+## <i class="fa-solid fa-dice-d20"></i> Interests & Hobbies
 
 * Home automation with HomeAssistant, Raspberry Pi, KNX, MikroTik
 * Dungeon & Dragons
 * RISC hardware
 * Writing
 
-## Languages
+## <i class="fa-solid fa-language"></i> Languages
 
 * English
 * Italian
