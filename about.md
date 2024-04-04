@@ -14,7 +14,9 @@ Decided to study some Computer Science in Italy but there was no 3D engines cour
 
 Very cool stuff and after a while ended up landing a job in Ubisoft with C++, but this is the boring work experience stuff, you can find out about my professional life in my [CV]({{ site.url }}/{{ site.resume-url }}).
 
-I really like playing Dungeon & Dragons and tinkering around with home automation stuff (KNX, Raspberry Pi & Home Assistant).
+I really like playing Dungeon & Dragons so if you use Roll20 send me a message!
+
+I also tinker around with home automation stuff (KNX, Raspberry Pi & Home Assistant).
 
 At home I have MikroTik devices and a custom physical firewall because that's how you do a nice network 😎
 
