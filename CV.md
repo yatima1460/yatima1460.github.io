@@ -5,7 +5,7 @@ _As it was in April 2024_
 
 Yatima Santamorena
 
-Ljubljana, Slovenia
+[Ljubljana, Slovenia](https://maps.app.goo.gl/HkrXs5vaJ4y3X6vW8)
 
 [contact@yatima.me](mailto:contact@yatima.me)
 
@@ -104,7 +104,7 @@ emulated RS-232 serial port with USB on Arduino.
 
 ## Education
 
-2013-2016: Sapienza Rome University, Computer Science, left after a while because I wanted to work on 3D engines and there were no courses available :(  
+2013-2016: Sapienza Rome University, Computer Science, left after a while to work in the job sector with startups and 3D engines because there were no 3D courses available in university  
 
 ## Languages
 
