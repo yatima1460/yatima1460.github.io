@@ -108,13 +108,4 @@ emulated RS-232 serial port with USB on Arduino.
 
 ## Languages
 
-* English
-* Italian
-
-## Location
-
-Remote-ready, open to work on-site in your U.S. company provided visa assistance.
-
-
-
-
+My native language is Italian and I use English regularly in a professional context
