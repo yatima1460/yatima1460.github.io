@@ -1,8 +1,12 @@
-# Who am I?
+# Curriculum Vitae
 
-I'm Yatima Santamorena, a Senior Build Engineer specialized in automation
+_As it was in April 2024_
 
-## Work Experience
+Yatima Santamorena
+Ljubljana, Slovenia
+[contact@yatima.me](mailto:contact@yatima.me)
+
+## Job Experience
 
 ### People Can Fly (ex Epic Games Poland)
 
@@ -15,7 +19,7 @@ Senior Build Engineer - October 2023 to Present
 
 Build Engineer - 2023
 
-Worked briefly as a Build Engineer in Crytek for the automated processes to build Crysis 4,
+Worked very briefly as a Build Engineer in Crytek for the automated processes to build Crysis 4,
 Hunt and CryEngine and distribute them to customers and QA.
 
 Python was the main scripting language.
@@ -91,6 +95,14 @@ hardware and Unity, enabling the simulation of vehicle inertia and collisions th
 emulated RS-232 serial port with USB on Arduino.
 * Maintained an AI system to control multiple agents simulating traffic in a city environment.
 
+## Achievements
+
+2013: First place in Rotary Club Rome C++ competition
+
+## Education
+
+2013-2016: Sapienza Rome University, Computer Science, left after a while because I wanted to work on 3D engines and there were no courses available :(  
+
 ## Languages
 
 * English
@@ -100,6 +112,6 @@ emulated RS-232 serial port with USB on Arduino.
 
 Remote-ready, open to work on-site in your U.S. company provided visa assistance.
 
-## Contact
 
-[contact@yatima.me](mailto:contact@yatima.me)
+
+
