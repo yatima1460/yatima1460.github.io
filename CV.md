@@ -2,8 +2,11 @@
 
 _As it was in April 2024_
 
+
 Yatima Santamorena
+
 Ljubljana, Slovenia
+
 [contact@yatima.me](mailto:contact@yatima.me)
 
 ## Job Experience
