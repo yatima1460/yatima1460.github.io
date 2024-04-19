@@ -11,33 +11,30 @@ Yatima Santamorena
 
 ## Job Experience
 
-### People Can Fly (ex Epic Games Poland)
+### 2023 October - Present
 
-Senior Build Engineer - October 2023 to Present
+Working as contractor in **People Can Fly** (**ex Epic Games Poland**) as a Senior Build Engineer.
+Maintained the current pipelines with Jenkins + Groovy and started using Epic Games' BuildGraph solution to accelerate Unreal compilation.
 
-* Maintaining the current pipelines with Jenkins + Groovy
-* Using Epic Games' BuildGraph to accelerate Unreal compilation
+### 2023 June - August
 
-### Crytek
-
-Build Engineer - 2023
-
-Worked very briefly as a Build Engineer in Crytek for the automated processes to build Crysis 4,
+Worked very briefly in **Crytek**, as a Build Engineer to maintain the automated processes to build Crysis 4,
 Hunt and CryEngine and distribute them to customers and QA.
 
-Python was the main scripting language.
+Python was the main scripting language of the build system.
 
-### Opera
+### 2021 - 2023
 
-Build Engineer - 2021 to 2023
+I worked as the Build Engineer of **GameMaker** engine, part of **YoYoGames**, subsidiary of **Opera** as a contractor.
 
-I worked in the GameMaker team inside YoYoGames, subsidiary of Opera.
+- 2021-2022: R&D about developing a new build system to compile the game engine on the cloud with GitHub Actions and AWS
+- 2022-2023: maintenance on the build system 
 
 As part of my responsibilities, I designed with Python, C# and Powershell the automated process
 for compiling and packaging the game engine runtimes and IDE across a wide range of platforms, including Android, HTML5, iOS, Linux, Mac, WebAssembly,
 Windows, and tvOS.
 
-Additionally, I utilized software development kits (SDKs) for consoles such as
+Additionally, I utilized SDKs for consoles such as
 PS4 and PS5, Switch, Xbox One, and Xbox Series XS, to ensure the seamless functioning of the
 game engine and IDE on these platforms.
 
@@ -46,27 +43,27 @@ containers.
 
 AWS services were also used for the pipeline.
 
-### Zuru Tech
+### 2020 December - 2021 March
 
-Junior C++ Software Developer - 2020 to 2021
-
-Helped a medium-sized team develop an arch-viz BIM software with a fork of Unreal Engine 4 using C++14, Visual Studio and Rider.
+Helped as a Junior C++ Software Developer in **Zuru Tech** a medium-sized team develop an arch-viz BIM software with a fork of Unreal Engine 4 using C++14, Visual Studio and Rider.
 My tasks involved writing reliable tests that detected potential flaws and errors, contributing to the
 overall stability and robustness of the building.
 
-### Ubisoft
+### 2020 September - December
 
-Junior Gameplay Programmer - 2020
+Briefly worked as a Junior Gameplay Programmer for **Ubisoft** 
 
-* Worked on Mario Rabbids: Sparks of Hope with the teams in Milan and Paris with a modified Snowdrop engine,
+* Mario Rabbids: Sparks of Hope with the teams in Milan and Paris with a modified Snowdrop engine,
 * C++17, Perforce and Windows environment
 * I was responsible for designing and implementing a C++ backend to automate the generation of the navmesh, which facilitated AI pathfinding in the game.
 
-### Sfera Productions
+### 2019
 
-Unreal Engine Programmer - 2017 to 2018
+Career break to work on myself and to study programming 🌱
 
- I developed VR virtual tours, experiences, documentaries, and video games with a small team
+### 2016 - 2018
+
+I developed for a startup called Sfera Productions: VR virtual tours, experiences, documentaries, and video games; with a small team
 using various early-market headsets such as Oculus DK2, HTC Vive, Samsung Gear, Cardboard,
 and Daydream.
 
@@ -74,7 +71,7 @@ We utilized Unreal Engine 4.x as our development engine.
 One notable collaboration was with Cranio Creations, an Italian board game manufacturer, where
 we digitized a tabletop board game to run within Unreal with VR controllers.
 
-e showcased multiple VR video games and experiences at Lucca Comics & Games, one of
+We showcased multiple VR video games and experiences at Lucca Comics & Games, one of
 Europe's largest comic-cons, where we had our own stand.
 Additionally, I contributed to the publication of a video game on Steam.
 
@@ -84,11 +81,9 @@ As we were running VR simulations on hardware not specifically designed for virt
 high-end Android phones like Samsung Gear compatible devices, I tackled challenges related to
 draw calls, pixel overdraw, mesh optimization, and benchmarking bottlenecks within projects. Also extending Unreal's Blueprints functionality using C++.
 
-### ITC Consulting
+### 2015 - 2016
 
-Unity Engine Developer - 2016
-
-I collaborated with a small team on a driving simulator project using Unity Engine, C#, and
+I collaborated for a startup "ITC Consulting" with a small team on a driving simulator project using Unity Engine, C#, and
 external libraries.
 
 * Developed a high-performance C# library for real-time user action recording, storing them in a
