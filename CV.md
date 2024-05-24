@@ -14,7 +14,8 @@ Yatima Santamorena
 ### 2023 October - Present
 
 Working as contractor in **People Can Fly** (**ex Epic Games Poland**) as a Senior Build Engineer.
-Maintained the current pipelines with Jenkins + Groovy and started using Epic Games' BuildGraph solution to accelerate Unreal compilation.
+Maintained the current pipelines with Jenkins + Groovy and started implementing Epic Games' BuildGraph solution to accelerate Unreal compilation.
+Currently working on R&D for distributed compilation.
 
 ### 2023 June - August
 
