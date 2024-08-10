@@ -33,6 +33,8 @@ GitHub Actions...
 
 <i class="fa-solid fa-server"></i> Setting up your MikroTik device
 
+<i class="fa-solid fa-shield"></i> Setting up your router and firewall with OPNSense
+
 ## C++
 
 Extending Unreal Blueprint functionality using C++
