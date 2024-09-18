@@ -1,27 +1,36 @@
 # Curriculum Vitae
 
-CV as it was in July 2024
+CV as it was in September 2024
 
-## Yatima Santamorena
+# Yatima Santamorena
 
 [Ljubljana, Slovenia](https://maps.app.goo.gl/HkrXs5vaJ4y3X6vW8)
 
 [contact@yatima.me](mailto:contact@yatima.me)
 
-## Job Experience
+# Job Experience
 
-### 2023 October - Present
+## Present
+
+### 2023 October - ?
 
 Working as contractor in **People Can Fly** (**ex Epic Games Poland**) as a Senior Build Engineer.
 
 - 2023-2024: Maintained the current pipelines with Jenkins + Groovy and started implementing Epic Games' BuildGraph solution to simplify Unreal compilation.
-- 2024-Present: Currently implementing distributed Horde build system
+- 2024-Present: **Technical Product Owner** of the Epic Games' Horde build system used internally
+    - Continuous collaboration with Epic Games to increase Horde stability
+    - CI in Horde for PCF games
+    - OpenID authentication with company's Google workspace
 
-Pursuing in my free time a Cisco CCNA certification.
-
-### 2023 August - Present
+### 2023 August - ?
 
 I am presently working on retainer as a contractor for Anguilla-based consulting company NHB Consulting SEZC, providing networking support for MikroTik devices and cybersecurity coaching for its senior staff of digital nomads.
+
+### 2024 March - ?
+
+Pursuing in my free time a Cisco CCNA certification. <small><- Never enough time for this!</small>
+
+## Past
 
 ### 2023 June - August
 
