@@ -1,6 +1,6 @@
 # Services
 
-Having work experience in various AAA gaming companies, I can provide you with the available services and consulting on topics like:
+Having work experience in various AAA gaming companies, I can provide you with topics like [platform engineering](https://en.wikipedia.org/wiki/Platform_engineering), C++ development and automation!
 
 ## Build Engineering
 
