@@ -2,7 +2,7 @@
 
 Having work experience in various AAA gaming companies, I can provide you with topics like [platform engineering](https://en.wikipedia.org/wiki/Platform_engineering), C++ development and automation!
 
-## Build Engineering
+## Platform Engineering
 
 <i class="fa fa-scroll" aria-hidden="true"></i> Scripts to build your engine or game written in Unity, Unreal, or custom
 
