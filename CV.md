@@ -4,9 +4,9 @@ CV as it was in September 2024
 
 # Yatima Santamorena
 
-I'm a [platform engineer](https://en.wikipedia.org/wiki/Platform_engineering)!
+I'm a [build engineer](https://en.wikipedia.org/wiki/Platform_engineering)!
 
-[Ljubljana, Slovenia](https://maps.app.goo.gl/HkrXs5vaJ4y3X6vW8)
+[Slovenia](https://maps.app.goo.gl/HkrXs5vaJ4y3X6vW8)
 
 [contact@yatima.me](mailto:contact@yatima.me)
 
