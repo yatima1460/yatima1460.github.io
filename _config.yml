@@ -1,14 +1,11 @@
 # main text of home
-title: Yatima Santamorena OÜ
-bio: Consulting services including Build Engineering, Automation, Cloud building, C++, Tools Development, Networking, Containerization.
-
-# twitter summary info
-# description: A blog about technology and stuff related
+title: Yatima Santamorena
+bio: Build Engineering, Automation, Cloud building, C++, Tools Development, Networking, Containerization
 
 # if it's an external image, update below for true
 # better with square images
-external-image: false
-picture: assets/images/profile.jpeg
+external-image: true
+picture: http://github.com/yatima1460.png
 
 # your site color theme, true for dark theme, 
 # false to light theme, auto to switch with system.
@@ -59,13 +56,13 @@ email: contact@yatima.me
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-width: normal
+width: large
 
 # if you don't need projects, comment the *projects* configs below
 projects: false
 
 # if you don't need "about" or "blog", comment them out below
-about: true
+about: false
 blog: false
 
 # do you want to show the "read time" of the posts?
@@ -81,10 +78,10 @@ related: true
 post-advance-links: [blog]
 
 # show author block at the end of a post ?
-show-author: true
+show-author: false
 
 # do you want some animations?
-animation: true
+animation: false
 
 # add default values to specific pages or layouts
 defaults:
