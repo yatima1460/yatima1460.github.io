@@ -2,7 +2,7 @@
 
 Having work experience in various AAA gaming companies, I can provide you with topics like [platform engineering](https://en.wikipedia.org/wiki/Platform_engineering), C++ development and automation!
 
-## Platform Engineering
+## Build Engineering
 
 <i class="fa fa-scroll" aria-hidden="true"></i> Scripts to build your engine or game written in Unity, Unreal, or custom
 
@@ -49,7 +49,7 @@ Makefiles
 
 # Contracting
 
-In terms of establishing a contract between us we can do a B2B contract with my entity in EU
+In terms of establishing a contract between us we can do a B2B contract with my entity
 
 # Price
 
