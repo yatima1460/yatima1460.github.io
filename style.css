@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --heading-color: #1a1a1a;
+    --link-color: #0066cc;
+    --link-hover: #004499;
+    --border-color: #e0e0e0;
+    --section-spacing: 2.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --text-color: #e0e0e0;
+        --heading-color: #ffffff;
+        --link-color: #6699ff;
+        --link-hover: #99bbff;
+        --border-color: #333333;
+    }
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: var(--section-spacing);
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--heading-color);
+    margin-top: var(--section-spacing);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: var(--heading-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--heading-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.contact {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+.separator {
+    margin: 0 0.5rem;
+    color: var(--text-color);
+}
+
+.social {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social a {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.social a:hover {
+    background-color: var(--link-color);
+    color: var(--bg-color);
+    border-color: var(--link-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: var(--section-spacing);
+}
+
+.job {
+    margin-bottom: 2rem;
+}
+
+ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ul ul {
+    margin-left: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+strong {
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+small {
+    font-size: 0.85rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-color);
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem 0.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    .social {
+        gap: 1rem;
+    }
+
+    .social a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+        padding: 0;
+    }
+
+    .social a {
+        border: 1px solid #000;
+    }
+
+    a {
+        color: #000;
+    }
+
+    footer {
+        page-break-after: avoid;
+    }
+}

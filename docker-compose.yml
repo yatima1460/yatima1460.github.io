@@ -1,9 +1,7 @@
-# no version needed since 2020
-
 services:
-  jekyll:
-    image: bretfisher/jekyll-serve
+  web:
+    image: nginx:alpine
     volumes:
-      - .:/site
+      - .:/usr/share/nginx/html:ro
     ports:
-      - '4000:4000'
+      - '8080:80'
