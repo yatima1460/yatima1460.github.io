@@ -4,38 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yatima Santamorena - Build Engineer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
     <meta name="description" content="Build Engineering, Automation, Cloud building, C++, Tools Development, Networking, Containerization">
+    <style>
+        body {
+            padding: 20px;
+            background: #008080;
+        }
+        .window {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .title-bar-text {
+            font-weight: bold;
+        }
+        .window-body {
+            margin: 10px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .center {
+            text-align: center;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+        .social-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Yatima Santamorena</h1>
-            <p class="subtitle">I'm a <a href="https://en.wikipedia.org/wiki/Platform_engineering" target="_blank">build engineer</a>!</p>
-            <div class="contact">
-                <a href="https://maps.app.goo.gl/HkrXs5vaJ4y3X6vW8" target="_blank">Slovenia</a>
-                <span class="separator">|</span>
-                <a href="mailto:contact@yatima.me">contact@yatima.me</a>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">Yatima Santamorena</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close"></button>
             </div>
-            <nav class="social">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="cv.html">CV</a>
-            </nav>
-            <div class="social" style="margin-top: 0.5rem;">
-                <a href="https://github.com/yatima1460" target="_blank" title="GitHub">GitHub</a>
-                <a href="https://linkedin.com/in/yatima1460" target="_blank" title="LinkedIn">LinkedIn</a>
-                <a href="https://discord.com/users/yatima" target="_blank" title="Discord">Discord</a>
+        </div>
+        <div class="window-body">
+            <div class="center">
+                <h1>Yatima Santamorena</h1>
+                <p>I'm a <a href="https://en.wikipedia.org/wiki/Platform_engineering" target="_blank">build engineer</a>!</p>
+                <p>
+                    <a href="https://maps.app.goo.gl/HkrXs5vaJ4y3X6vW8" target="_blank">Slovenia</a>
+                    |
+                    <a href="mailto:contact@yatima.me">contact@yatima.me</a>
+                </p>
             </div>
-        </header>
 
-        <main>
-            Welcome :3
-        </main>
+            <div class="nav-buttons">
+                <button onclick="window.location.href='index.html'">Home</button>
+                <button onclick="window.location.href='about.html'">About</button>
+                <button onclick="window.location.href='cv.html'">CV</button>
+            </div>
 
-        <footer>
-            <p>&copy; 2025 Yatima Santamorena</p>
-        </footer>
+            <div class="social-buttons">
+                <button onclick="window.open('https://github.com/yatima1460', '_blank')">GitHub</button>
+                <button onclick="window.open('https://linkedin.com/in/yatima1460', '_blank')">LinkedIn</button>
+                <button onclick="window.open('https://discord.com/users/yatima', '_blank')">Discord</button>
+            </div>
+
+            <hr>
+
+            <p class="center">Welcome :3</p>
+        </div>
+    </div>
+
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">Footer</div>
+        </div>
+        <div class="window-body">
+            <p class="center">&copy; 2025 Yatima Santamorena</p>
+        </div>
     </div>
 </body>
 </html>

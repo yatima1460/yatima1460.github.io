@@ -4,49 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Yatima Santamorena</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
     <meta name="description" content="About Yatima Santamorena">
+    <style>
+        body {
+            padding: 20px;
+            background: #008080;
+        }
+        .window {
+            max-width: 700px;
+            margin: 20px auto;
+        }
+        .title-bar-text {
+            font-weight: bold;
+        }
+        .window-body {
+            margin: 10px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .center {
+            text-align: center;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+        .profile-img {
+            max-width: 200px;
+            display: block;
+            margin: 0 auto 20px;
+            border: 2px solid #000;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>About</h1>
-            <nav class="social">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="cv.html">CV</a>
-            </nav>
-        </header>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">About</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="nav-buttons">
+                <button onclick="window.location.href='index.html'">Home</button>
+                <button onclick="window.location.href='about.html'">About</button>
+                <button onclick="window.location.href='cv.html'">CV</button>
+            </div>
 
-        <main>
-            <section>
-                <img src="https://github.com/yatima1460.png" alt="Profile Image" style="max-width: 200px; border-radius: 50%; display: block; margin: 0 auto 2rem;">
+            <hr>
 
-                <p>Hello! 👋</p>
+            <img src="https://github.com/yatima1460.png" alt="Profile Image" class="profile-img">
 
-                <p>I am Yatima, I was born in Italy but my family tree goes back to South America.</p>
+            <p>Hello! 👋</p>
 
-                <p>I started playing with computers since I was 3 years old and years later one day I bought a computers magazine that shipped a software called <em>"The Games Factory"</em> and as you can imagine I started tinkering around with game engines ever since!</p>
+            <p>I am Yatima, I was born in Italy but my family tree goes back to South America.</p>
 
-                <p>Decided to study some Computer Science in Italy but there were no 3D engines courses available so I decided to delve deeper by myself into how 2D and 3D engines work and studied more the 3D graphics rendering side of things while also working for some nearby startups.</p>
+            <p>I started playing with computers since I was 3 years old and years later one day I bought a computers magazine that shipped a software called <em>"The Games Factory"</em> and as you can imagine I started tinkering around with game engines ever since!</p>
 
-                <p>Very cool stuff and after a while ended up landing a job in big companies, but this is the boring work experience stuff, you can find out about my professional life in my <a href="cv.html">CV</a>.</p>
+            <p>Decided to study some Computer Science in Italy but there were no 3D engines courses available so I decided to delve deeper by myself into how 2D and 3D engines work and studied more the 3D graphics rendering side of things while also working for some nearby startups.</p>
 
-                <p>I really like playing Dungeon & Dragons so if you use Roll20 send me a message!</p>
+            <p>Very cool stuff and after a while ended up landing a job in big companies, but this is the boring work experience stuff, you can find out about my professional life in my <a href="cv.html">CV</a>.</p>
 
-                <p>I also tinker around with home automation stuff (KNX, Raspberry Pi & Home Assistant).</p>
+            <p>I really like playing Dungeon & Dragons so if you use Roll20 send me a message!</p>
 
-                <p>At home I have MikroTik devices because that's how you do a nice network 😎 (If you need any help contact me!)</p>
+            <p>I also tinker around with home automation stuff (KNX, Raspberry Pi & Home Assistant).</p>
 
-                <p>As anime I really enjoy One Piece! 🏴‍☠️</p>
+            <p>At home I have MikroTik devices because that's how you do a nice network 😎 (If you need any help contact me!)</p>
 
-                <p>And as always I'm very excited about the crypto space and RISC hardware.</p>
-            </section>
-        </main>
+            <p>As anime I really enjoy One Piece! 🏴‍☠️</p>
 
-        <footer>
-            <p>&copy; 2025 Yatima Santamorena</p>
-        </footer>
+            <p>And as always I'm very excited about the crypto space and RISC hardware.</p>
+        </div>
+    </div>
+
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">Footer</div>
+        </div>
+        <div class="window-body">
+            <p class="center">&copy; 2025 Yatima Santamorena</p>
+        </div>
     </div>
 </body>
 </html>
