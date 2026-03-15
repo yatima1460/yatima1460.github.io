@@ -87,7 +87,7 @@ Maintained an AI system to control multiple agents simulating traffic in a city 
 
 My native language is Italian and I use English regularly in a professional context
 
-## More about me
+## More about me {#more-about-me}
 
 Hello! 👋
 

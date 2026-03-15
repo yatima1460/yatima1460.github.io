@@ -40,10 +40,17 @@
      border-radius: 6px;
      padding: 0.25rem 0.65rem;
      text-decoration: none;
+     border-bottom: 1px solid #444444;
  }
 
  .btn:hover {
      background: #e8e8e8;
+     border-bottom: 1px solid #444444;
+ }
+
+ .btn:focus-visible {
+     outline: 2px solid #444444;
+     outline-offset: 2px;
  }
 
  code {
