@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.title }}">
-  <link rel="stylesheet" href="/simple.css">
+  <link rel="stylesheet" href="{{ '/simple.css' | relative_url }}">
 </head>
 <body>
   <div class="window">
@@ -14,14 +14,14 @@
     </div>
     <div class="window-body">
       <div class="nav-buttons">
-        <button class="btn" onclick="window.location.href='/'">Home</button>
-        <button class="btn" onclick="window.location.href='/about.html'">About</button>
+        <a class="btn" href="{{ '/' | relative_url }}">Home</a>
+        <a class="btn" href="{{ '/#more-about-me' | relative_url }}">About</a>
       </div>
 
       <div class="social-buttons">
-        <button class="btn" onclick="window.open('https://github.com/yatima1460', '_blank')">GitHub</button>
-        <button class="btn" onclick="window.open('https://linkedin.com/in/yatima1460', '_blank')">LinkedIn</button>
-        <button class="btn" onclick="window.open('https://discord.com/users/yatima', '_blank')">Discord</button>
+        <a class="btn" href="https://github.com/yatima1460" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn" href="https://linkedin.com/in/yatima1460" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn" href="https://discord.com/users/yatima" target="_blank" rel="noopener noreferrer">Discord</a>
       </div>
 
       <hr>
@@ -29,10 +29,12 @@
       <h1>{{ page.title | default: site.title }}</h1>
 
       {{ content }}
+
+      <hr>
+      <footer>
+        <p class="center">&copy; 2026 Yatima Santamorena</p>
+      </footer>
     </div>
   </div>
 </body>
-<footer>
-    <p class="center">&copy; 2025 Yatima Santamorena</p>
-</footer>
 </html>

@@ -9,6 +9,43 @@
      max-width: 73%;
  }
 
+ .window {
+     margin: 0 auto;
+ }
+
+ .title-bar {
+     margin-bottom: 0.5rem;
+ }
+
+ .title-bar-text {
+     font-weight: 700;
+     font-size: 1.1rem;
+ }
+
+ .window-body {
+     margin-top: 0.75rem;
+ }
+
+ .nav-buttons,
+ .social-buttons {
+     display: flex;
+     gap: 0.6rem;
+     flex-wrap: wrap;
+     margin: 0.5rem 0 1rem;
+ }
+
+ .btn {
+     display: inline-block;
+     border: 1px solid #444444;
+     border-radius: 6px;
+     padding: 0.25rem 0.65rem;
+     text-decoration: none;
+ }
+
+ .btn:hover {
+     background: #e8e8e8;
+ }
+
  code {
      background: white;
  }
@@ -21,4 +58,11 @@
 
  a:hover {
      border-bottom: 0;
+ }
+
+ @media (max-width: 900px) {
+     body {
+         max-width: 92%;
+         margin: 1.5rem auto;
+     }
  }
