@@ -13,11 +13,11 @@
       <div class="title-bar-text">Curriculum Vitae</div>
     </div>
     <div class="window-body">
-      <div class="nav-buttons">
-        <a class="btn" href="{{ '/' | relative_url }}">Home</a>
-        <a class="btn" href="{{ '/#more-about-me' | relative_url }}">About</a>
-      </div>
 
+      <h1>{{ page.title | default: site.title }}</h1>
+
+      <hr>
+     
       <div class="social-buttons">
         <a class="btn" href="https://github.com/yatima1460" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a class="btn" href="https://linkedin.com/in/yatima1460" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -26,11 +26,10 @@
 
       <hr>
 
-      <h1>{{ page.title | default: site.title }}</h1>
-
       {{ content }}
 
       <hr>
+      
       <footer>
         <p class="center">&copy; 2026 Yatima Santamorena</p>
       </footer>
