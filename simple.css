@@ -73,3 +73,49 @@
          margin: 1.5rem auto;
      }
  }
+
+ .print-only {
+     display: none;
+ }
+
+ @media print {
+     @page {
+         margin: 1.2cm;
+     }
+
+     body {
+         margin: 0;
+         max-width: 100%;
+         background: #ffffff;
+         color: #000000;
+         text-shadow: none;
+         font-size: 11pt;
+         line-height: 1.45;
+     }
+
+     .screen-only {
+         display: none !important;
+     }
+
+     .print-only {
+         display: block !important;
+     }
+
+     .print-links ul {
+         margin: 0;
+         padding-left: 0;
+         list-style: none;
+     }
+
+     .print-links li {
+         margin: 0.15rem 0;
+         word-break: break-all;
+     }
+
+     a,
+     .btn {
+         color: #000000;
+         border: none;
+         text-decoration: none;
+     }
+ }
