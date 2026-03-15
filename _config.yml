@@ -1,0 +1,5 @@
+title: Yatima Santamorena
+markdown: kramdown
+permalink: pretty
+exclude:
+  - docker-compose.yml
