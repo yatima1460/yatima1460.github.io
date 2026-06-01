@@ -660,14 +660,16 @@ a:hover {
 }
 
 h2 + h3[id*="drill"] + ul li,
-h3[id*="gmilauncher"] + ul li {
+h3[id*="gmilauncher"] + ul li,
+#people-can-fly--ex-epic-games-poland---2023-october-to-future + ul li:nth-child(4) {
     background:
         radial-gradient(circle at 92% 20%, rgba(255, 255, 255, 0.95) 0 0.28rem, transparent 0.32rem),
         linear-gradient(135deg, rgba(255, 216, 241, 0.86), rgba(255, 228, 92, 0.52) 45%, rgba(49, 216, 255, 0.52));
 }
 
 h2 + h3[id*="drill"] + ul li::before,
-h3[id*="gmilauncher"] + ul li::before {
+h3[id*="gmilauncher"] + ul li::before,
+#people-can-fly--ex-epic-games-poland---2023-october-to-future + ul li:nth-child(4)::before {
     content: "✦";
 }
 
@@ -1174,7 +1176,8 @@ h3[id*="gmilauncher"] + ul li a:hover {
     }
 
     h2 + h3[id*="drill"] + ul li,
-    h3[id*="gmilauncher"] + ul li {
+    h3[id*="gmilauncher"] + ul li,
+    #people-can-fly--ex-epic-games-poland---2023-october-to-future + ul li:nth-child(4) {
         background:
             radial-gradient(circle at 92% 20%, rgba(255, 255, 255, 0.46) 0 0.28rem, transparent 0.32rem),
             linear-gradient(135deg, rgba(255, 56, 212, 0.38), rgba(255, 243, 77, 0.20) 45%, rgba(32, 247, 255, 0.34));
