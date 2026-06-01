@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Jekyll: serve (Apple container)",
+      "type": "process",
+      "command": "container",
+      "args": [
+        "run",
+        "--rm",
+        "--publish",
+        "127.0.0.1:4000:4000",
+        "--volume",
+        "${workspaceFolder}:/srv/jekyll",
+        "--workdir",
+        "/srv/jekyll",
+        "ruby:3.3-alpine",
+        "sh",
+        "-lc",
+        "export GEM_HOME=/srv/jekyll/vendor/bundle GEM_PATH=/srv/jekyll/vendor/bundle PATH=/srv/jekyll/vendor/bundle/bin:$PATH; [ -x vendor/bundle/bin/jekyll ] || (apk add --no-cache build-base && gem install --no-document jekyll kramdown); jekyll serve --host 0.0.0.0 --port 4000"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
