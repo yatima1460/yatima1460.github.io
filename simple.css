@@ -294,6 +294,80 @@ hr {
     outline-offset: 3px;
 }
 
+.skill-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1.15rem 0 1.4rem;
+    padding: clamp(0.9rem, 2.4vw, 1.2rem);
+    border: 4px solid var(--ink);
+    border-radius: 8px;
+    background:
+        radial-gradient(circle at 12% 22%, rgba(255, 255, 255, 0.9) 0 0.35rem, transparent 0.4rem),
+        radial-gradient(circle at 78% 68%, rgba(255, 255, 255, 0.72) 0 0.28rem, transparent 0.32rem),
+        linear-gradient(135deg, rgba(255, 216, 241, 0.9), rgba(157, 255, 179, 0.82) 48%, rgba(49, 216, 255, 0.82));
+    box-shadow: 6px 6px 0 var(--shadow);
+}
+
+.skill-cloud::before {
+    content: "Skill stickers";
+    flex: 1 0 100%;
+    width: fit-content;
+    max-width: 100%;
+    color: var(--ink);
+    font-size: 0.85rem;
+    font-weight: 1000;
+    letter-spacing: 0.08em;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.skill-sticker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.25rem;
+    padding: 0.38rem 0.72rem;
+    border: 3px solid var(--ink);
+    border-radius: 999px;
+    color: var(--ink);
+    background: var(--white);
+    box-shadow: 3px 3px 0 var(--shadow);
+    font-size: clamp(0.84rem, 2vw, 1rem);
+    font-weight: 900;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+.skill-sticker:nth-child(3n + 1) {
+    background: var(--hot-pink);
+    color: var(--white);
+    text-shadow:
+        1px 1px 0 var(--shadow),
+        -1px 1px 0 var(--shadow),
+        1px -1px 0 var(--shadow),
+        -1px -1px 0 var(--shadow);
+    transform: rotate(-3deg);
+}
+
+.skill-sticker:nth-child(3n + 2) {
+    background: var(--sun);
+    transform: rotate(2deg);
+}
+
+.skill-sticker:nth-child(3n) {
+    background: var(--cyan);
+    transform: rotate(-1deg);
+}
+
+.skill-sticker:nth-child(5n) {
+    background: var(--mint);
+    transform: rotate(4deg);
+}
+
 h2,
 h3 {
     letter-spacing: 0;
@@ -359,9 +433,68 @@ li {
     margin: 0.45rem 0;
 }
 
+h3 + ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+    gap: 0.7rem;
+    margin: 0.75rem 0 1.4rem;
+    padding: 0;
+    list-style: none;
+}
+
+h3 + ul li {
+    max-width: none;
+    margin: 0;
+    padding: 0.75rem 0.9rem;
+    border: 3px solid var(--ink);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 4px 4px 0 var(--shadow);
+    line-height: 1.42;
+}
+
+h3 + ul li:nth-child(4n + 1) {
+    transform: rotate(-1.2deg);
+}
+
+h3 + ul li:nth-child(4n + 2) {
+    transform: rotate(1deg);
+}
+
+h3 + ul li:nth-child(4n + 3) {
+    transform: rotate(-0.6deg);
+}
+
+h3 + ul li:nth-child(4n) {
+    transform: rotate(1.4deg);
+}
+
+h3 + ul li::before {
+    content: "★";
+    margin-right: 0.45rem;
+    color: var(--hot-pink);
+    font-weight: 1000;
+}
+
 strong {
     color: #121212;
     background: linear-gradient(transparent 58%, rgba(255, 79, 184, 0.38) 58%);
+}
+
+strong:nth-of-type(4n + 1) {
+    background: linear-gradient(transparent 58%, rgba(157, 255, 179, 0.58) 58%);
+}
+
+strong:nth-of-type(4n + 2) {
+    background: linear-gradient(transparent 58%, rgba(49, 216, 255, 0.48) 58%);
+}
+
+strong:nth-of-type(4n + 3) {
+    background: linear-gradient(transparent 58%, rgba(255, 228, 92, 0.68) 58%);
+}
+
+strong:nth-of-type(4n) {
+    background: linear-gradient(transparent 58%, rgba(255, 79, 184, 0.42) 58%);
 }
 
 em {
@@ -485,8 +618,27 @@ footer {
         flex-basis: 100%;
     }
 
+    .skill-cloud {
+        gap: 0.55rem;
+        padding: 0.8rem;
+    }
+
+    .skill-sticker {
+        flex: 0 1 calc(50% - 0.55rem);
+        min-width: 0;
+        white-space: normal;
+    }
+
     h2 {
         font-size: 1.75rem;
+    }
+
+    h3 + ul {
+        grid-template-columns: 1fr;
+    }
+
+    h3 + ul li:nth-child(n) {
+        transform: rotate(0deg);
     }
 }
 
@@ -569,6 +721,8 @@ footer {
     .kicker,
     .hero-subtitle,
     .portrait-frame,
+    .skill-cloud,
+    .skill-sticker,
     h2,
     h3,
     .btn {
@@ -640,10 +794,70 @@ footer {
             0 0 1.5rem rgba(255, 56, 212, 0.75);
     }
 
+    .skill-cloud {
+        background:
+            radial-gradient(circle at 12% 22%, rgba(255, 255, 255, 0.44) 0 0.35rem, transparent 0.4rem),
+            radial-gradient(circle at 78% 68%, rgba(255, 255, 255, 0.36) 0 0.28rem, transparent 0.32rem),
+            linear-gradient(135deg, rgba(255, 56, 212, 0.62), rgba(77, 255, 147, 0.34) 48%, rgba(32, 247, 255, 0.52));
+    }
+
+    .skill-cloud::before {
+        color: #fff7ff;
+        text-shadow: 0 0 0.85rem rgba(255, 56, 212, 0.9);
+    }
+
+    .skill-sticker {
+        color: #0b0018;
+        text-shadow: none;
+    }
+
+    .skill-sticker:nth-child(3n + 1) {
+        color: #fff7ff;
+        text-shadow:
+            1px 1px 0 #000000,
+            -1px 1px 0 #000000,
+            1px -1px 0 #000000,
+            -1px -1px 0 #000000,
+            0 0 0.75rem rgba(255, 56, 212, 0.95);
+    }
+
+    h3 + ul li {
+        border-color: #fff7ff;
+        background: rgba(11, 0, 24, 0.78);
+        box-shadow:
+            4px 4px 0 #000000,
+            0 0 1rem rgba(32, 247, 255, 0.36);
+    }
+
+    h3 + ul li::before {
+        color: #fff34d;
+        text-shadow: 0 0 0.7rem rgba(255, 243, 77, 0.9);
+    }
+
     strong {
         color: #ffffff;
         background: linear-gradient(transparent 52%, rgba(32, 247, 255, 0.44) 52%);
         text-shadow: 0 0 0.7rem rgba(32, 247, 255, 0.75);
+    }
+
+    strong:nth-of-type(4n + 1) {
+        background: linear-gradient(transparent 52%, rgba(77, 255, 147, 0.42) 52%);
+        text-shadow: 0 0 0.7rem rgba(77, 255, 147, 0.75);
+    }
+
+    strong:nth-of-type(4n + 2) {
+        background: linear-gradient(transparent 52%, rgba(32, 247, 255, 0.44) 52%);
+        text-shadow: 0 0 0.7rem rgba(32, 247, 255, 0.75);
+    }
+
+    strong:nth-of-type(4n + 3) {
+        background: linear-gradient(transparent 52%, rgba(255, 243, 77, 0.42) 52%);
+        text-shadow: 0 0 0.7rem rgba(255, 243, 77, 0.68);
+    }
+
+    strong:nth-of-type(4n) {
+        background: linear-gradient(transparent 52%, rgba(255, 56, 212, 0.42) 52%);
+        text-shadow: 0 0 0.7rem rgba(255, 56, 212, 0.82);
     }
 
     em {
@@ -761,6 +975,27 @@ footer {
     .print-links li {
         margin: 0.15rem 0;
         word-break: break-all;
+    }
+
+    h3 + ul {
+        display: block;
+        margin: 0.25rem 0 0.6rem;
+        padding-left: 1.2rem;
+        list-style: disc;
+    }
+
+    h3 + ul li {
+        margin: 0.12rem 0;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+        transform: none;
+    }
+
+    h3 + ul li::before {
+        content: none;
     }
 
     strong,
