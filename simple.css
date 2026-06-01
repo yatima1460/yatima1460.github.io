@@ -151,14 +151,14 @@ body::after {
 }
 
 .hero::before {
-    content: "KAWAII";
+    content: "かわいい";
     top: -1.05rem;
     right: 21%;
     transform: rotate(5deg);
 }
 
 .hero::after {
-    content: "POWER";
+    content: "パワー!!";
     right: 1rem;
     bottom: -1.05rem;
     background: var(--mint);
@@ -296,6 +296,131 @@ hr {
 .btn:focus-visible {
     outline: 4px solid var(--hot-pink);
     outline-offset: 3px;
+}
+
+.heisei-web {
+    display: grid;
+    gap: 0.75rem;
+    margin: 1.1rem 0 1.3rem;
+    padding: 0.85rem;
+    border: 4px double var(--ink);
+    border-radius: 8px;
+    background:
+        radial-gradient(circle at 8% 18%, rgba(255, 255, 255, 0.95) 0 0.28rem, transparent 0.32rem),
+        radial-gradient(circle at 84% 72%, rgba(255, 255, 255, 0.78) 0 0.24rem, transparent 0.28rem),
+        linear-gradient(135deg, rgba(255, 216, 241, 0.94), rgba(255, 228, 92, 0.72) 45%, rgba(49, 216, 255, 0.78));
+    box-shadow: 6px 6px 0 var(--shadow);
+    font-family: "Osaka", "Hiragino Maru Gothic ProN", "MS PGothic", ui-rounded, sans-serif;
+}
+
+.heisei-marquee {
+    overflow: hidden;
+    border: 3px solid var(--ink);
+    border-radius: 999px;
+    background: var(--white);
+    box-shadow: 3px 3px 0 var(--shadow);
+    white-space: nowrap;
+}
+
+.heisei-marquee span {
+    display: inline-block;
+    min-width: 100%;
+    padding: 0.35rem 0.75rem;
+    color: #9b0067;
+    font-size: 0.95rem;
+    font-weight: 1000;
+    text-align: center;
+    animation: heisei-scroll 18s linear infinite;
+}
+
+@keyframes heisei-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.counter-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.55rem;
+    border: 3px solid var(--ink);
+    border-radius: 8px;
+    background:
+        repeating-linear-gradient(90deg, rgba(255, 79, 184, 0.18) 0 8px, rgba(49, 216, 255, 0.18) 8px 16px),
+        rgba(255, 255, 255, 0.72);
+}
+
+.counter-label {
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+.counter-digits {
+    display: inline-flex;
+    gap: 0.16rem;
+    padding: 0.25rem;
+    border: 3px inset var(--ink);
+    background: #100a12;
+    box-shadow: inset 0 0 0.45rem rgba(255, 79, 184, 0.5);
+}
+
+.counter-digits span {
+    display: grid;
+    place-items: center;
+    width: 1.35rem;
+    height: 1.8rem;
+    border: 1px solid #61505f;
+    color: #9dffb3;
+    background: linear-gradient(#271425, #0c070d);
+    font-family: "Courier New", monospace;
+    font-size: 1.08rem;
+    font-weight: 900;
+    line-height: 1;
+    text-shadow:
+        0 0 0.35rem #9dffb3,
+        0 0 0.8rem #31d8ff;
+}
+
+.retro-banners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    justify-content: center;
+}
+
+.retro-banner {
+    display: inline-grid;
+    place-items: center;
+    width: 7.25rem;
+    height: 2rem;
+    border: 2px solid var(--ink);
+    color: var(--ink);
+    background:
+        linear-gradient(90deg, var(--hot-pink) 0 12%, var(--white) 12% 88%, var(--cyan) 88% 100%);
+    box-shadow: 3px 3px 0 var(--shadow);
+    font-size: 0.72rem;
+    font-weight: 1000;
+    line-height: 1;
+    text-align: center;
+    transform: rotate(-1deg);
+}
+
+.retro-banner:nth-child(even) {
+    background:
+        linear-gradient(90deg, var(--sun) 0 12%, var(--white) 12% 88%, var(--mint) 88% 100%);
+    transform: rotate(1.3deg);
+}
+
+.retro-banner:nth-child(3n) {
+    background:
+        linear-gradient(90deg, var(--lilac) 0 12%, var(--white) 12% 88%, var(--hot-pink) 88% 100%);
 }
 
 .skill-cloud {
@@ -718,6 +843,22 @@ h3[id*="gmilauncher"] + ul li a:hover {
         flex-basis: 100%;
     }
 
+    .btn:nth-child(4) {
+        flex-basis: 100%;
+    }
+
+    .heisei-web {
+        padding: 0.7rem;
+    }
+
+    .heisei-marquee span {
+        animation-duration: 14s;
+    }
+
+    .retro-banner {
+        width: calc(50% - 0.45rem);
+    }
+
     .skill-cloud {
         gap: 0.55rem;
         padding: 0.8rem;
@@ -743,8 +884,11 @@ h3[id*="gmilauncher"] + ul li a:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .btn {
+    .btn,
+    .heisei-marquee span {
         transition: none;
+        animation: none;
+        transform: none;
     }
 }
 
@@ -821,6 +965,10 @@ h3[id*="gmilauncher"] + ul li a:hover {
     .kicker,
     .hero-subtitle,
     .portrait-frame,
+    .heisei-web,
+    .heisei-marquee,
+    .counter-box,
+    .retro-banner,
     .skill-cloud,
     .skill-sticker,
     h2,
@@ -892,6 +1040,39 @@ h3[id*="gmilauncher"] + ul li a:hover {
         box-shadow:
             1px 1px 0 #000000,
             0 0 1.5rem rgba(255, 56, 212, 0.75);
+    }
+
+    .heisei-web {
+        background:
+            radial-gradient(circle at 8% 18%, rgba(255, 255, 255, 0.45) 0 0.28rem, transparent 0.32rem),
+            radial-gradient(circle at 84% 72%, rgba(255, 255, 255, 0.34) 0 0.24rem, transparent 0.28rem),
+            linear-gradient(135deg, rgba(255, 56, 212, 0.62), rgba(255, 243, 77, 0.22) 45%, rgba(32, 247, 255, 0.54));
+    }
+
+    .heisei-marquee {
+        background: rgba(11, 0, 24, 0.88);
+    }
+
+    .heisei-marquee span {
+        color: #fff34d;
+        text-shadow:
+            0 0 0.7rem rgba(255, 243, 77, 0.9),
+            0 0 1.1rem rgba(255, 56, 212, 0.75);
+    }
+
+    .counter-box {
+        background:
+            repeating-linear-gradient(90deg, rgba(255, 56, 212, 0.26) 0 8px, rgba(32, 247, 255, 0.26) 8px 16px),
+            rgba(11, 0, 24, 0.72);
+    }
+
+    .counter-label {
+        color: #fff7ff;
+    }
+
+    .retro-banner {
+        color: #0b0018;
+        text-shadow: none;
     }
 
     .skill-cloud {
