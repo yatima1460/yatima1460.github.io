@@ -5,71 +5,84 @@ description: Curriculum Vitae - Yatima Santamorena
 permalink: /index.html
 ---
 
-## Present
+## Lore
 
-### 2023 October - Future
+### People Can Fly / (ex-Epic Games Poland) - 2023 October to Future
 
-- **People Can Fly** (ex **Epic Games Poland**) Senior Build Engineer contractor.
-- Maintained pipelines with **Jenkins** + **Groovy** and introduced Epic Games' **BuildGraph** for simpler **Unreal** compilation.
-- Owned Epic Games' **Horde** build system internally.
-- Current focus: **Perforce**, **Swarm**, **Ansible**, **Docker**, **Robomerge**, and every kind of automation.
+- Senior Build Engineer contractor.
+- *2023-2024*: Maintained pipelines with **Jenkins** + **Groovy** and started implementing Epic Games' **BuildGraph** to simplify **Unreal** compilation.
+- *2024-2025*: Owner of Epic Games' **Horde** build system used internally.
+- *2026 - Now*: **Perforce** admin, **Swarm** admin, **Ansible** deployment, **Docker**, **Robomerge**, and every kind of automation.
 
-### 2023 August - Now
+### NHB Consulting SEZC - 2023 August to Now
 
-- Retainer contractor for Anguilla-based **NHB Consulting SEZC**.
+- Retainer contractor for an Anguilla-based consulting company.
 - Networking support for **MikroTik**, **Ubiquiti**, and **OPNSense** devices.
-- Cybersecurity coaching for senior staff and digital nomads.
+- Cybersecurity coaching for senior staff of digital nomads.
 
+### Crytek - 2023 June to August
 
-## Past
+- Build Engineer maintaining automated processes for Crysis 4, Hunt, and **CryEngine**.
+- Distributed builds to customers and QA.
+- **Python** was the main scripting language of the build system.
 
-### 2023 June - August
+### GameMaker / YoYoGames / Opera - 2021 to 2023
 
-- **Crytek** Build Engineer for Crysis 4, Hunt, and **CryEngine** automation.
-- Main tools: **Python**, build pipelines, artifact distribution.
+- Build Engineer contractor for the **GameMaker** engine.
+- *2021-2022*: R&D for a new cloud build system using **GitHub Actions** and **AWS**.
+- *2022-2023*: Maintained the new build system.
+- Designed automated compilation and packaging with **Python**, **C#**, and **PowerShell**.
+- Supported **Android**, **HTML5**, **iOS**, **Linux**, **Mac**, **WebAssembly**, **Windows**, **tvOS**, console SDKs, **Docker**, **AWS**, and **S3**.
 
-### 2021 - 2023
+### Zuru Tech - 2020 December to 2021 March
 
-- **GameMaker / YoYoGames / Opera** Build Engineer contractor.
-- Designed cloud build workflows with **GitHub Actions**, **AWS**, and **S3**.
-- Automated runtime and IDE packaging with **Python**, **C#**, and **PowerShell**.
-- Covered **Android**, **HTML5**, **iOS**, **Linux**, **Mac**, **WebAssembly**, **Windows**, **tvOS**, and console SDKs.
+- Junior **C++** Software Developer on arch-viz BIM software.
+- Worked with a fork of **Unreal Engine 4**, **C++14**, **Visual Studio**, and **Rider**.
+- Wrote reliability tests to detect flaws and improve stability.
 
-### 2020 December - 2021 March
+### Ubisoft - 2020 September to December
 
-- **Zuru Tech** Junior **C++** Software Developer.
-- Worked on arch-viz BIM software built on **Unreal Engine 4**.
-- Added reliability tests with **C++14**, **Visual Studio**, and **Rider**.
+- Junior Gameplay Programmer on **Mario Rabbids: Sparks of Hope**.
+- Worked with Milan and Paris teams on a modified **Snowdrop** engine.
+- Built **C++17** backend automation for navmesh generation.
+- Production environment: **Perforce** and **Windows**.
 
-### 2020 September - December
+### Career Break - 2019
 
-- **Ubisoft** Junior Gameplay Programmer on **Mario Rabbids: Sparks of Hope**.
-- Built **C++17** automation for navmesh generation in a modified **Snowdrop** engine.
-- Worked in a **Perforce** and **Windows** production environment.
+- Took time to work on myself and study programming 🌱
 
-### 2019
+### Sfera Productions - 2016 to 2018
 
-- Career break to study programming, graphics, and myself 🌱
+- Developed VR virtual tours, experiences, documentaries, and games.
+- Built with **Unreal Engine 4.x** and early-market headsets: **Oculus DK2**, **HTC Vive**, **Samsung Gear**, **Cardboard**, and **Daydream**.
+- Digitized a Cranio Creations tabletop board game in **Unreal** with VR controllers.
+- Showcased projects at Lucca Comics & Games and contributed to a **Steam** release.
+- Focused on performance: draw calls, pixel overdraw, mesh optimization, benchmarking bottlenecks, and Blueprint extensions with **C++**.
 
-### 2016 - 2018
-
-- **Sfera Productions** developer for VR tours, documentaries, and games.
-- Built with **Unreal Engine 4.x** across **Oculus DK2**, **HTC Vive**, **Samsung Gear**, **Cardboard**, and **Daydream**.
-- Focused on performance: draw calls, pixel overdraw, mesh optimization, and mobile VR bottlenecks.
-- Published/showcased projects including Lucca Comics & Games and **Steam**.
-
-### 2015 - 2016
-
-- **ITC Consulting** developer on a **Unity** driving simulator.
-- Built a **C#** replay system backed by **SQLite**.
-- Connected cockpit hardware through **Windows** APIs, emulated **RS-232**, **USB**, and **Arduino**.
-- Maintained traffic AI for simulation scenarios.
-
-## Achievements
-
-### 2013
+### Rotary Club Rome - 2013
 
 - First place in Rotary Club Rome **C++** competition.
+
+### ITC Consulting - 2015 to 2016
+
+- Developer on a **Unity** driving simulator with **C#** and external libraries.
+- Built a high-performance **C#** action recording system backed by **SQLite** for replay analysis.
+- Connected cockpit hardware through **Windows** APIs, emulated **RS-232**, **USB**, and **Arduino**.
+- Maintained traffic AI for city simulation scenarios.
+
+## Projects
+
+### Drill - https://drill.software
+
+- Cute, fast search software for finding things without suffering.
+- Built with a care for local workflows, speed, and practical UI polish.
+- [Visit Drill](https://drill.software)
+
+### GMILauncher - https://github.com/yatima1460/GMILauncher
+
+- Open-source launcher project.
+- A tiny useful tool with the correct amount of tinkering energy.
+- [View on GitHub](https://github.com/yatima1460/GMILauncher)
 
 ## Education
 
