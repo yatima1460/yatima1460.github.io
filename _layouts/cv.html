@@ -10,11 +10,22 @@
 <body>
   <div class="window">
     <div class="title-bar">
-      <div class="title-bar-text">Curriculum Vitae</div>
+      <div class="title-bar-text">Yatima.exe / Curriculum Vitae</div>
     </div>
     <div class="window-body">
 
-      <h1>{{ page.title | default: site.title }}</h1>
+      <header class="hero screen-only">
+        <div class="hero-copy">
+          <p class="kicker">Shibuya build engineer energy</p>
+          <h1>{{ page.title | default: site.title }}</h1>
+          <p class="hero-subtitle">Automation, game engines, networks, and cheerful chaos control.</p>
+        </div>
+        <figure class="portrait-frame">
+          <img src="{{ '/assets/images/profile.jpeg' | relative_url }}" alt="Yatima Santamorena avatar">
+        </figure>
+      </header>
+
+      <h1 class="print-only">{{ page.title | default: site.title }}</h1>
 
       <hr>
 

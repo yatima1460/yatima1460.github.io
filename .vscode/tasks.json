@@ -17,7 +17,7 @@
         "ruby:3.3-alpine",
         "sh",
         "-lc",
-        "export GEM_HOME=/srv/jekyll/vendor/bundle GEM_PATH=/srv/jekyll/vendor/bundle PATH=/srv/jekyll/vendor/bundle/bin:$PATH; [ -x vendor/bundle/bin/jekyll ] || (apk add --no-cache build-base && gem install --no-document jekyll kramdown); jekyll serve --host 0.0.0.0 --port 4000"
+        "export GEM_HOME=/srv/jekyll/vendor/bundle GEM_PATH=/srv/jekyll/vendor/bundle PATH=/srv/jekyll/vendor/bundle/bin:$PATH; [ -x vendor/bundle/bin/jekyll ] || (apk add --no-cache build-base && gem install --no-document jekyll kramdown); jekyll serve --host 0.0.0.0 --port 4000 --force_polling"
       ],
       "group": {
         "kind": "build",
