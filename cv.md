@@ -12,7 +12,7 @@ permalink: /index.html
 - Senior Build Engineer contractor
 - *2023-2024*: Maintained pipelines with **Jenkins** + **Groovy** and started implementing Epic Games' **BuildGraph** to simplify **Unreal** compilation
 - *2024-2025*: Owner of Epic Games' **Horde** build system used internally
-- *2026 - Now*: **Perforce** admin, **Swarm** admin, **Ansible** deployment, **Docker**, **Robomerge**, and every kind of automation
+- *2026 - Now*: **Perforce** admin, **Swarm** admin, **Ansible** deployment, **Docker**, **Kubernetes** cluster with **Headlamp**, **Portainer**, and **Homepage**, **Robomerge**, and every kind of automation
 
 ### NHB Consulting SEZC - 2023 August to Now
 
