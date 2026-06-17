@@ -667,6 +667,34 @@ h1 {
         min-height: auto;
     }
 
+    .hero-copy {
+        display: contents;
+    }
+
+    .eyebrow {
+        order: 1;
+    }
+
+    h1 {
+        order: 2;
+    }
+
+    .portrait {
+        order: 3;
+    }
+
+    .hero-subtitle {
+        order: 4;
+    }
+
+    .hero-actions {
+        order: 5;
+    }
+
+    .charm-strip {
+        order: 6;
+    }
+
     .hero::before,
     .hero::after {
         transform: none;
@@ -674,7 +702,7 @@ h1 {
 
     .portrait {
         width: min(13rem, 52vw);
-        justify-self: start;
+        justify-self: center;
         transform: none;
     }
 
