@@ -1,120 +1,160 @@
 ---
 layout: cv
 title: Yatima Santamorena
-description: Curriculum Vitae - Yatima Santamorena
+description: Senior Build Engineer and C++ developer specializing in CI/CD, game-engine build systems, release automation, Unreal, Perforce, Jenkins, Python, and infrastructure operations
 permalink: /index.html
 ---
 
-## Lore
+## Profile
 
-### People Can Fly / (ex-Epic Games Poland) - 2023 October to Future
+I make complex software easier to ship; my work sits where build engineering, game engines, release automation, infrastructure, and developer support meet: CI/CD, Perforce, Jenkins, Horde, BuildGraph, packaging, platform SDKs, and the scripts that keep teams moving
 
-- Senior Build Engineer contractor
-- *2023-2024*: Maintained pipelines with **Jenkins** + **Groovy** and started implementing Epic Games' **BuildGraph** to simplify **Unreal** compilation
-- *2024-2025*: Owner of Epic Games' **Horde** build system used internally
-- *2026 - Now*: **Perforce** admin, **Swarm** admin, **Ansible** deployment, **Docker**, **Kubernetes** cluster with **Headlamp**, **Portainer**, and **Homepage**, **Robomerge**, and every kind of automation
+I have worked across AAA games, commercial engines, VR, architectural visualization, networking, and consulting; I am strongest in messy production environments where the useful answer is not just "write code", but "find the real bottleneck, make it repeatable, document it, and make the next failure easier to diagnose"
 
-### NHB Consulting SEZC - 2023 August to Now
+## Selected Work {#selected-work}
 
-- Retainer contractor for an Anguilla-based consulting company
-- Networking support for **MikroTik**, **Ubiquiti**, and **OPNSense** devices
-- Cybersecurity coaching for senior staff of digital nomads
+### People Can Fly build platform
 
-### Crytek - 2023 June to August
+- Senior Build Engineer contractor for People Can Fly, formerly Epic Games Poland
+- Manage the entire DevOps infrastructure across Epic Games' **Horde**, **Perforce**, **Swarm**, **Jenkins**, **Groovy**, **Unreal BuildGraph**, **Ansible**, **Docker**, **Kubernetes**, **Rancher**, **Harvester**, **Headlamp**, **Portainer**, **Homepage**, and **Robomerge**
+- Operate the production build platform end to end, from source control and build orchestration to deployment, cluster administration, and automation
+- Integrate AI agents to automate boring and repetitive DevOps tasks
+- Focus: make large Unreal pipelines easier to operate, easier to debug, and easier for the whole team to understand
 
-- Build Engineer maintaining automated processes for Crysis 4, Hunt, and **CryEngine**
-- Distributed builds to customers and QA
-- **Python** was the main scripting language of the build system
+### GameMaker multi-platform releases
 
-### GameMaker / YoYoGames / Opera - 2021 to 2023
+- Built and maintained automation for compiling and packaging **GameMaker** runtimes and IDE releases
+- Supported **Android**, **HTML5**, **iOS**, **Linux**, **macOS**, **WebAssembly**, **Windows**, **tvOS**, and console SDKs including **PS4**, **PS5**, **Switch**, **Xbox One**, and **Xbox Series XS**
+- Worked across **Python**, **C#**, **PowerShell**, **GitHub Actions**, **Jenkins**, **Docker**, **AWS**, and **S3**
+- Focus: turn a wide platform matrix into repeatable build and release paths
 
-- Build Engineer contractor for the **GameMaker** engine
-- *2021-2022*: R&D for a new cloud build system using **GitHub Actions** and **AWS**
-- *2022-2023*: Maintained the new build system
-- Designed automated compilation and packaging with **Python**, **C#**, and **PowerShell**
-- Supported **Android**, **HTML5**, **iOS**, **Linux**, **Mac**, **WebAssembly**, **Windows**, **tvOS**, console SDKs, **Docker**, **AWS**, and **S3**
+### Unreal and VR performance work
 
-### Zuru Tech - 2020 December to 2021 March
+- Developed VR virtual tours, experiences, documentaries, and games in **Unreal Engine 4.x**
+- Worked with early-market hardware including **Oculus DK2**, **HTC Vive**, **Samsung Gear**, **Cardboard**, and **Daydream**
+- Optimized for hardware-constrained VR: draw calls, pixel overdraw, mesh complexity, benchmarking, and C++ Blueprint extensions
+- Focus: keep interactive experiences comfortable and shippable on hardware that did not forgive waste
 
-- Junior **C++** Software Developer on arch-viz BIM software
-- Worked with a fork of **Unreal Engine 4**, **C++14**, **Visual Studio**, and **Rider**
-- Wrote reliability tests to detect flaws and improve stability
+### Projects
 
-### Ubisoft - 2020 September to December
+- **Drill** - File search that goes nyoom, built because waiting for search results is spiritually damaging, [Visit Drill](https://drill.software)
+- **GMILauncher** - A practical GameMaker-related launcher/tooling project, [View on GitHub](https://github.com/yatima1460/GMILauncher)
 
-- Junior Gameplay Programmer on **Mario Rabbids: Sparks of Hope**
-- Worked with Milan and Paris teams on a modified **Snowdrop** engine
-- Built **C++17** backend automation for navmesh generation
-- Production environment: **Perforce** and **Windows**
+## Experience {#experience}
 
-### Career Break - 2019
+### People Can Fly / ex-Epic Games Poland - Senior Build Engineer contractor
 
-- Took time to work on myself and study programming 🌱
+**October 2023 to present**
 
-### Sfera Productions - 2016 to 2018
+- Manage the entire DevOps infrastructure for production development and build operations
+- Operate Epic Games' **Horde** build system as the internal platform owner
+- Administer **Perforce** and **Swarm** for production development workflows
+- Maintain and improve game build pipelines around **Jenkins**, **Groovy**, **Unreal**, and **BuildGraph**
+- Automate deployment and operations with **Ansible**, **Docker**, **Kubernetes**, **Rancher**, **Harvester**, **Headlamp**, **Portainer**, **Homepage**, and **Robomerge**
+- Integrate AI agents into DevOps workflows to automate boring and repetitive tasks
 
-- Developed VR virtual tours, experiences, documentaries, and games
-- Built with **Unreal Engine 4.x** and early-market headsets: **Oculus DK2**, **HTC Vive**, **Samsung Gear**, **Cardboard**, and **Daydream**
-- Digitized a Cranio Creations tabletop board game in **Unreal** with VR controllers
-- Showcased projects at Lucca Comics & Games and contributed to a **Steam** release
-- Focused on performance: draw calls, pixel overdraw, mesh optimization, benchmarking bottlenecks, and Blueprint extensions with **C++**
+### NHB Consulting SEZC - Retainer contractor
 
-### Rotary Club Rome - 2013
+**August 2023 to present**
 
-- First place in Rotary Club Rome **C++** competition
+- Provide technical support for an Anguilla-based consulting company
+- Support networking and security operations for **MikroTik**, **Ubiquiti**, and **OPNSense** devices
+- Coach senior staff on practical cybersecurity habits and operational safety
 
-### ITC Consulting - 2015 to 2016
+### Crytek - Build Engineer
 
-- Developer on a **Unity** driving simulator with **C#** and external libraries
-- Built a high-performance **C#** action recording system backed by **SQLite** for replay analysis
+**June 2023 to August 2023**
+
+- Maintained automated build processes for **Crysis 4**, **Hunt**, and **CryEngine**
+- Supported distribution of builds to customers and QA
+- Worked primarily in **Python** on build-system automation
+
+### GameMaker / YoYoGames / Opera - Build Engineer contractor
+
+**June 2021 to March 2023**
+
+- Designed automation for compiling and packaging engine runtimes and IDE releases across desktop, mobile, web, tvOS, and console platforms
+- Researched and implemented cloud build work using **GitHub Actions**, **AWS**, and **S3**
+- Maintained build and release systems with **Python**, **C#**, **PowerShell**, **Jenkins**, and **Docker**
+- Worked with platform SDKs for **Android**, **iOS**, **macOS**, **Linux**, **Windows**, **WebAssembly**, **PS4**, **PS5**, **Switch**, **Xbox One**, and **Xbox Series XS**
+
+### Zuru Tech - Junior C++ Software Developer
+
+**December 2020 to March 2021**
+
+- Worked on arch-viz BIM software built on a fork of **Unreal Engine 4**
+- Developed in **C++14** with **Visual Studio** and **Rider**
+- Wrote reliability tests that helped detect flaws and improve product stability
+
+### Ubisoft - Junior Gameplay Programmer
+
+**September 2020 to December 2020**
+
+- Worked on **Mario + Rabbids Sparks of Hope** with teams in Milan and Paris
+- Built **C++17** backend automation for navmesh generation in a modified **Snowdrop** engine
+- Worked in a production environment using **Perforce** and **Windows** tooling
+
+### Sfera Productions - Unreal Engine / VR Developer
+
+**2016 to 2018**
+
+- Developed VR virtual tours, experiences, documentaries, and games with **Unreal Engine 4.x**
+- Built for **Oculus DK2**, **HTC Vive**, **Samsung Gear**, **Cardboard**, and **Daydream**
+- Digitized a Cranio Creations tabletop board game in Unreal with VR controllers
+- Showcased work at Lucca Comics & Games and contributed to a Steam release
+- Focused on draw-call reduction, pixel overdraw, mesh optimization, benchmarking, and Blueprint extensions with **C++**
+
+### ITC Consulting - Unity Developer
+
+**2015 to 2016**
+
+- Developed a **Unity** driving simulator with **C#** and external libraries
+- Built a high-performance C# action-recording system backed by **SQLite** for replay analysis
 - Connected cockpit hardware through **Windows** APIs, emulated **RS-232**, **USB**, and **Arduino**
 - Maintained traffic AI for city simulation scenarios
 
-## Projects
+## Skills
 
-### Drill - https://drill.software
+### Build and release engineering
 
-- File search that goes nyoom
-- Made because waiting for search results is spiritually damaging
-- [Visit Drill](https://drill.software)
+- CI/CD, build automation, packaging, release operations, developer tooling, build farm operations
+- **Perforce**, **Swarm**, **Horde**, **Jenkins**, **GitHub Actions**, **BuildGraph**, **Robomerge**
+- **Python**, **C#**, **PowerShell**, **Bash**, **Groovy**, **Inno Setup Pascal**
 
-### GMILauncher - https://github.com/yatima1460/GMILauncher
+### Platforms and infrastructure
 
-- A launcher thingy from the GameMaker mines
-- Small, practical, and probably held together with stubbornness
-- [View on GitHub](https://github.com/yatima1460/GMILauncher)
+- **Windows**, **Linux**, **macOS**, **Android**, **iOS**, **WebAssembly**, **tvOS**
+- **Docker**, **Kubernetes**, **Rancher**, **Harvester**, **Ansible**, **AWS**, **S3**, **Headlamp**, **Portainer**, **Homepage**
+- Networking with **MikroTik**, **Ubiquiti**, and **OPNSense**
+
+### Game and engine development
+
+- **C**, **C++**, **C#**, **Unreal Engine 4**, **Unity**, **OpenGL**, **SDL2**
+- Console SDK experience: **PS4**, **PS5**, **Switch**, **Xbox One**, **Xbox Series XS**
+- Performance work for VR and hardware-constrained interactive systems
 
 ## Education
 
-### 2013 - 2016
+### Sapienza University of Rome - Computer Science
 
-- Studied Computer Science at **Sapienza Rome University**
-- Left to work directly with startups and 3D engines when university had no 3D-focused courses
+**2013 to 2016**
+
+- Studied Computer Science before moving directly into startup and 3D engine work
+
+## Awards
+
+### Rotary Club Rome - Youth Award for Science and Technology
+
+**2013**
+
+- First place in a **C++** programming competition
 
 ## Languages
 
-### Communication
+- Italian: native
+- English: used regularly in professional contexts
 
-- Native Italian speaker
-- English used regularly in professional contexts
+## More
 
-## More about me {#more-about-me}
-
-### Origin story
-
-- Born in Italy, with family roots going back to South America
-- Started playing with computers at 3 years old
-- Fell into game engines thanks to a computer magazine shipping *"The Games Factory"*
-
-### Tinkering
-
-- Studied 2D and 3D engine internals independently
-- Especially interested in graphics rendering and engine performance
-- Home automation tinkerer: **KNX**, **Raspberry Pi**, and **Home Assistant**
-- Home network enjoyer with **Ubiquiti** devices
-
-### Fun bits
-
-- I like playing **Dungeons & Dragons**, especially on Roll20
-- Anime favorites include **One Piece** and **Chainsaw Man**
-- Always excited about the crypto space and **RISC** hardware
+- Started programming through game-making tools and stayed curious about engine internals, graphics, build systems, and performance
+- Interested in home automation, **KNX**, **Raspberry Pi**, **Home Assistant**, **Ubiquiti**, search engines, RISC hardware, and teaching
