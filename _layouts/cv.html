@@ -44,91 +44,100 @@
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to CV</a>
-  <header class="site-header">
-    <nav class="top-nav" aria-label="Primary">
-      <a href="#experience">Experience</a>
-      <a href="#selected-work">Selected work</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main id="content">
-    <section class="hero" aria-labelledby="page-title">
-      <div class="hero-copy">
-        <p class="eyebrow">Build systems, game engines, release automation</p>
-        <h1 id="page-title">{{ page.title | default: site.title }}</h1>
-        <p class="hero-subtitle">Senior Build Engineer and C++ developer who makes complex software shippable: faster builds, sturdier pipelines, cleaner releases, and better hardware-aware performance</p>
-        <div class="hero-actions" aria-label="Contact and profile links">
-          <a class="button primary" href="https://linkedin.com/in/yatima1460" target="_blank" rel="noopener noreferrer">Contact on LinkedIn</a>
-          <a class="button" href="https://github.com/yatima1460" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <button class="button" type="button" onclick="window.print()">Print / PDF</button>
-        </div>
-      </div>
-      <figure class="portrait">
-        <img src="https://github.com/yatima1460.png" alt="Yatima Santamorena avatar" width="320" height="320">
-      </figure>
-    </section>
-
-    <section class="proof-strip" aria-label="Career highlights">
-      <article>
-        <strong>2023-now</strong>
-        <span>People Can Fly DevOps infrastructure, Horde ownership, Perforce and Swarm administration</span>
-      </article>
-      <article>
-        <strong>2021-2023</strong>
-        <span>GameMaker runtimes and IDE packaging across desktop, mobile, web, tvOS, and consoles</span>
-      </article>
-      <article>
-        <strong>2016-2018</strong>
-        <span>VR and Unreal performance work across PC and mobile headsets</span>
-      </article>
-    </section>
-
-    <div class="content-grid">
-      <aside class="sidebar" aria-label="Profile summary">
-        <section class="panel" id="contact">
-          <h2>Contact</h2>
-          <ul class="link-list">
-            <li><a href="https://linkedin.com/in/yatima1460" target="_blank" rel="noopener noreferrer">linkedin.com/in/yatima1460</a></li>
-            <li><a href="https://github.com/yatima1460" target="_blank" rel="noopener noreferrer">github.com/yatima1460</a></li>
-          </ul>
-        </section>
-
-        <section class="panel">
-          <h2>Core Stack</h2>
-          <div class="tag-list">
-            <span>Perforce</span>
-            <span>Horde</span>
-            <span>Jenkins</span>
-            <span>GitHub Actions</span>
-            <span>BuildGraph</span>
-            <span>Python</span>
-            <span>C++</span>
-            <span>C#</span>
-            <span>PowerShell</span>
-            <span>Ansible</span>
-            <span>Kubernetes</span>
-            <span>Rancher</span>
-            <span>Harvester</span>
-            <span>Unreal Engine</span>
-          </div>
-        </section>
-
-        <section class="panel print-links">
-          <h2>Print Links</h2>
-          <p>GitHub: https://github.com/yatima1460</p>
-          <p>LinkedIn: https://linkedin.com/in/yatima1460</p>
-        </section>
-      </aside>
-
-      <article class="cv-body">
-        {{ content }}
-      </article>
+  <div class="site-shell">
+    <div class="title-bar" aria-hidden="true">
+      <span>Yatima.exe / Curriculum Vitae</span>
     </div>
+    <header class="site-header">
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#experience">Experience</a>
+        <a href="#selected-work">Selected work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-    <footer class="site-footer">
-      <p>&copy; 2026 Yatima Santamorena, built for GitHub Pages, readable by humans, friendly to print</p>
-    </footer>
-  </main>
+    <main id="content">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Build systems, game engines, release automation</p>
+          <h1 id="page-title">{{ page.title | default: site.title }}</h1>
+          <p class="hero-subtitle">Senior Build Engineer and C++ developer who makes complex software shippable: faster builds, sturdier pipelines, cleaner releases, and better hardware-aware performance</p>
+          <div class="hero-actions" aria-label="Contact and profile links">
+            <a class="button primary" href="https://linkedin.com/in/yatima1460" target="_blank" rel="noopener noreferrer">Contact on LinkedIn</a>
+            <a class="button" href="https://github.com/yatima1460" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <button class="button" type="button" onclick="window.print()">Print / PDF</button>
+          </div>
+          <div class="charm-strip" aria-label="Site charms">
+            <span>Buildmaxxing</span>
+            <span>Y2K CV</span>
+            <span>かわいく出荷</span>
+          </div>
+        </div>
+        <figure class="portrait">
+          <img src="https://github.com/yatima1460.png" alt="Yatima Santamorena avatar" width="320" height="320">
+        </figure>
+      </section>
+
+      <section class="proof-strip" aria-label="Career highlights">
+        <article>
+          <strong>2023-now</strong>
+          <span>Entire People Can Fly DevOps infrastructure, Horde ownership, Perforce and Swarm administration</span>
+        </article>
+        <article>
+          <strong>2021-2023</strong>
+          <span>GameMaker runtimes and IDE packaging across desktop, mobile, web, tvOS, and consoles</span>
+        </article>
+        <article>
+          <strong>2016-2018</strong>
+          <span>VR and Unreal performance work across PC and mobile headsets</span>
+        </article>
+      </section>
+
+      <div class="content-grid">
+        <aside class="sidebar" aria-label="Profile summary">
+          <section class="panel" id="contact">
+            <h2>Contact</h2>
+            <ul class="link-list">
+              <li><a href="https://linkedin.com/in/yatima1460" target="_blank" rel="noopener noreferrer">linkedin.com/in/yatima1460</a></li>
+              <li><a href="https://github.com/yatima1460" target="_blank" rel="noopener noreferrer">github.com/yatima1460</a></li>
+            </ul>
+          </section>
+
+          <section class="panel" aria-label="Core stack">
+            <div class="tag-list">
+              <span>Perforce</span>
+              <span>Horde</span>
+              <span>Jenkins</span>
+              <span>GitHub Actions</span>
+              <span>BuildGraph</span>
+              <span>Python</span>
+              <span>C++</span>
+              <span>C#</span>
+              <span>PowerShell</span>
+              <span>Ansible</span>
+              <span>Kubernetes</span>
+              <span>Rancher</span>
+              <span>Harvester</span>
+              <span>Unreal Engine</span>
+            </div>
+          </section>
+
+          <section class="panel print-links">
+            <h2>Print Links</h2>
+            <p>GitHub: https://github.com/yatima1460</p>
+            <p>LinkedIn: https://linkedin.com/in/yatima1460</p>
+          </section>
+        </aside>
+
+        <article class="cv-body">
+          {{ content }}
+        </article>
+      </div>
+
+      <footer class="site-footer">
+        <p>&copy; 2026 Yatima Santamorena, built for GitHub Pages, readable by humans, friendly to print</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>

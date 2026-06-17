@@ -37,8 +37,8 @@ I have worked across AAA games, commercial engines, VR, architectural visualizat
 
 ### Projects
 
-- **Drill** - File search that goes nyoom, built because waiting for search results is spiritually damaging, [Visit Drill](https://drill.software)
-- **GMILauncher** - A practical GameMaker-related launcher/tooling project, [View on GitHub](https://github.com/yatima1460/GMILauncher)
+- <img class="project-logo" src="/assets/logos/drill.svg" alt="" width="28" height="28"> **Drill** - File search that goes nyoom, built because waiting for search results is spiritually damaging, [Visit Drill](https://drill.software)
+- <img class="project-logo" src="/assets/logos/gmilauncher.svg" alt="" width="28" height="28"> **GMILauncher** - A practical GameMaker-related launcher/tooling project, [View on GitHub](https://github.com/yatima1460/GMILauncher)
 
 ## Experience {#experience}
 
