@@ -1,7 +1,0 @@
-title: Yatima Santamorena
-description: Senior Build Engineer and C++ developer specializing in CI/CD, game-engine build systems, release automation, Unreal, Perforce, Jenkins, Python, and infrastructure operations
-url: https://yatima.me
-markdown: kramdown
-permalink: pretty
-exclude:
-  - docker-compose.yml
