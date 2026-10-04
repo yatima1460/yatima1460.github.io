@@ -101,6 +101,12 @@ li {
   break-after: avoid;
 }
 
+.role {
+  margin: 0.15rem 0 0.25rem;
+  font-size: 0.95rem;
+  break-after: avoid;
+}
+
 .project-logo,
 .company-logo {
   width: 20px;
