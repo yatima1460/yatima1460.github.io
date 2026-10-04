@@ -1,913 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yatima Santamorena - Build &amp; DevOps, Automation &amp; Defensive Security</title>
-  <meta name="description" content="Build &amp; DevOps engineer and consultant in automation, game development, and defensive security. Technical ownership of company-wide automation, Horde build pipelines, and Kubernetes deployments.">
-  <meta name="theme-color" content="#000000">
-  <meta property="og:title" content="Yatima Santamorena">
-  <meta property="og:description" content="Build &amp; DevOps engineer and consultant in automation, game development, and defensive security. Technical ownership of company-wide automation, Horde build pipelines, and Kubernetes deployments.">
-  <meta property="og:type" content="profile">
-  <meta property="og:url" content="https://yatima.me/">
-  <meta property="og:site_name" content="Yatima Santamorena">
-  <meta property="og:image" content="https://github.com/yatima1460.png">
-  <link rel="canonical" href="https://yatima.me/">
-  <style>
-    /*
-     * GeoCities-derived styles, based on observed 1997-1998 pages:
-     * fixed 600px tables, Arial/Helvetica text, nested cells, white pages,
-     * black/indigo/blue panels, #cc33ff accents, thin rules, and compact
-     * centered navigation. The only deliberate modern exception is the
-     * narrow-screen rendering below.
-     */
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      background: #000000;
-    }
-
-    body {
-      min-width: 0;
-      margin: 0;
-      color: #000000;
-      background: #000000;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 13px;
-      line-height: 1.35;
-    }
-
-    a {
-      color: #0000ee;
-      font-weight: normal;
-      text-decoration: underline;
-    }
-
-    a:visited {
-      color: #551a8b;
-    }
-
-    a:hover {
-      color: #ff0000;
-      background: #ffff00;
-    }
-
-    a:focus,
-    button:focus {
-      outline: 2px solid #ff00ff;
-      outline-offset: 2px;
-    }
-
-    button {
-      cursor: pointer;
-      font: inherit;
-    }
-
-    img {
-      max-width: 100%;
-    }
-
-    .skip-link {
-      position: absolute;
-      top: -100px;
-      left: 4px;
-      z-index: 10;
-      padding: 4px 6px;
-      color: #000000;
-      background: #ffff00;
-    }
-
-    .skip-link:focus {
-      top: 4px;
-    }
-
-    .site-shell {
-      width: 600px;
-      max-width: calc(100% - 12px);
-      margin: 10px auto 22px;
-      background: #ffffff;
-      border: 4px solid #000000;
-    }
-
-    .title-bar {
-      padding: 5px 6px;
-      color: #ffff00;
-      background: #000000;
-      border-bottom: 3px solid indigo;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-      line-height: 1.2;
-      text-align: center;
-    }
-
-    .site-header,
-    main {
-      width: 100%;
-      margin: 0;
-    }
-
-    .welcome-note {
-      margin: 0;
-      padding: 4px 3px;
-      color: #ffffff;
-      background: indigo;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 12px;
-      font-style: normal;
-      line-height: 1.25;
-      text-align: center;
-    }
-
-    .welcome-note span {
-      color: #ffff00;
-    }
-
-    .top-nav {
-      display: table;
-      width: 100%;
-      table-layout: fixed;
-      border-collapse: collapse;
-      background: #000000;
-    }
-
-    .top-nav a {
-      display: table-cell;
-      padding: 3px 2px;
-      color: #ffffff;
-      background: #0000ff;
-      border: 1px solid #ffffff;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 11px;
-      font-weight: bold;
-      line-height: 1.15;
-      text-align: center;
-    }
-
-    .top-nav a:visited {
-      color: #ffffff;
-    }
-
-    .top-nav a:hover {
-      color: #000000;
-      background: #ffff00;
-    }
-
-    .hero {
-      display: table;
-      width: 100%;
-      table-layout: fixed;
-      background: #ffffff;
-    }
-
-    .hero-copy,
-    .hero-visual {
-      display: table-cell;
-      vertical-align: top;
-    }
-
-    .hero-copy {
-      width: 390px;
-      padding: 12px 10px 16px;
-    }
-
-    .hero-visual {
-      width: 210px;
-      padding: 12px 8px;
-      color: #ffffff;
-      background: #000000;
-      border-left: 4px solid indigo;
-      text-align: center;
-    }
-
-    .eyebrow {
-      display: block;
-      margin: 0 0 8px;
-      padding: 3px 4px;
-      color: #000000;
-      background: #ffff00;
-      border: 1px solid #000000;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 11px;
-      font-weight: bold;
-      line-height: 1.2;
-      text-align: center;
-    }
-
-    h1,
-    h2,
-    h3 {
-      line-height: 1.15;
-    }
-
-    h1 {
-      margin: 7px 0 6px;
-      color: #cc33ff;
-      font-family: "Times New Roman", Times, serif;
-      font-size: 38px;
-      font-weight: bold;
-      line-height: 0.95;
-      text-align: center;
-    }
-
-    .name-line {
-      display: block;
-      white-space: nowrap;
-    }
-
-    .hero-subtitle {
-      margin: 8px 0 10px;
-      padding: 7px;
-      color: #000000;
-      background: #eee8aa;
-      border: 1px solid #000000;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      line-height: 1.3;
-    }
-
-    .hero-actions {
-      margin-top: 7px;
-      text-align: center;
-    }
-
-    .button {
-      display: inline-block;
-      margin: 2px;
-      padding: 3px 6px;
-      color: #ffffff;
-      background: #0000ff;
-      border: 3px outset #cc33ff;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 11px;
-      font-weight: bold;
-      line-height: 1.1;
-    }
-
-    .button:visited {
-      color: #ffffff;
-    }
-
-    .button.primary {
-      color: #ffff00;
-      background: indigo;
-    }
-
-    .button.primary:visited {
-      color: #ffff00;
-    }
-
-    .button:hover {
-      color: #000000;
-      background: #ffff00;
-    }
-
-    .portrait {
-      width: 160px;
-      margin: 0 auto;
-      padding: 3px;
-      background: #ffffff;
-      border: 4px ridge #cc33ff;
-    }
-
-    .portrait img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border: 1px solid #000000;
-    }
-
-    .proof-strip {
-      display: table;
-      width: 100%;
-      table-layout: fixed;
-      border-collapse: collapse;
-      background: #ffffff;
-    }
-
-    .proof-strip article {
-      display: table-cell;
-      width: 33.333%;
-      padding: 7px 6px;
-      vertical-align: top;
-      background: #eee8aa;
-      border: 1px solid #000000;
-    }
-
-    .proof-strip strong {
-      display: block;
-      margin-bottom: 2px;
-      color: #000000;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 12px;
-    }
-
-    .proof-strip span {
-      display: block;
-      color: #000000;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 11px;
-      line-height: 1.25;
-    }
-
-    .content-grid {
-      display: table;
-      width: 100%;
-      table-layout: fixed;
-      border-collapse: collapse;
-    }
-
-    .sidebar {
-      display: table-cell;
-      width: 170px;
-      padding: 7px 5px;
-      vertical-align: top;
-      color: #ffffff;
-      background: indigo;
-    }
-
-    .panel {
-      margin: 0 0 8px;
-      padding: 5px;
-      color: #ffffff;
-      background: indigo;
-      border: 1px solid #cc33ff;
-    }
-
-    .panel h2 {
-      margin: 0 0 4px;
-      padding: 2px 3px;
-      color: #ffff00;
-      background: #000000;
-      border: 1px solid #cc33ff;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 12px;
-      font-weight: bold;
-      line-height: 1.2;
-    }
-
-    .link-list {
-      margin: 0;
-      padding-left: 15px;
-    }
-
-    .link-list li {
-      margin: 2px 0;
-    }
-
-    .link-list a {
-      color: #ffffff;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 11px;
-    }
-
-    .link-list a:visited {
-      color: #ffccff;
-    }
-
-    .tag-list {
-      line-height: 1.45;
-    }
-
-    .tag-list span {
-      color: #ffff00;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 11px;
-      font-weight: bold;
-    }
-
-    .tag-list span::after {
-      color: #cc33ff;
-      content: " | ";
-    }
-
-    .tag-list span:last-child::after {
-      content: "";
-    }
-
-    .site-notes p,
-    .print-links p {
-      margin: 4px 0;
-      color: #ffffff;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 11px;
-    }
-
-    .print-links {
-      display: none;
-    }
-
-    .cv-body {
-      display: table-cell;
-      width: 430px;
-      padding: 10px;
-      vertical-align: top;
-      background: #ffffff;
-    }
-
-    .cv-body h2 {
-      margin: 10px 0 6px;
-      padding-bottom: 3px;
-      color: #000000;
-      border-bottom: 1px solid #000000;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .cv-body h3 {
-      margin: 10px 0 3px;
-      color: #000080;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    .cv-body h3::before {
-      display: none;
-      content: "";
-      width: 28px;
-      height: 28px;
-      margin: 0 5px 0 0;
-      vertical-align: middle;
-      background-color: #ffffff;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      border: 1px solid #000000;
-    }
-
-    #people-can-fly--ex-epic-games-poland---senior-build-engineer-contractor::before {
-      display: inline-block;
-      background-image: url("assets/logos/people-can-fly.png");
-    }
-
-    #pandaworks-corp---owner::before,
-    #pandaware-llc---owner::before,
-    #nhb-consulting-sezc---retainer-contractor::before {
-      display: inline-block;
-      background-image: url("assets/logos/company-generic.svg");
-    }
-
-    #crytek---build-engineer::before {
-      display: inline-block;
-      background-image: url("assets/logos/crytek.svg");
-    }
-
-    #gamemaker--yoyogames--opera---build-engineer-contractor::before {
-      display: inline-block;
-      background-image: url("assets/logos/opera.png");
-    }
-
-    #zuru-tech---junior-c-software-developer::before {
-      display: inline-block;
-      background-image: url("assets/logos/zurutech.png");
-    }
-
-    #ubisoft---junior-gameplay-programmer::before {
-      display: inline-block;
-      background-image: url("assets/logos/ubisoft.png");
-    }
-
-    #sfera-productions---unreal-engine--vr-developer::before {
-      display: inline-block;
-      background-image: url("assets/logos/sfera-productions.png");
-    }
-
-    #itc-consulting---unity-developer::before {
-      display: inline-block;
-      background-image: url("assets/logos/itc-consulting.png");
-    }
-
-    .cv-body p,
-    .cv-body li {
-      color: #000000;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 13px;
-      line-height: 1.35;
-    }
-
-    .cv-body p {
-      margin: 5px 0;
-    }
-
-    .cv-body ul {
-      margin: 4px 0 10px;
-      padding-left: 20px;
-    }
-
-    .cv-body li {
-      margin: 2px 0;
-    }
-
-    .project-logo {
-      width: 28px;
-      height: 28px;
-      margin-right: 3px;
-      vertical-align: -8px;
-      background: #ffffff;
-      border: 1px solid #000000;
-    }
-
-    .cv-body strong {
-      color: #000000;
-    }
-
-    .cv-body h3 + p strong:only-child {
-      font-weight: bold;
-    }
-
-    .cv-body h2 + h3,
-    .cv-body h3:first-child {
-      margin-top: 3px;
-    }
-
-    .site-footer {
-      margin: 0;
-      padding: 6px 3px;
-      color: #000000;
-      background: #ffffff;
-      border-top: 1px solid #000000;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 10px;
-      line-height: 1.2;
-      text-align: center;
-    }
-
-    @media (max-width: 620px) {
-      .site-shell {
-        width: calc(100% - 12px);
-        max-width: none;
-        margin-top: 6px;
-      }
-
-      .hero,
-      .proof-strip,
-      .content-grid {
-        display: block;
-        width: 100%;
-      }
-
-      .hero-copy,
-      .hero-visual,
-      .proof-strip article,
-      .sidebar,
-      .cv-body {
-        display: block;
-        width: auto;
-      }
-
-      .hero-copy {
-        padding: 10px 8px 12px;
-      }
-
-      .hero-visual {
-        padding: 10px 8px 12px;
-        border-top: 4px solid indigo;
-        border-left: 0;
-      }
-
-      .sidebar {
-        padding: 7px 5px 0;
-      }
-
-      .cv-body {
-        padding: 8px;
-      }
-
-      h1 {
-        font-size: 34px;
-      }
-    }
-
-    @media print {
-      body {
-        background: #ffffff;
-        font-size: 10pt;
-      }
-
-      .site-shell {
-        width: 100%;
-        max-width: none;
-        margin: 0;
-        border: 0;
-      }
-
-      .title-bar,
-      .site-header,
-      .hero-visual,
-      .hero-actions,
-      .site-footer {
-        display: none !important;
-      }
-
-      .hero,
-      .content-grid {
-        display: block;
-      }
-
-      .hero-copy,
-      .sidebar,
-      .cv-body {
-        display: block;
-        width: auto;
-        padding: 0;
-        color: #000000;
-        background: #ffffff;
-      }
-
-      .sidebar {
-        display: none;
-      }
-
-      .cv-body h2 {
-        margin-top: 14px;
-      }
-
-      .cv-body h3::before {
-        display: none !important;
-      }
-
-      .print-links {
-        display: block;
-      }
-    }
-  </style>
-</head>
-<body>
-  <a class="skip-link" href="#content">Skip to CV</a>
-  <div class="site-shell">
-    <div class="title-bar" aria-hidden="true">
-      <span>YATIMA'S HOME PAGE // BUILD SYSTEMS</span>
-    </div>
-
-    <header class="site-header">
-      <p class="welcome-note"><span aria-hidden="true">★</span> Welcome to my corner of the web <span aria-hidden="true">★</span></p>
-      <nav class="top-nav" aria-label="Primary">
-        <a href="#experience">Experience</a>
-        <a href="#selected-work">Selected work</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatima Santamorena - Build &amp; DevOps, Automation &amp; Defensive Security</title>
+    <meta name="description" content="Build &amp; DevOps engineer and consultant in automation, game development, and defensive security. Technical ownership of company-wide automation, Horde build pipelines, and Kubernetes deployments.">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Yatima Santamorena">
+    <meta property="og:description" content="Build &amp; DevOps engineer and consultant in automation, game development, and defensive security. Technical ownership of company-wide automation, Horde build pipelines, and Kubernetes deployments.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://yatima.me/">
+    <meta property="og:site_name" content="Yatima Santamorena">
+    <meta property="og:image" content="https://yatima.me/assets/images/profile.jpeg">
+    <link rel="canonical" href="https://yatima.me/">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
     <main id="content">
-      <section class="hero" aria-labelledby="page-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Automation, game development, defensive security</p>
-          <h1 id="page-title"><span class="name-line">Yatima</span><span class="name-line">Santamorena</span></h1>
-          <p class="hero-subtitle">Build &amp; DevOps Engineer and consultant in automation, game development, and defensive security, with a C++ background</p>
-          <div class="hero-actions" aria-label="Contact and profile links">
-            <a class="button primary" href="https://linkedin.com/in/yatima1460" target="_blank" rel="noopener noreferrer">Contact on LinkedIn</a>
-            <a class="button" href="https://github.com/yatima1460" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <button class="button" type="button" onclick="window.print()">Print / PDF</button>
-          </div>
+      <header class="profile">
+        <div>
+          <h1 id="page-title">Yatima Santamorena</h1>
+          <p class="subtitle">Build &amp; DevOps Engineer and consultant in automation, game development, and defensive security, with a C++ background</p>
+          <ul class="contact" id="contact" aria-label="Contact">
+            <li>
+              <a href="https://linkedin.com/in/yatima1460">linkedin.com/in/yatima1460</a>
+            </li>
+            <li>
+              <a href="https://github.com/yatima1460">github.com/yatima1460</a>
+            </li>
+          </ul>
         </div>
-
-        <div class="hero-visual">
-          <figure class="portrait">
-            <img src="https://github.com/yatima1460.png" alt="Yatima Santamorena avatar" width="320" height="320">
-          </figure>
-        </div>
+      </header>
+      <section class="highlights" aria-label="Career highlights">
+        <p>
+          <strong>2023-now</strong> Company-wide automation ownership at People Can Fly: 2–3× faster builds and up to 10× faster service deployment</p>
+        <p>
+          <strong>2016-2018</strong> VR and Unreal performance work across PC and mobile headsets</p>
       </section>
-
-      <section class="proof-strip" aria-label="Career highlights">
-        <article>
-          <strong>2023-now</strong>
-          <span>Company-wide automation ownership at People Can Fly: 2–3× faster builds and up to 10× faster service deployment</span>
-        </article>
-        <article>
-          <strong>2021-2023</strong>
-          <span>GameMaker runtimes and IDE packaging across desktop, mobile, web, tvOS, and consoles</span>
-        </article>
-        <article>
-          <strong>2016-2018</strong>
-          <span>VR and Unreal performance work across PC and mobile headsets</span>
-        </article>
+      <section aria-labelledby="selected-work">
+        <h2 id="selected-work">Selected Work</h2>
+        <h3 id="people-can-fly-build-platform">People Can Fly build platform</h3>
+        <ul>
+          <li>Migrated every internal project from <strong>Jenkins</strong> to Epic Games' <strong>Horde</strong>, making builds <strong>2–3× faster</strong>
+          </li>
+          <li>Set up <strong>Kubernetes</strong> deployments for every internal service, enabling <strong>up to 10× faster service deployment</strong> and adding redundancy</li>
+          <li>Technical lead and owner of automation, Kubernetes, and DevOps across all internal projects</li>
+        </ul>
+        <h3 id="gamemaker-multi-platform-releases">GameMaker CI/CD automation</h3>
+        <ul>
+          <li>Owned all automation for the <strong>GameMaker</strong> CI/CD pipeline, including runtime and IDE builds, packaging, and releases</li>
+          <li>Owned build and release automation across <strong>Android</strong>, <strong>HTML5</strong>, <strong>iOS</strong>, <strong>Linux</strong>, <strong>macOS</strong>, <strong>WebAssembly</strong>, <strong>Windows</strong>, <strong>tvOS</strong>, and console SDKs including <strong>PS4</strong>, <strong>PS5</strong>, <strong>Switch</strong>, <strong>Xbox One</strong>, and <strong>Xbox Series XS</strong>
+          </li>
+          <li>Developed and maintained pipeline automation using <strong>Python</strong>, <strong>C#</strong>, <strong>PowerShell</strong>, <strong>GitHub Actions</strong>, <strong>Jenkins</strong>, <strong>Docker</strong>, <strong>AWS</strong>, and <strong>S3</strong>
+          </li>
+        </ul>
+        <h3 id="unreal-and-vr-performance-work">Unreal and VR performance work</h3>
+        <ul>
+          <li>Developed VR virtual tours, experiences, documentaries, and games in <strong>Unreal Engine 4.x</strong>
+          </li>
+          <li>Worked with early-market hardware including <strong>Oculus DK2</strong>, <strong>HTC Vive</strong>, <strong>Samsung Gear</strong>, <strong>Cardboard</strong>, and <strong>Daydream</strong>
+          </li>
+          <li>Optimized for hardware-constrained VR: draw calls, pixel overdraw, mesh complexity, benchmarking, and C++ Blueprint extensions</li>
+          <li>Focus: keep interactive experiences comfortable and shippable on hardware that did not forgive waste</li>
+        </ul>
+        <h3 id="projects">Projects</h3>
+        <ul>
+          <li>
+            <img class="project-logo" src="assets/logos/proteinmate.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+            <strong>ProteinMate</strong> - Protein and calorie tracking app, <a href="https://proteinmate.app">Visit ProteinMate</a>
+          </li>
+          <li>
+            <img class="project-logo" src="assets/logos/drill.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+            <strong>Drill</strong> - File search that goes nyoom, built because waiting for search results is spiritually damaging, <a href="https://drill.software">Visit Drill</a>
+          </li>
+          <li>
+            <img class="project-logo" src="assets/logos/gmilauncher.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+            <strong>GMILauncher</strong> - A practical GameMaker-related launcher/tooling project, <a href="https://github.com/yatima1460/GMILauncher">View on GitHub</a>
+          </li>
+        </ul>
       </section>
-
-      <div class="content-grid">
-        <aside class="sidebar" aria-label="Profile summary">
-          <section class="panel" id="contact">
-            <h2>Contact</h2>
-            <ul class="link-list">
-              <li><a href="https://linkedin.com/in/yatima1460" target="_blank" rel="noopener noreferrer">linkedin.com/in/yatima1460</a></li>
-              <li><a href="https://github.com/yatima1460" target="_blank" rel="noopener noreferrer">github.com/yatima1460</a></li>
-            </ul>
-          </section>
-
-          <section class="panel" aria-label="Core stack">
-            <div class="tag-list">
-              <span>Perforce</span>
-              <span>Horde</span>
-              <span>Jenkins</span>
-              <span>GitHub Actions</span>
-              <span>BuildGraph</span>
-              <span>Python</span>
-              <span>C++</span>
-              <span>C#</span>
-              <span>PowerShell</span>
-              <span>Ansible</span>
-              <span>Kubernetes</span>
-              <span>Rancher</span>
-              <span>Harvester</span>
-              <span>Unreal Engine</span>
-              <span>Codex</span>
-              <span>Claude</span>
-              <span>MCP</span>
-            </div>
-          </section>
-
-          <section class="panel site-notes" aria-label="Site notes">
-            <h2>Web notes</h2>
-            <p>Hand-built with HTML and CSS.</p>
-            <p>No plug-ins required.</p>
-          </section>
-
-          <section class="panel print-links">
-            <h2>Print Links</h2>
-            <p>GitHub: https://github.com/yatima1460</p>
-            <p>LinkedIn: https://linkedin.com/in/yatima1460</p>
-          </section>
-        </aside>
-
-        <article class="cv-body">
-          <h2 id="selected-work">Selected Work</h2>
-          <h3 id="people-can-fly-build-platform">People Can Fly build platform</h3>
-          <ul>
-            <li>Migrated every internal project from <strong>Jenkins</strong> to Epic Games' <strong>Horde</strong>, making builds <strong>2–3× faster</strong></li>
-            <li>Set up <strong>Kubernetes</strong> deployments for every internal service, enabling <strong>up to 10× faster service deployment</strong> and adding redundancy</li>
-            <li>Technical lead and owner of automation, Kubernetes, and DevOps across all internal projects</li>
-          </ul>
-
-          <h3 id="gamemaker-multi-platform-releases">GameMaker multi-platform releases</h3>
-          <ul>
-            <li>Built and maintained automation for compiling and packaging <strong>GameMaker</strong> runtimes and IDE releases</li>
-            <li>Supported <strong>Android</strong>, <strong>HTML5</strong>, <strong>iOS</strong>, <strong>Linux</strong>, <strong>macOS</strong>, <strong>WebAssembly</strong>, <strong>Windows</strong>, <strong>tvOS</strong>, and console SDKs including <strong>PS4</strong>, <strong>PS5</strong>, <strong>Switch</strong>, <strong>Xbox One</strong>, and <strong>Xbox Series XS</strong></li>
-            <li>Worked across <strong>Python</strong>, <strong>C#</strong>, <strong>PowerShell</strong>, <strong>GitHub Actions</strong>, <strong>Jenkins</strong>, <strong>Docker</strong>, <strong>AWS</strong>, and <strong>S3</strong></li>
-            <li>Focus: turn a wide platform matrix into repeatable build and release paths</li>
-          </ul>
-
-          <h3 id="unreal-and-vr-performance-work">Unreal and VR performance work</h3>
-          <ul>
-            <li>Developed VR virtual tours, experiences, documentaries, and games in <strong>Unreal Engine 4.x</strong></li>
-            <li>Worked with early-market hardware including <strong>Oculus DK2</strong>, <strong>HTC Vive</strong>, <strong>Samsung Gear</strong>, <strong>Cardboard</strong>, and <strong>Daydream</strong></li>
-            <li>Optimized for hardware-constrained VR: draw calls, pixel overdraw, mesh complexity, benchmarking, and C++ Blueprint extensions</li>
-            <li>Focus: keep interactive experiences comfortable and shippable on hardware that did not forgive waste</li>
-          </ul>
-
-          <h3 id="projects">Projects</h3>
-          <ul>
-            <li><img class="project-logo" src="assets/logos/drill.svg" alt="" width="28" height="28"> <strong>Drill</strong> - File search that goes nyoom, built because waiting for search results is spiritually damaging, <a href="https://drill.software" target="_blank" rel="noopener noreferrer">Visit Drill</a></li>
-            <li><img class="project-logo" src="assets/logos/gmilauncher.svg" alt="" width="28" height="28"> <strong>GMILauncher</strong> - A practical GameMaker-related launcher/tooling project, <a href="https://github.com/yatima1460/GMILauncher" target="_blank" rel="noopener noreferrer">View on GitHub</a></li>
-          </ul>
-
-          <h2 id="experience">Experience</h2>
-          <h3 id="pandaworks-corp---owner">PANDAWORKS, CORP. - Owner</h3>
-          <p><strong>2026 to present</strong></p>
-          <ul>
-            <li>Provide defensive security consulting, assessing client applications, source code, systems, and infrastructure to identify vulnerabilities</li>
-            <li>Deliver vulnerability reports with actionable recommendations for remediation</li>
-            <li>Submit proposed fixes through pull requests when repository access is available</li>
-          </ul>
-
-          <h3 id="pandaware-llc---owner">Pandaware LLC - Owner</h3>
-          <p><strong>2024 to present</strong></p>
-          <ul>
-            <li>Provide consulting and freelance services in automation, pipelines, and game development</li>
-          </ul>
-
-          <h3 id="people-can-fly--ex-epic-games-poland---senior-build-engineer-contractor">People Can Fly / ex-Epic Games Poland - Senior Build Engineer contractor</h3>
-          <p><strong>October 2023 to present</strong></p>
-          <ul>
-            <li>Provide technical leadership and end-to-end ownership of automation, <strong>Kubernetes</strong>, and DevOps across all internal projects</li>
-            <li>Migrated all internal projects from <strong>Jenkins</strong> to <strong>Horde</strong>, making builds <strong>2–3× faster</strong></li>
-            <li>Set up <strong>Kubernetes</strong> deployments for every internal service, enabling <strong>up to 10× faster service deployment</strong> and adding redundancy</li>
-            <li>Operate <strong>Horde</strong> and <strong>Unreal BuildGraph</strong> pipelines, administer <strong>Perforce</strong> and <strong>Swarm</strong>, and automate infrastructure with <strong>Ansible</strong>, <strong>Docker</strong>, <strong>Rancher</strong>, <strong>Harvester</strong>, and <strong>Robomerge</strong></li>
-            <li>Automate service deployment and recovery using <strong>Codex</strong>, <strong>Claude</strong>, and custom <strong>MCP</strong> integrations</li>
-          </ul>
-
-          <h3 id="nhb-consulting-sezc---retainer-contractor">NHB Consulting SEZC - Retainer contractor</h3>
-          <p><strong>August 2023 to present</strong></p>
-          <ul>
-            <li>Provide technical support for an Anguilla-based consulting company</li>
-            <li>Support networking and security operations for <strong>MikroTik</strong>, <strong>Ubiquiti</strong>, and <strong>OPNSense</strong> devices</li>
-            <li>Coach senior staff on practical cybersecurity habits and operational safety</li>
-          </ul>
-
-          <h3 id="crytek---build-engineer">Crytek - Build Engineer</h3>
-          <p><strong>June 2023 to August 2023</strong></p>
-          <ul>
-            <li>Maintained automated build processes for <strong>Crysis 4</strong>, <strong>Hunt</strong>, and <strong>CryEngine</strong></li>
-            <li>Supported distribution of builds to customers and QA</li>
-            <li>Worked primarily in <strong>Python</strong> on build-system automation</li>
-          </ul>
-
-          <h3 id="gamemaker--yoyogames--opera---build-engineer-contractor">GameMaker / YoYoGames / Opera - Build Engineer contractor</h3>
-          <p><strong>June 2021 to March 2023</strong></p>
-          <ul>
-            <li>Designed automation for compiling and packaging engine runtimes and IDE releases across desktop, mobile, web, tvOS, and console platforms</li>
-            <li>Researched and implemented cloud build work using <strong>GitHub Actions</strong>, <strong>AWS</strong>, and <strong>S3</strong></li>
-            <li>Maintained build and release systems with <strong>Python</strong>, <strong>C#</strong>, <strong>PowerShell</strong>, <strong>Jenkins</strong>, and <strong>Docker</strong></li>
-            <li>Worked with platform SDKs for <strong>Android</strong>, <strong>iOS</strong>, <strong>macOS</strong>, <strong>Linux</strong>, <strong>Windows</strong>, <strong>WebAssembly</strong>, <strong>PS4</strong>, <strong>PS5</strong>, <strong>Switch</strong>, <strong>Xbox One</strong>, and <strong>Xbox Series XS</strong></li>
-          </ul>
-
-          <h3 id="zuru-tech---junior-c-software-developer">Zuru Tech - Junior C++ Software Developer</h3>
-          <p><strong>December 2020 to March 2021</strong></p>
-          <ul>
-            <li>Worked on arch-viz BIM software built on a fork of <strong>Unreal Engine 4</strong></li>
-            <li>Developed in <strong>C++14</strong> with <strong>Visual Studio</strong> and <strong>Rider</strong></li>
-            <li>Wrote reliability tests that helped detect flaws and improve product stability</li>
-          </ul>
-
-          <h3 id="ubisoft---junior-gameplay-programmer">Ubisoft - Junior Gameplay Programmer</h3>
-          <p><strong>September 2020 to December 2020</strong></p>
-          <ul>
-            <li>Worked on <strong>Mario + Rabbids Sparks of Hope</strong> with teams in Milan and Paris</li>
-            <li>Built <strong>C++17</strong> backend automation for navmesh generation in a modified <strong>Snowdrop</strong> engine</li>
-            <li>Worked in a production environment using <strong>Perforce</strong> and <strong>Windows</strong> tooling</li>
-          </ul>
-
-          <h3 id="sfera-productions---unreal-engine--vr-developer">Sfera Productions - Unreal Engine / VR Developer</h3>
-          <p><strong>2016 to 2018</strong></p>
-          <ul>
-            <li>Developed VR virtual tours, experiences, documentaries, and games with <strong>Unreal Engine 4.x</strong></li>
-            <li>Built for <strong>Oculus DK2</strong>, <strong>HTC Vive</strong>, <strong>Samsung Gear</strong>, <strong>Cardboard</strong>, and <strong>Daydream</strong></li>
-            <li>Digitized a Cranio Creations tabletop board game in Unreal with VR controllers</li>
-            <li>Showcased work at Lucca Comics &amp; Games and contributed to a Steam release</li>
-            <li>Focused on draw-call reduction, pixel overdraw, mesh optimization, benchmarking, and Blueprint extensions with <strong>C++</strong></li>
-          </ul>
-
-          <h3 id="itc-consulting---unity-developer">ITC Consulting - Unity Developer</h3>
-          <p><strong>2015 to 2016</strong></p>
-          <ul>
-            <li>Developed a <strong>Unity</strong> driving simulator with <strong>C#</strong> and external libraries</li>
-            <li>Built a high-performance C# action-recording system backed by <strong>SQLite</strong> for replay analysis</li>
-            <li>Connected cockpit hardware through <strong>Windows</strong> APIs, emulated <strong>RS-232</strong>, <strong>USB</strong>, and <strong>Arduino</strong></li>
-            <li>Maintained traffic AI for city simulation scenarios</li>
-          </ul>
-
-          <h2 id="skills">Skills</h2>
-          <h3>Build and release engineering</h3>
-          <ul>
-            <li>CI/CD, build automation, packaging, release operations, developer tooling, build farm operations</li>
-            <li><strong>Perforce</strong>, <strong>Swarm</strong>, <strong>Horde</strong>, <strong>Jenkins</strong>, <strong>GitHub Actions</strong>, <strong>BuildGraph</strong>, <strong>Robomerge</strong></li>
-            <li><strong>Python</strong>, <strong>C#</strong>, <strong>PowerShell</strong>, <strong>Bash</strong>, <strong>Groovy</strong>, <strong>Inno Setup Pascal</strong></li>
-          </ul>
-
-          <h3>Platforms and infrastructure</h3>
-          <ul>
-            <li><strong>Windows</strong>, <strong>Linux</strong>, <strong>macOS</strong>, <strong>Android</strong>, <strong>iOS</strong>, <strong>WebAssembly</strong>, <strong>tvOS</strong></li>
-            <li><strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>Rancher</strong>, <strong>Harvester</strong>, <strong>Ansible</strong>, <strong>AWS</strong>, <strong>S3</strong>, <strong>Headlamp</strong>, <strong>Portainer</strong>, <strong>Homepage</strong></li>
-            <li>Networking with <strong>MikroTik</strong>, <strong>Ubiquiti</strong>, and <strong>OPNSense</strong></li>
-          </ul>
-
-          <h3>Defensive security consulting</h3>
-          <ul>
-            <li>Vulnerability assessments across applications, source code, systems, and infrastructure</li>
-            <li>Vulnerability reporting, remediation recommendations, and proposed code fixes through pull requests</li>
-          </ul>
-
-          <h3>Game and engine development</h3>
-          <ul>
-            <li><strong>C</strong>, <strong>C++</strong>, <strong>C#</strong>, <strong>Unreal Engine 4</strong>, <strong>Unity</strong>, <strong>OpenGL</strong>, <strong>SDL2</strong></li>
-            <li>Console SDK experience: <strong>PS4</strong>, <strong>PS5</strong>, <strong>Switch</strong>, <strong>Xbox One</strong>, <strong>Xbox Series XS</strong></li>
-            <li>Performance work for VR and hardware-constrained interactive systems</li>
-          </ul>
-
-          <h2 id="education">Education</h2>
-          <h3>Sapienza University of Rome - Computer Science</h3>
-          <p><strong>2013 to 2016</strong></p>
-          <ul>
-            <li>Studied Computer Science before moving directly into startup and 3D engine work</li>
-          </ul>
-
-          <h2 id="awards">Awards</h2>
-          <h3>Rotary Club Rome - Youth Award for Science and Technology</h3>
-          <p><strong>2013</strong></p>
-          <ul>
-            <li>First place in a <strong>C++</strong> programming competition</li>
-          </ul>
-
-          <h2 id="languages">Languages</h2>
-          <ul>
-            <li>Italian: native</li>
-            <li>English: used regularly in professional contexts</li>
-          </ul>
-
-          <h2 id="more">More</h2>
-          <ul>
-            <li>Started programming through game-making tools and stayed curious about engine internals, graphics, build systems, and performance</li>
-            <li>Interested in home automation, <strong>KNX</strong>, <strong>Raspberry Pi</strong>, <strong>Home Assistant</strong>, <strong>Ubiquiti</strong>, search engines, RISC hardware, and teaching</li>
-          </ul>
-        </article>
-      </div>
-
-      <footer class="site-footer">
-        <p>&copy; 2026 Yatima Santamorena</p>
+      <section aria-labelledby="experience">
+        <h2 id="experience">Experience</h2>
+        <h3 id="pandaworks-corp---owner"><img class="company-logo" src="assets/images/profile.jpeg" alt="" width="28" height="28" loading="lazy" decoding="async">PANDAWORKS, CORP. - Owner</h3>
+        <p class="date">
+          <strong>2026 to present</strong>
+        </p>
+        <ul>
+          <li>Provide defensive security consulting, assessing client applications, source code, systems, and infrastructure to identify vulnerabilities</li>
+          <li>Deliver vulnerability reports with actionable recommendations for remediation</li>
+          <li>Submit proposed fixes through pull requests when repository access is available</li>
+        </ul>
+        <h3 id="pandaware-llc---owner"><img class="company-logo" src="assets/images/profile.jpeg" alt="" width="28" height="28" loading="lazy" decoding="async">Pandaware LLC - Owner</h3>
+        <p class="date">
+          <strong>2024 to present</strong>
+        </p>
+        <ul>
+          <li>Provide consulting and freelance services in automation, pipelines, and game development</li>
+        </ul>
+        <h3 id="people-can-fly--ex-epic-games-poland---senior-build-engineer-contractor"><img class="company-logo" src="assets/logos/people-can-fly.png" alt="" width="28" height="28" loading="lazy" decoding="async">People Can Fly / ex-Epic Games Poland - Senior Build Engineer contractor</h3>
+        <p class="date">
+          <strong>October 2023 to present</strong>
+        </p>
+        <ul>
+          <li>Provide technical leadership and end-to-end ownership of automation, <strong>Kubernetes</strong>, and DevOps across all internal projects</li>
+          <li>Migrated all internal projects from <strong>Jenkins</strong> to <strong>Horde</strong>, making builds <strong>2–3× faster</strong>
+          </li>
+          <li>Set up <strong>Kubernetes</strong> deployments for every internal service, enabling <strong>up to 10× faster service deployment</strong> and adding redundancy</li>
+          <li>Operate <strong>Horde</strong> and <strong>Unreal BuildGraph</strong> pipelines, administer <strong>Perforce</strong> and <strong>Swarm</strong>, and automate infrastructure with <strong>Ansible</strong>, <strong>Docker</strong>, <strong>Rancher</strong>, <strong>Harvester</strong>, and <strong>Robomerge</strong>
+          </li>
+          <li>Automate service deployment and recovery using <strong>Codex</strong>, <strong>Claude</strong>, and custom <strong>MCP</strong> integrations</li>
+        </ul>
+        <h3 id="nhb-consulting-sezc---retainer-contractor"><a href="https://www.nhb-consulting.net"><img class="company-logo" src="assets/logos/nhb-consulting.png" alt="" width="28" height="28" loading="lazy" decoding="async">NHB Consulting SEZC - Retainer contractor</a></h3>
+        <p class="date">
+          <strong>August 2023 to present</strong>
+        </p>
+        <ul>
+          <li>Provide technical support for an Anguilla-based consulting company</li>
+          <li>Support networking and security operations for <strong>MikroTik</strong>, <strong>Ubiquiti</strong>, and <strong>OPNSense</strong> devices</li>
+          <li>Coach senior staff on practical cybersecurity habits and operational safety</li>
+        </ul>
+        <h3 id="crytek---build-engineer"><img class="company-logo" src="assets/logos/crytek.svg" alt="" width="28" height="28" loading="lazy" decoding="async">Crytek - Build Engineer</h3>
+        <p class="date">
+          <strong>June 2023 to August 2023</strong>
+        </p>
+        <ul>
+          <li>Maintained automated build processes for <strong>Crysis 4</strong>, <strong>Hunt</strong>, and <strong>CryEngine</strong>
+          </li>
+          <li>Supported distribution of builds to customers and QA</li>
+          <li>Worked primarily in <strong>Python</strong> on build-system automation</li>
+        </ul>
+        <h3 id="gamemaker--yoyogames--opera---build-engineer-contractor"><img class="company-logo" src="assets/logos/opera.png" alt="" width="28" height="28" loading="lazy" decoding="async">GameMaker / YoYoGames / Opera - Build Engineer contractor</h3>
+        <p class="date">
+          <strong>June 2021 to March 2023</strong>
+        </p>
+        <ul>
+          <li>Owned all automation related to the <strong>GameMaker</strong> CI/CD pipeline, from runtime and IDE builds to packaging and releases across desktop, mobile, web, tvOS, and consoles</li>
+          <li>Researched and implemented cloud build automation using <strong>GitHub Actions</strong>, <strong>AWS</strong>, and <strong>S3</strong>
+          </li>
+          <li>Developed and maintained CI/CD automation with <strong>Python</strong>, <strong>C#</strong>, <strong>PowerShell</strong>, <strong>Jenkins</strong>, and <strong>Docker</strong>
+          </li>
+          <li>Automated builds and packaging for platform SDKs including <strong>Android</strong>, <strong>iOS</strong>, <strong>macOS</strong>, <strong>Linux</strong>, <strong>Windows</strong>, <strong>WebAssembly</strong>, <strong>PS4</strong>, <strong>PS5</strong>, <strong>Switch</strong>, <strong>Xbox One</strong>, and <strong>Xbox Series XS</strong>
+          </li>
+        </ul>
+        <h3 id="zuru-tech---junior-c-software-developer"><img class="company-logo" src="assets/logos/zurutech.png" alt="" width="28" height="28" loading="lazy" decoding="async">Zuru Tech - Junior C++ Software Developer</h3>
+        <p class="date">
+          <strong>December 2020 to March 2021</strong>
+        </p>
+        <ul>
+          <li>Worked on arch-viz BIM software built on a fork of <strong>Unreal Engine 4</strong>
+          </li>
+          <li>Developed in <strong>C++14</strong> with <strong>Visual Studio</strong> and <strong>Rider</strong>
+          </li>
+          <li>Wrote reliability tests that helped detect flaws and improve product stability</li>
+        </ul>
+        <h3 id="ubisoft---junior-gameplay-programmer"><img class="company-logo" src="assets/logos/ubisoft.png" alt="" width="28" height="28" loading="lazy" decoding="async">Ubisoft - Junior Gameplay Programmer</h3>
+        <p class="date">
+          <strong>September 2020 to December 2020</strong>
+        </p>
+        <ul>
+          <li>Worked on <strong>Mario + Rabbids Sparks of Hope</strong> with teams in Milan and Paris</li>
+          <li>Built <strong>C++17</strong> backend automation for navmesh generation in a modified <strong>Snowdrop</strong> engine</li>
+          <li>Worked in a production environment using <strong>Perforce</strong> and <strong>Windows</strong> tooling</li>
+        </ul>
+        <h3 id="sfera-productions---unreal-engine--vr-developer"><img class="company-logo" src="assets/logos/sfera-productions.png" alt="" width="28" height="28" loading="lazy" decoding="async">Sfera Productions - Unreal Engine / VR Developer</h3>
+        <p class="date">
+          <strong>2016 to 2018</strong>
+        </p>
+        <ul>
+          <li>Developed VR virtual tours, experiences, documentaries, and games with <strong>Unreal Engine 4.x</strong>
+          </li>
+          <li>Built for <strong>Oculus DK2</strong>, <strong>HTC Vive</strong>, <strong>Samsung Gear</strong>, <strong>Cardboard</strong>, and <strong>Daydream</strong>
+          </li>
+          <li>Digitized a Cranio Creations tabletop board game in Unreal with VR controllers</li>
+          <li>Showcased work at Lucca Comics &amp; Games and contributed to a Steam release</li>
+          <li>Focused on draw-call reduction, pixel overdraw, mesh optimization, benchmarking, and Blueprint extensions with <strong>C++</strong>
+          </li>
+        </ul>
+        <h3 id="itc-consulting---unity-developer"><img class="company-logo" src="assets/logos/itc-consulting.png" alt="" width="28" height="28" loading="lazy" decoding="async">ITC Consulting - Unity Developer</h3>
+        <p class="date">
+          <strong>2015 to 2016</strong>
+        </p>
+        <ul>
+          <li>Developed a <strong>Unity</strong> driving simulator with <strong>C#</strong> and external libraries</li>
+          <li>Built a high-performance C# action-recording system backed by <strong>SQLite</strong> for replay analysis</li>
+          <li>Connected cockpit hardware through <strong>Windows</strong> APIs, emulated <strong>RS-232</strong>, <strong>USB</strong>, and <strong>Arduino</strong>
+          </li>
+          <li>Maintained traffic AI for city simulation scenarios</li>
+        </ul>
+      </section>
+      <section aria-labelledby="skills">
+        <h2 id="skills">Skills</h2>
+        <h3>Build and release engineering</h3>
+        <ul>
+          <li>CI/CD, build automation, packaging, release operations, developer tooling, build farm operations</li>
+          <li>
+            <strong>Perforce</strong>, <strong>Swarm</strong>, <strong>Horde</strong>, <strong>Jenkins</strong>, <strong>GitHub Actions</strong>, <strong>BuildGraph</strong>, <strong>Robomerge</strong>
+          </li>
+          <li>
+            <strong>Python</strong>, <strong>C#</strong>, <strong>PowerShell</strong>, <strong>Bash</strong>, <strong>Groovy</strong>, <strong>Inno Setup Pascal</strong>
+          </li>
+        </ul>
+        <h3>Platforms and infrastructure</h3>
+        <ul>
+          <li>
+            <strong>Windows</strong>, <strong>Linux</strong>, <strong>macOS</strong>, <strong>Android</strong>, <strong>iOS</strong>, <strong>WebAssembly</strong>, <strong>tvOS</strong>
+          </li>
+          <li>
+            <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>Rancher</strong>, <strong>Harvester</strong>, <strong>Ansible</strong>, <strong>AWS</strong>, <strong>S3</strong>, <strong>Headlamp</strong>, <strong>Portainer</strong>, <strong>Homepage</strong>
+          </li>
+          <li>Networking with <strong>MikroTik</strong>, <strong>Ubiquiti</strong>, and <strong>OPNSense</strong>
+          </li>
+        </ul>
+        <h3>Defensive security consulting</h3>
+        <ul>
+          <li>Vulnerability assessments across applications, source code, systems, and infrastructure</li>
+          <li>Vulnerability reporting, remediation recommendations, and proposed code fixes through pull requests</li>
+        </ul>
+        <h3>Game and engine development</h3>
+        <ul>
+          <li>
+            <strong>C</strong>, <strong>C++</strong>, <strong>C#</strong>, <strong>Unreal Engine 4</strong>, <strong>Unity</strong>, <strong>OpenGL</strong>, <strong>SDL2</strong>
+          </li>
+          <li>Console SDK experience: <strong>PS4</strong>, <strong>PS5</strong>, <strong>Switch</strong>, <strong>Xbox One</strong>, <strong>Xbox Series XS</strong>
+          </li>
+          <li>Performance work for VR and hardware-constrained interactive systems</li>
+        </ul>
+      </section>
+      <section aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <h3>Sapienza University of Rome - Computer Science</h3>
+        <p class="date">
+          <strong>2013 to 2016</strong>
+        </p>
+        <ul>
+          <li>Studied Computer Science before moving directly into startup and 3D engine work</li>
+        </ul>
+      </section>
+      <section aria-labelledby="awards">
+        <h2 id="awards">Awards</h2>
+        <h3>Rotary Club Rome - Youth Award for Science and Technology</h3>
+        <p class="date">
+          <strong>2013</strong>
+        </p>
+        <ul>
+          <li>First place in a <strong>C++</strong> programming competition</li>
+        </ul>
+      </section>
+      <section aria-labelledby="languages">
+        <h2 id="languages">Languages</h2>
+        <ul>
+          <li>Italian: native</li>
+          <li>English: used regularly in professional contexts</li>
+          <li>Spanish: basic comprehension</li>
+        </ul>
+      </section>
+      <section aria-labelledby="more">
+        <h2 id="more">Personal Life</h2>
+        <ul>
+          <li>Started programming through game-making tools and stayed curious about engine internals, graphics, build systems, and performance</li>
+          <li>Enjoy <strong>D&amp;D</strong>, anime, and manga</li>
+          <li>Interested in home automation, <strong>KNX</strong>, <strong>Raspberry Pi</strong>, <strong>Home Assistant</strong>, <strong>Ubiquiti</strong>, <strong>OPNSense</strong>, search engines, RISC hardware, and teaching</li>
+        </ul>
+      </section>
+      <footer>
+        <p>© 2026 Yatima Santamorena</p>
       </footer>
     </main>
-  </div>
-</body>
+  </body>
 </html>
