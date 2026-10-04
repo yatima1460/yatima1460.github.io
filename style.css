@@ -136,7 +136,7 @@ footer {
 @media screen and (prefers-color-scheme: dark) {
   html {
     color: #eee;
-    background: #181818;
+    background: #000000;
   }
 
   h2 {
